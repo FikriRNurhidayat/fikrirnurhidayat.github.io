@@ -8,24 +8,12 @@ body {
   margin: 0;
   line-height: 1.4;
   transition: 0.3s;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 a {
   text-decoration: none;
+  font-weight: normal;
   color: var(--color-accent);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-accent-rgb: var(--color-accent-dark-rgb);
-  }
-
-  body {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-  }
-
-  a {
-    font-weight: normal;
-  }
 }

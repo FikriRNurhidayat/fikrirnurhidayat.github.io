@@ -1,10 +1,21 @@
 :root {
-  --color-accent-rgb: 249, 197, 19;
+  --color-accent-rgb: 255, 193, 7;
+  --color-accent-dark-rgb: 255, 193, 7;
   --color-accent: rgb(var(--color-accent-rgb));
   --color-accent-1: rgba(var(--color-accent-rgb), 0.9);
   --color-accent-2: rgba(var(--color-accent-rgb), 0.8);
-  --color-accent-dark-rgb: 255, 211, 61;
 
   --color-light: #ffffff;
   --color-dark: #000000;
+
+  --color-foreground: var(--color-dark);
+  --color-background: var(--color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: rgb(var(--color-accent-dark-rgb));
+    --color-foreground: var(--color-light);
+    --color-background: var(--color-dark);
+  }
 }

@@ -6,7 +6,7 @@
 main {
   display: flex;
   justify-content: start;
-  align-items: flex-end;
+  align-items: center;
   min-height: 100vh;
   width: 100%;
 }
@@ -54,12 +54,6 @@ header a {
 
 header a:hover {
   color: var(--color-accent-1);
-  font-weight: bolder;
-}
-
-header a[class="active"] {
-  color: var(--color-accent);
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 576px) {
@@ -81,6 +75,10 @@ header a[class="active"] {
     justify-content: end;
     width: fit-content;
     margin-top: unset;
+  }
+
+  main {
+    align-items: flex-end;
   }
 
   main > div {
