@@ -3,8 +3,9 @@ layout: default
 title: "Blogs"
 ---
 
-# Coming Soon 🤔
+I share everything that I want here!
+Let's call it, my safe space. 🤫
 
-Yes, I'm planning to write some blogpost, maybe it's all about **GNU/Linux** stuff, if you're interested in that, stay tune!
-
-For the time being, you can check out my <a target="_blank" href="https://github.com/fikrirnurhidayat">Github</a> instead.
+{% for post in site.posts %}
+  - {{post.date | date: "%b %d, %Y" }} - [{{post.title}}]({{post.url}}) 
+{% endfor %}
