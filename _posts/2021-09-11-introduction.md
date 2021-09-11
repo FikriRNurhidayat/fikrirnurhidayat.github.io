@@ -40,8 +40,8 @@ build that I've done. Yes, I use Arch btw 🙂.
 #### What now?
 
 I don't know, find something else that might interest you. But, here's picture of my cat.
-She's pregnant by the way.
+She's pregnant by the way at the time when I'm writing this.
 
-<img src="{{ "/assets/images/2021/09/11/oyen.jpg" | relative_url }}" alt="oyen">
+<img src="{{ "/assets/images/2021/09/11/oyen.webp" | relative_url }}" alt="oyen">
 
 <h2 align="center">✨ Thank You ✨</h2>
