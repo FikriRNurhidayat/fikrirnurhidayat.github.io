@@ -1,10 +1,12 @@
-:root { --color-accent-rgb: 255, 193, 7; --color-accent-dark-rgb: 255, 193, 7; --color-accent: rgb(var(--color-accent-rgb)); --color-accent-1: rgba(var(--color-accent-rgb), 0.9); --color-accent-2: rgba(var(--color-accent-rgb), 0.8); --color-light: #ffffff; --color-dark: #000000; --color-foreground: var(--color-dark); --color-background: var(--color-light); }
+:root { --color-light-rgb: 255,255,255; --color-dark-rgb: 0,0,0; --color-foreground-rgb: var(--color-dark-rgb); --color-background-rgb: var(--color-light-rgb); --color-foreground: rgb(var(--color-foreground-rgb)); --color-background: rgb(var(--color-background-rgb)); --color-foreground-1: rgba(var(--color-foreground-rgb), 0.8); --color-background-1: rgba(var(--color-background-rgb), 0.8); --color-foreground-2: rgba(var(--color-foreground-rgb), 0.5); --color-background-2: rgba(var(--color-background-rgb), 0.5); --color-accent-rgb: 255, 211, 61; --color-accent: rgb(var(--color-accent-rgb)); }
 
-@media (prefers-color-scheme: dark) { :root { --color-accent: rgb(var(--color-accent-dark-rgb)); --color-foreground: var(--color-light); --color-background: var(--color-dark); } }
+@media (prefers-color-scheme: dark) { :root { --color-foreground-rgb: var(--color-light-rgb); --color-background-rgb: var(--color-dark-rgb); } }
 
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace; min-height: 100vh; font: 1.2em/1.62 sans-serif; margin: 0; line-height: 1.4; transition: 0.3s; background-color: var(--color-background); color: var(--color-foreground); }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace; min-height: 100vh; font: 1.2em/1.62 sans-serif; margin: 0; line-height: 1.4; transition: 0.3s; background-color: var(--color-background); color: var(--color-foreground); -ms-overflow-style: none; scrollbar-width: none; overflow-y: scroll; }
 
-a { text-decoration: none; font-weight: normal; color: var(--color-accent); }
+body::-webkit-scrollbar { display: none; }
+
+a { text-decoration: none; color: var(--color-accent); }
 
 body { max-width: 40em; margin: auto; padding: 0 1em; line-height: 1.7; min-height: unset; }
 
@@ -12,18 +14,24 @@ img { max-width: 100%; }
 
 header { display: flex; justify-content: space-between; align-items: center; flex-direction: column; padding: 2rem 0; position: sticky-top; }
 
-.brand { max-width: fit-content; padding: 0; margin: 0; font-size: unset; font-weight: normal; text-transform: uppercase; }
+.brand { max-width: fit-content; padding: 0; margin: 0; font-size: unset; font-weight: lighter; text-transform: uppercase; }
+
+.brand a { color: var(--color-foreground); }
 
 .nav-link { display: flex; margin-top: 1rem; justify-content: center; align-items: center; }
 
-.nav-link a { padding: 0 1rem; text-transform: uppercase; color: var(--color-accent-2); }
+.nav-link a { padding: 0 1rem; text-transform: uppercase; }
 
-.nav-link a:hover { color: var(--color-accent-1); }
-
-.nav-link a[class="active"] { color: var(--color-accent); font-weight: bold; }
+.nav-link a[class="active"] { color: var(--color-foreground); }
 
 footer { display: flex; justify-content: space-between; }
 
 @media only screen and (min-width: 992px) { header { flex-direction: row; } .nav-link { margin-top: unset; justify-content: start; } }
+
+.blog-list li { display: flex; width: 100%; }
+
+.blog-list li h4 { margin: 0; }
+
+.blog-list li .date { width: 5em; }
 
 /*# sourceMappingURL=main.css.map */

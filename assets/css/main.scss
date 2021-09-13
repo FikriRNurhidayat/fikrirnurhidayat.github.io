@@ -29,8 +29,12 @@ header {
   padding: 0;
   margin: 0;
   font-size: unset;
-  font-weight: normal;
+  font-weight: lighter;
   text-transform: uppercase;
+}
+
+.brand a {
+  color: var(--color-foreground);
 }
 
 .nav-link {
@@ -43,16 +47,10 @@ header {
 .nav-link a {
   padding: 0 1rem;
   text-transform: uppercase;
-  color: var(--color-accent-2);
-}
-
-.nav-link a:hover {
-  color: var(--color-accent-1);
 }
 
 .nav-link a[class="active"] {
-  color: var(--color-accent);
-  font-weight: bold;
+  color: var(--color-foreground);
 }
 
 footer {
@@ -68,5 +66,18 @@ footer {
   .nav-link {
     margin-top: unset;
     justify-content: start;
+  }
+}
+
+.blog-list li {
+  display: flex;
+  width: 100%;
+
+  h4 {
+    margin: 0;
+  }
+
+  .date {
+    width: 5em;
   }
 }

@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Blogs"
+---
+
+<p>I share everything that I want here!
+Let's call it, my safe space. 🤫</p>
+
+<ul class="blog-list">
+{% for post in site.posts %}
+  <li>
+    <h4 class="date">{{post.date | date: "%b %d" }}</h4>
+    <h4 class="title">
+      <a href="{{post.url}}" target="_blank">{{post.title}}</a>
+    </h4>
+  </li>
+{% endfor %}
+</ul>

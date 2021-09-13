@@ -48,12 +48,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: normal;
-  color: var(--color-accent-2);
   padding-right: 1rem;
-}
-
-header a:hover {
-  color: var(--color-accent-1);
 }
 
 @media only screen and (min-width: 576px) {

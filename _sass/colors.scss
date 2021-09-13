@@ -1,21 +1,26 @@
 :root {
-  --color-accent-rgb: 255, 193, 7;
-  --color-accent-dark-rgb: 255, 193, 7;
+  --color-light-rgb: 255,255,255;
+  --color-dark-rgb: 0,0,0;
+
+  --color-foreground-rgb: var(--color-dark-rgb);
+  --color-background-rgb: var(--color-light-rgb);
+
+  --color-foreground: rgb(var(--color-foreground-rgb));
+  --color-background: rgb(var(--color-background-rgb));
+
+  --color-foreground-1: rgba(var(--color-foreground-rgb), 0.8);
+  --color-background-1: rgba(var(--color-background-rgb), 0.8);
+
+  --color-foreground-2: rgba(var(--color-foreground-rgb), 0.5);
+  --color-background-2: rgba(var(--color-background-rgb), 0.5);
+
+  --color-accent-rgb: 255, 211, 61;
   --color-accent: rgb(var(--color-accent-rgb));
-  --color-accent-1: rgba(var(--color-accent-rgb), 0.9);
-  --color-accent-2: rgba(var(--color-accent-rgb), 0.8);
-
-  --color-light: #ffffff;
-  --color-dark: #000000;
-
-  --color-foreground: var(--color-dark);
-  --color-background: var(--color-light);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent: rgb(var(--color-accent-dark-rgb));
-    --color-foreground: var(--color-light);
-    --color-background: var(--color-dark);
+    --color-foreground-rgb: var(--color-light-rgb);
+    --color-background-rgb: var(--color-dark-rgb);
   }
 }

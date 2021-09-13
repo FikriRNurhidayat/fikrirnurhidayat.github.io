@@ -10,10 +10,18 @@ body {
   transition: 0.3s;
   background-color: var(--color-background);
   color: var(--color-foreground);
+
+  // Hide Scrollbar
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll; 
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
+
 
 a {
   text-decoration: none;
-  font-weight: normal;
   color: var(--color-accent);
 }
