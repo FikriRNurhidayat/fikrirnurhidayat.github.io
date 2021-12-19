@@ -1,0 +1,4 @@
+#+TITLE: My Journal
+
+- [[file:index.org][Fikri Rahmat Nurhidayat]]
+- [[file:id/open-api/index.org][Open API]]

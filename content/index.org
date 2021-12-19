@@ -1,0 +1,35 @@
+#+TITLE: Fikri Rahmat Nurhidayat
+#+DESCRIPTION: Bottom text
+#+OPTIONS: title:nil toc:nil
+
+#+BEGIN_EXPORT html
+<header style="text-align:center;">
+    <img alt="This is me" src="/assets/images/avatar.jpg"  height="25%" width="25%" style="border-radius:100%;" />
+    <h1>Fikri Rahmat Nurhidayat</h1>
+    <p>Backend Developer at <a href="https://binaracademy.com">Binar Academy</a></p>
+</header>
+#+END_EXPORT
+
+My name is Fikri Rahmat Nurhidayat. Web developer based on Indonesia. I’m mainly focusing on *Backend Web Development*, and I’m OK with *Frontend Web Development*.
+
+I work using *Typescript*, *Ruby on Rails*, and *Nodejs* on my current workplaces, but I also use *Vuejs*, *Gridsome*, *Nextjs*, and *Expressjs* on my other projects.
+
+I’m planning on working on some open-source projects, specifically on desktop application such as:
+
+- [[https://github.com/FikriRNurhidayat/dwm][suckless’s dwm]] (Dynamic Window Manager)
+- [[https://st.suckless.org/][suckless’s st]] (Simple Terminal)
+- and many others.
+
+Also, I’m a GNU/Linux enthusiast, so expect some GNU/Linux related blogpost 🤭
+
+* Interested in me?
+
+You can find me here:
+
+- [[https://github.com/FikriRNurhidayat][Github]]
+- [[https://gitlab.com/FikriRNurhidayat][Gitlab]]
+- [[https://www.linkedin.com/in/fikrirnurhidayat/][Linkedin]]
+
+#+BEGIN_EXPORT html
+<footer><p>© 2021 Fikri Rahmat Nurhidayat </p></footer>
+#+END_EXPORT
