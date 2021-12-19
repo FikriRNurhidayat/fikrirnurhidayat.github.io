@@ -29,7 +29,3 @@ You can find me here:
 - [[https://github.com/FikriRNurhidayat][Github]]
 - [[https://gitlab.com/FikriRNurhidayat][Gitlab]]
 - [[https://www.linkedin.com/in/fikrirnurhidayat/][Linkedin]]
-
-#+BEGIN_EXPORT html
-<footer><p>© 2021 Fikri Rahmat Nurhidayat </p></footer>
-#+END_EXPORT
