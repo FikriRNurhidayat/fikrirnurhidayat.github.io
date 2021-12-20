@@ -39,13 +39,13 @@ brew install emacs
 
 To make new page inside this project, the only thing you need is, create new file with ~.org~ extention inside ~${PROJECT_ROOT}/content/~ directory. It work just like ~jekyll~ and other SSG framework.
 
-* Great, I want to use this as my framework for my personal website, how do i do that?
+* I want to use this as my framework
 
 1. You only need to clone this repository.
 
-   #+begin_src shell
+#+begin_src shell
 git clone https://github.com/FikriRNurhidayat/fikrirnurhidayat.github.io
-   #+end_src
+#+end_src
 
 2. Just launch emacs inside this project or any editor you'd like
 3. That's it.
