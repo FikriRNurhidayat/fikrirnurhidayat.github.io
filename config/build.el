@@ -39,7 +39,6 @@
 (require 'org)
 (require 'ox-publish)
 
-
 (setq org-html-validation-link nil
       org-html-head-include-default-style nil
       org-export-headline-levels 5
@@ -50,7 +49,8 @@
                      (content "main" "content")
                      (postamble "footer" "postamble"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
-      org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">")
+      org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">"
+      org-html-head-extra "<link rel=\"icon\" type=\"image/png\" href=\"/assets/favicon.png\">")
 
 ;; Setup publishing
 (setq org-publish-project-alist
