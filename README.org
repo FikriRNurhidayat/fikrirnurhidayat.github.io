@@ -1,0 +1,52 @@
+#+TITLE: fikrirnurhidayat.github.io
+#+AUTHOR: Fikri Rahmat Nurhidayat
+#+EMAIL: FikriRNurhidayat@gmail.com
+#+html: <a href="https://www.gnu.org/software/emacs/emacs.html#Releases"><img src="https://img.shields.io/badge/Emacs-27.1%20%E2%80%93%2028.0.50-blueviolet.svg?style=flat-square&logo=GNU%20Emacs&logoColor=white"></a>
+#+html: <a href="https://orgmode.org"><img src="https://img.shields.io/badge/Org-literate%20config-%2377aa99?style=flat-square&logo=org&logoColor=white"></a>
+#+html: <a href="https://github.com/FikriRNurhidayat/fikrirnurhidayat.github.io/actions"><img src="https://img.shields.io/github/workflow/status/FikriRNurhidayat/fikrirnurhidayat.github.io/Publish/main.svg?style=flat-square&label=publish&logo=buffer"></a>
+
+
+This repository contains the source code of [[https://fikrirnurhidayat.github.io][my personal website]]. The website was built by using ~org-mode~ publish function that can be invoked inside ~emacs~ by configuring the build manifest using ~emacs-lisp~.
+
+* How to build?
+
+To build the website, the only thing you need is ~emacs~ binary installed on your system. You can install ~emacs-nox~ package for simplicity if you don't want to get your hands dirty of using emacs.
+
+Once you've got that installed, the only thing you need to run is the file inside ~bin~ folder.
+
+#+begin_src shell
+${PROJECT_ROOT}/bin/build
+#+end_src
+
+** Debian
+
+#+begin_src shell
+apt install emacs-nox
+#+end_src
+
+** Arch Linux
+
+#+begin_src shell
+pacman -Syu emacs-nox
+#+end_src
+
+** MacOS
+
+#+begin_src shell
+brew install emacs
+#+end_src
+
+* How to make new page?
+
+To make new page inside this project, the only thing you need is, create new file with ~.org~ extention inside ~${PROJECT_ROOT}/content/~ directory. It work just like ~jekyll~ and other SSG framework.
+
+* Great, I want to use this as my framework for my personal website, how do i do that?
+
+1. You only need to clone this repository.
+
+   #+begin_src shell
+git clone https://github.com/FikriRNurhidayat/fikrirnurhidayat.github.io
+   #+end_src
+
+2. Just launch emacs inside this project or any editor you'd like
+3. That's it.
