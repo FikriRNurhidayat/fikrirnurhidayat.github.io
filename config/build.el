@@ -1,9 +1,31 @@
+;;; build --- Description -*- lexical-binding: t; -*-
+;;
+;; Copyright (C) 2021 Fikri Rahmat Nurhidayat
+;;
+;; Author: Fikri Rahmat Nurhidayat <https://github.com/fain>
+;; Maintainer: Fikri Rahmat Nurhidayat <fikrirnurhidayat@gmail.com>
+;; Created: December 20, 2021
+;; Modified: December 20, 2021
+;; Version: 0.0.1
+;; Keywords: abbrev bib c calendar comm convenience data docs emulations extensions faces files frames games hardware help hypermedia i18n internal languages lisp local maint mail matching mouse multimedia news outlines processes terminals tex tools unix vc wp
+;; Homepage: https://github.com/fain/build-config
+;; Package-Requires: ((emacs "24.3"))
+;;
+;; This file is not part of GNU Emacs.
+;;
+;;; Commentary:
+;;; This file is being used to configure how the site will be build
+;;
+;;  Description
+;;; This file is being used to configure how the site will be build
+;;
+;;
+;;; Code:
 ;; Set the package installation directory so that packages aren't stored in the
 ;; ~/.emacs.d/elpa path.
 (require 'package)
 (setq package-user-dir (expand-file-name "./packages"))
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")))
 
 ;; Initialize the package system
 (package-initialize)
@@ -14,7 +36,6 @@
 (package-install 'htmlize)
 
 ;; Import publishing tools
-(require 'htmlize)
 (require 'org)
 (require 'ox-publish)
 
@@ -53,3 +74,5 @@
              :publishing-directory "./dist/assets"
              :publishing-function org-publish-attachment)
         ("site" :components ("site:main" "site:assets"))))
+(provide 'build)
+;;; build.el ends here
