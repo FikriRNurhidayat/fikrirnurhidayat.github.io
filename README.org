@@ -5,7 +5,6 @@
 #+html: <a href="https://orgmode.org"><img src="https://img.shields.io/badge/Org-literate%20config-%2377aa99?style=flat-square&logo=org&logoColor=white"></a>
 #+html: <a href="https://github.com/FikriRNurhidayat/fikrirnurhidayat.github.io/actions"><img src="https://img.shields.io/github/workflow/status/FikriRNurhidayat/fikrirnurhidayat.github.io/Publish/main.svg?style=flat-square&label=publish&logo=buffer"></a>
 
-
 This repository contains the source code of [[https://fikrirnurhidayat.github.io][my personal website]]. The website was built by using ~org-mode~ publish function that can be invoked inside ~emacs~ by configuring the build manifest using ~emacs-lisp~.
 
 * How to build?
