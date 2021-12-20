@@ -3,10 +3,13 @@ pages:
   only:
     - main
   script:
-    - apt update -y
     - apt install -y emacs-nox
     - ./bin/build
     - mv dist public
+  cache:
+    key: ${CI_JOB_NAME}
+    paths:
+      - ./packages
   artifacts:
     paths:
       - public
