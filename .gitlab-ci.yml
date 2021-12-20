@@ -2,7 +2,8 @@ pages:
   only:
     - main
   script:
-    - apt install emacs-nox
+    - apt update -y
+    - apt install -y emacs-nox
     - ./bin/build
     - mv dist public
   artifacts:
