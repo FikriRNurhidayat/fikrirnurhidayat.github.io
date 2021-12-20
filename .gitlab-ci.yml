@@ -1,10 +1,13 @@
 pages:
-  image: ubuntu:latest
+  image: alpine:latest
   only:
     - main
+  environment:
+    name: production
+    url: https://fikrirnurhidayat.gitlab.io
   script:
-    - apt update -y
-    - apt install -y emacs-nox
+    - apk update
+    - apk add emacs-nox
     - ./bin/build
     - mv dist public
   cache:
