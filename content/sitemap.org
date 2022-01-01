@@ -1,4 +1,3 @@
-#+TITLE: My Journal
+#+TITLE: Sitemap for project site:main
 
 - [[file:index.org][Fikri Rahmat Nurhidayat]]
-- [[file:id/open-api/index.org][Open API]]

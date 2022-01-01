@@ -1,31 +1,95 @@
 #+TITLE: Fikri Rahmat Nurhidayat
 #+DESCRIPTION: Bottom text
 #+OPTIONS: title:nil toc:nil
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="/assets/css/home.css">
 
 #+BEGIN_EXPORT html
-<header style="text-align:center;">
-    <img alt="This is me" src="/assets/images/avatar.jpg"  height="25%" width="25%" style="border-radius:100%;" />
-    <h1>Fikri Rahmat Nurhidayat</h1>
-    <p>Backend Developer at <a href="https://binaracademy.com">Binar Academy</a></p>
+<header>
+  <h1>Fikri<br>Rahmat<br>Nurhidayat</h1>
 </header>
 #+END_EXPORT
 
-My name is Fikri Rahmat Nurhidayat. Web developer based on Indonesia. I’m mainly focusing on *Backend Web Development*, and I’m OK with *Frontend Web Development*.
+#+BEGIN_EXPORT html
+<section class="description">
+  <h1>Software Developer</h1>
+  <p>I’m based on Yogyakarta, Indonesia. Can work remotely anywhere.</p>
+  <nav>
+    <a href="https://github.com/fikrirnurhidayat" target="_blank">Github</a>
+    <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">Gitlab</a>
+    <a href="https://www.linkedin.com/in/fikrirnurhidayat" target="_blank">Linkedin</a>
+  </nav>
+</section>
+#+END_EXPORT
 
-I work using *Typescript*, *Ruby on Rails*, and *Nodejs* on my current workplaces, but I also use *Vuejs*, *Gridsome*, *Nextjs*, and *Expressjs* on my other projects.
+#+BEGIN_EXPORT html
+<section class="features">
+  <div class="features--card">
+    <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="51.6923" cy="51.6923" r="42.3077" stroke="black" stroke-width="4"/>
+      <circle cx="44.3077" cy="44.3077" r="42.3077" stroke="black" stroke-width="4"/>
+    </svg>
 
-I’m planning on working on some open-source projects, specifically on desktop application such as:
+    <h2>Back-end Developer</h2>
+    <p>I love to write code, especially when it comes to the business logic, I love the complexity behind everything.</p>
 
-- [[https://github.com/FikriRNurhidayat/dwm][suckless’s dwm]] (Dynamic Window Manager)
-- [[https://st.suckless.org/][suckless’s st]] (Simple Terminal)
-- and many others.
+    <h6>Spells that I use to build backend application</h6>
 
-Also, I’m a GNU/Linux enthusiast, so expect some GNU/Linux related blogpost 🤭
+    <ul>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.ruby.png" alt="Ruby">
+        <h6 class="stacks--name">Ruby</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.javascript.png" alt="Javascript">
+        <h6 class="stacks--name">Node.js</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.rails.png" alt="Rails">
+        <h6 class="stacks--name">Ruby on Rails</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.postgresql.png" alt="Postgresql">
+        <h6 class="stacks--name">Postgresql</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.mongodb.png" alt="MongoDB">
+        <h6 class="stacks--name">MongoDB</h6>
+      </li>
+    </ul>
+  </div>
 
-* Interested in me?
+  <div class="features--card">
+    <svg width="95" height="96" viewBox="0 0 95 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="82.1107" height="82.1107" stroke="black" stroke-width="4"/>
+      <rect x="10.7905" y="11.8894" width="82.1107" height="82.1107" stroke="black" stroke-width="4"/>
+    </svg>
 
-You can find me here:
+    <h2>Front-end Developer</h2>
+    <p>Converting UI design into a real application is my favourite things to do.</p>
+    <h6>I use these stacks to build frontend application</h6>
 
-- [[https://github.com/FikriRNurhidayat][Github]]
-- [[https://gitlab.com/FikriRNurhidayat][Gitlab]]
-- [[https://www.linkedin.com/in/fikrirnurhidayat/][Linkedin]]
+    <ul>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.html.png" alt="HTML">
+        <h6 class="stacks--name">HTML</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.css.png" alt="CSS">
+        <h6 class="stacks--name">CSS</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.sass.png" alt="Sass">
+        <h6 class="stacks--name">Sass</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.react.png" alt="React">
+        <h6 class="stacks--name">React</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.vue.png" alt="Vue">
+        <h6 class="stacks--name">Vue</h6>
+      </li>
+    </ul>
+  </div>
+</section>
+#+END_EXPORT

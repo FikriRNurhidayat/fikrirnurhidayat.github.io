@@ -49,3 +49,8 @@ git clone https://github.com/FikriRNurhidayat/fikrirnurhidayat.github.io
 
 2. Just launch emacs inside this project or any editor you'd like
 3. That's it.
+
+* Credit
+
+I'll take some image from unsplash.
+- [[https://unsplash.com/photos/vX_zk5yo7M4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink][Cetteup]]

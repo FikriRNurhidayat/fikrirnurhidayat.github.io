@@ -60,9 +60,6 @@
              :base-directory "./content"
              :publishing-directory "./dist"
              :auto-sitemap t
-             :sitemap-filename "sitemap.org"
-             :sitemap-title "My Journal"
-             :sitemap-style list
              :with-author nil
              :with-toc t
              :with-timestamps t
