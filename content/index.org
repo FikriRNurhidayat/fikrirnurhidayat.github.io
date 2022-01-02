@@ -10,9 +10,9 @@
 #+END_EXPORT
 
 #+BEGIN_EXPORT html
-<section class="description">
-  <h1>Software Developer</h1>
-  <p>I’m based on Yogyakarta, Indonesia. Can work remotely anywhere.</p>
+<section class="display">
+  <h1>Web Developer</h1>
+  <p>Based on Yogyakarta, Indonesia. Work remotely anywhere.</p>
   <nav>
     <a href="https://github.com/fikrirnurhidayat" target="_blank">Github</a>
     <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">Gitlab</a>
@@ -29,10 +29,10 @@
       <circle cx="44.3077" cy="44.3077" r="42.3077" stroke="black" stroke-width="4"/>
     </svg>
 
-    <h2>Back-end Developer</h2>
-    <p>I love to write code, especially when it comes to the business logic, I love the complexity behind everything.</p>
+    <h2>Back-end Web</h2>
+    <p>Every magic comes with the unknown reality behind it.</p>
 
-    <h6>Spells that I use to build backend application</h6>
+    <h6>The Spells</h6>
 
     <ul>
       <li class="stacks">
@@ -64,9 +64,9 @@
       <rect x="10.7905" y="11.8894" width="82.1107" height="82.1107" stroke="black" stroke-width="4"/>
     </svg>
 
-    <h2>Front-end Developer</h2>
-    <p>Converting UI design into a real application is my favourite things to do.</p>
-    <h6>I use these stacks to build frontend application</h6>
+    <h2>Front-end Web</h2>
+    <p>Mind creates reality, reality is what the vision can see.</p>
+    <h6>The Spells</h6>
 
     <ul>
       <li class="stacks">
@@ -93,3 +93,51 @@
   </div>
 </section>
 #+END_EXPORT
+
+* Holds
+:PROPERTIES:
+:HTML_CONTAINER: section
+:HTML_CONTAINER_CLASS: display
+:END:
+Serving as *Backend Developer* at *Binar Academy*
+
+#+BEGIN_EXPORT html
+<nav>
+  <a href="https://binaracademy.com" target="_blank">
+    Fast Travel
+    <img src="/assets/images/home/work.binaracademy.png" alt="Binar Academy">
+  </a>
+</nav>
+#+END_EXPORT
+
+* Recipes
+:PROPERTIES:
+:HTML_CONTAINER: section
+:HTML_CONTAINER_CLASS: display recipes
+:END:
+
+Spells and incantations for those with the talent to cast them.
+
+- @@html: <a href="https://orgmode.org" target="_blank">@@
+  org
+ #+ATTR_HTML: :class recipes-img
+  [[../assets/images/home/recipes.tecosaurorg.png]]
+  @@html: </a>@@
+
+- @@html: <a href="https://emacs.org" target="_blank">@@
+  emacs
+ #+ATTR_HTML: :class recipes-img
+  [[../assets/images/home/recipes.emacs.png]]
+  @@html: </a>@@
+
+- @@html: <a href="https://simplecss.org" target="_blank">@@
+  simple.css
+ #+ATTR_HTML: :class recipes-img
+  [[../assets/images/home/recipes.simpledotcss.png]]
+  @@html: </a>@@
+
+- @@html: <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@@
+  love
+ #+ATTR_HTML: :class recipes-img
+  [[../assets/images/home/recipes.love.png]]
+  @@html: </a>@@

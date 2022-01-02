@@ -26,27 +26,52 @@ header h1 {
 }
 
 section {
-  min-height: 50vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 80rem !important;
 }
 
-/* Description Section */
-.description {
+section .outline-text-2 {
+  text-align: center;
+}
+
+/* Display Section */
+.display {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   width: 100%;
 }
 
-.description h1 {
-  font-weight: lighter;
+.display h2 {
+  font-size: calc(
+    var(--base-fontsize) * var(--header-scale) * var(--header-scale) *
+      var(--header-scale) * var(--header-scale)
+  );
 }
 
-.description nav a {
+.display nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display nav a {
   background: var(--text);
   color: var(--bg) !important;
+  display: flex;
+  align-items: center;
+}
+
+.display nav a img {
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+
+.display nav a:hover {
+  text-decoration: none;
 }
 
 /* Feature section */
@@ -60,7 +85,7 @@ section {
 }
 
 .features--card {
-  padding: 2rem 4rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -73,8 +98,13 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
   list-style-type: none;
-  margin: 0;
-  padding: 2rem;
+  margin: 0 !important;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  padding-top: 2rem;
 }
 
 .stacks {
@@ -92,8 +122,61 @@ section {
   min-height: unset !important;
 }
 
-@media (max-width: var(--md)) {
+/* Recipes */
+.recipes {
+  width: fit-content !important;
+}
+
+.recipes ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+.recipes li {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.recipes li p a {
+  text-decoration: unset;
+  font-weight: normal;
+  color: var(--text) !important;
+}
+
+.recipes li:hover {
+  text-decoration: underline;
+}
+
+.recipes-img {
+  height: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  .recipes ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .features {
     flex-direction: column !important;
+  }
+
+  .features--card {
+    padding: 4rem 0;
+  }
+
+  .features--card:first-child {
+    margin-bottom: 4rem !important;
+    border-right: unset;
+    border-bottom: 1px solid var(--border);
   }
 }
