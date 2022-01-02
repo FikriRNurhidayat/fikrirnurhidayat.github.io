@@ -50,8 +50,8 @@
                      (content "main" "content")
                      (postamble "footer" "postamble"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
-      org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">"
-      org-html-head-extra "<link rel=\"icon\" type=\"image/png\" href=\"/assets/favicon.png\">")
+      org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
+                     <link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/favicon.svg\">")
 
 ;; Setup publishing
 (setq org-publish-project-alist
@@ -68,7 +68,7 @@
         ("site:assets"
              :recursive t
              :base-directory "./assets"
-             :base-extension "html\\|xml\\|css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|zip\\|gz\\|csv\\|m\\|R\\|el"
+             :base-extension "html\\|xml\\|css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|zip\\|gz\\|csv\\|m\\|R\\|el\\|svg"
              :publishing-directory "./dist/assets"
              :publishing-function org-publish-attachment)
         ("site" :components ("site:main" "site:assets"))))
