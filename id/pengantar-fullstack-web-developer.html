@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-02-08 Tue 10:05 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pengantar Fullstack Web Developer</title>
+<meta name="generator" content="Org mode">
+<link rel="stylesheet" href="/assets/css/main.css">
+                     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+<main id="content">
+<header>
+<h1 class="title">Pengantar Fullstack Web Developer</h1>
+</header><nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga38dcb0">Pendahuluan</a></li>
+<li><a href="#org5c2dadc">Apa itu situs web?</a>
+<ul>
+<li><a href="#org5ec60b7">Situs Web Statis (<i>static website</i>)</a></li>
+<li><a href="#org2008700">Situs Web Dinamis (<i>dynamic website</i>)</a></li>
+</ul>
+</li>
+<li><a href="#org6443359">Apa itu frontend?</a></li>
+<li><a href="#org0527d3d">Apa itu backend?</a></li>
+<li><a href="#org2ee3d74">Lantas apa hubungannya dengan fullstack web developer?</a></li>
+<li><a href="#orgd20320d">Cakupan Pekerjaan fullstack web developer</a>
+<ul>
+<li><a href="#org8a21204">Mengembangkan Server Side Application (Backend)</a></li>
+<li><a href="#org49049c4">Mengembangkan Client Side Application (Frontend)</a></li>
+</ul>
+</li>
+<li><a href="#org433e618">Keahlian apa saja yang diperlukan untuk menjadi seorang fullstack web developer?</a>
+<ul>
+<li><a href="#org3b315c3">Keahlian di bidang frontend</a></li>
+<li><a href="#org7025dac">Keahlian di bidang backend</a></li>
+<li><a href="#org66b6c49">Keahlian lainnya</a></li>
+<li><a href="#org6d5af91">Tech stack yang umum dijadikan landasan fullstack web developer</a></li>
+</ul>
+</li>
+<li><a href="#org0256518">Learning Path</a></li>
+<li><a href="#orgdc3e343">Kesimpulan</a></li>
+<li><a href="#org47bf1ad">Referensi</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-orga38dcb0" class="outline-2">
+<h2 id="orga38dcb0">Pendahuluan</h2>
+<div class="outline-text-2" id="text-orga38dcb0">
+<p>
+Dalam kehidupan sehari-hari; sebagai manusia post-mo pastinya sudah akrab nih dengan yang namanya situs web atau biasa disebut sebagai <i>website</i>. Ya jelas dong, kita sebagai manusia post modern kan pasti apa-apa harus serba digital, sebagai contoh, kita ngobrol secara digital pake <b>Whatsapp</b>, kita meeting juga digital atau virtual pake <b>Google Meet</b>, kita seneng-seneng nonton film juga lewat bioskop digital pake <b>Netflix</b>. Tuh kan, sudah terbukti kalo kita ga pernah lepas dari yang namanya teknologi digital. Kegiatan-kegiatan diatas yang sudah disebutin itu semuanya adalah situs web (<i>website</i>). Situs web tersebut mempunyai layanan-layanan yang dapat kita akses dimana pun dan kapanpun oleh siapapun (<i>kind of</i>).
+</p>
+
+<p>
+Pernah ga sih terbayang dibenak pembaca pertanyaan bikin situs web kayak gini dan gitu tuh gimana sih?. Kalau iya, tulisan ini tepat sekali untuk para pembaca, karena disini kita akan membahas tentang gambaran besar pengembangan situs web, secara spesifik adalah kita membahas salah satu profesi yang bertanggung dalam pengembangan situs web yaitu <i>fullstack web developer</i>. Tulisan ini akan membahas apa tugas dari seorang <i>fullstack web developer</i>, apa cakupan pekerjaannya, dan apa saja yang perlu dikuasai sehingga dapat membuat sebuah situs web yang dapat dinikmati manusia post modern di abad ke 21 dan era industri 4.0 ini.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c2dadc" class="outline-2">
+<h2 id="org5c2dadc">Apa itu situs web?</h2>
+<div class="outline-text-2" id="text-org5c2dadc">
+
+<figure id="org8ab9b1e">
+<img src="../../assets/images/pengantar-fullstack-web-developer/pendahuluan-binaracademy.com.png" alt="&quot;Binar Academy&quot;" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Contoh situs web yang mungkin pembaca pernah buka</figcaption>
+</figure>
+
+<p>
+Gambar diatas adalah gambar situs web yang mungkin pernah pembaca kunjungi sebelum bergabung ke Binar Academy. Jadi situs web itu adalah sebuah tempat menampung informasi yang dapat diakses menggunakan peramban web (<i>web browser</i>) dimana pun kalau situs web tersebut dibuat dengan domain publik. Informasi yang diterima di dalam situs web ini bentuknya berupa halaman situs web (<i>Page</i>). Contoh informasi yang ditampung di dalam binaracademy.com adalah informasi bagaimana cara agar dapat belajar di dalam Binar Academy, atau cara untuk menjadi partner di Binar Academy.
+</p>
+
+<p>
+Eeits, tapi tidak selamanya situs web itu berfungsi untuk menampung informasi dan menampilkannya, situs web juga bisa digunakan untuk mengolah informasi yang diberikan pengunjung, sebagai contoh, membayar tagihan listrik, membuat akun, mengunggah foto KTP untuk melakukan pinjol tapi pakai KTP orang lain, dan sebagainya.
+</p>
+
+<p>
+Pokoknya situs web modern sudah bisa dipake buat apa-apa lah, mulai dari ngegame, ngedate, nonton film, dengerin musik, baca manga, baca novel, baca artikel, baca manifesto, apapun deh yang bersifat digital.
+</p>
+
+<p>
+Dari cara situs web memberikan informasi, situs web dapat dibagi menjadi dua jenis, yaitu:
+</p>
+<ul class="org-ul">
+<li>Situs web statis (<i>static website</i>)</li>
+<li>Situs web dinamis (<i>dynamic website</i>)</li>
+</ul>
+
+<p>
+Yuk kita bahas apa sih kedua benda itu.
+</p>
+</div>
+
+<div id="outline-container-org5ec60b7" class="outline-3">
+<h3 id="org5ec60b7">Situs Web Statis (<i>static website</i>)</h3>
+<div class="outline-text-3" id="text-org5ec60b7">
+
+<figure id="org58f8ae1">
+<img src="../../assets/images/pengantar-fullstack-web-developer/static-website-spotify.png" alt="&quot;Spotify for Developer&quot;" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Contoh situs web statis yang dibuat dengan teknologi bernama <a href="https://jekyllrb.com/">jekyll</a></figcaption>
+</figure>
+
+<p>
+Situs web statis adalah sebuah situs web yang menyimpan halaman-halamannya di dalam sebuah server dengan format yang akan dikirim ke peramban web penggunanya. Situs web statis ini biasanya dibuat dengan menggunakan HTML, CSS dan Javascript saja. Karena situs web ini bersifat statis, artinya siapapun yang mengakses situs tersebut akan melihat informasi yang sama. Jadi kalo Budi ngebuka binaracademy.com itu udah pasti tampilannya sama kayak Rina yang ngebuka binaracademy.com di waktu yang sama.
+</p>
+
+<p>
+Anggep aja situs web statis itu kayak kamu jajan di Indomaret, kamu dateng ke Indomaret buat beli Coca-Cola, nah kamu waktu di Indomaret kan cuma dateng ambil Coca-Cola terus bayar, udah kelar. Jadi dengan analogi itu, indomaret itu situs web statis, terus Coca-Cola itu halaman dari situs web statis itu tadi. Kamu ga perlu nungguin si Coca-Cola ini diproses dari pabrik ketika dirimu berkunjung ke Indomaret, kamu cuma nerima jadi aja.
+</p>
+
+<p>
+Situs web statis ini cenderung lebih mudah untuk dikembangkan karena sudah banyak <i>tools</i> yang dapat membantu pengembangan situs web statis, dan juga informasi yang ditampilkan di dalam situs web statis bukanlah sebuah informasi yang kompleks. Contoh-contoh tools yang dapat digunakan untuk membuat situs web statis adalah <i>Wordpress</i>, <i>Webflow</i>, <i>Squarespace</i> dan sebagainya.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2008700" class="outline-3">
+<h3 id="org2008700">Situs Web Dinamis (<i>dynamic website</i>)</h3>
+<div class="outline-text-3" id="text-org2008700">
+
+<figure id="org0b9485c">
+<img src="../../assets/images/pengantar-fullstack-web-developer/dynamic-website-example.png" alt="&quot;Youtube&quot;" width="100%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Contoh situs web dinamis</figcaption>
+</figure>
+
+<p>
+Situs web dinamis itu sebuah situs web yang halaman-halamannya akan dibuat dan diproses tampilannya ketika pengunjung sedang mengakses situs tersebut. Beda dengan situs web statis yang mana halamannya akan selalu seperti itu karena dibuat dan disimpan di dalam server dan akan diberikan ke pengunjung jika mengaksesnya. Situs web dinamis ini akan melakukan <i>render</i> dari tiap halaman <i>on-demand</i> berdasarkan permintaan pengunjung. Jadi kalo pengunjung membuka halaman utama dari Youtube, si Youtube ini akan membuat halaman indeks yang akan disajikan khusus buat pengunjung tersebut. Maka dari itu biasanya informasi halaman yang dilihat user A akan berbeda dengan user B meskipun halaman yang dibuka sama.
+</p>
+
+<p>
+Anggep aja si situs web dinamis ini kayak nasi goreng gerobakan. Kamu dateng ke abang nasi gorengnya, terus yang kamu lakuin setelah itu adalah pesen nasi goreng. Ketika kamu pesen nasi goreng, kan nasi gorengnya ga ajaib langsung jadi, abangnya harus masakin dulu nasi gorengmu, terus kalo udah jadi baru disajiin ke kamu. Karena nasi gorengnya ini dimasak berdasarkan pesanan, artinya si abang nasi goreng ini bisa aja masak nasi goreng dengan perpaduan yang beda, kalo kamu suka pedes ya abangnya bakalan nambahin cabe lebih banyak di nasi gorengmu. Kalo kamu ga suka pedes ya abangnya waktu masak nasi gorengnya ya ga bakal nambahin cabe banyak-banyak.
+</p>
+
+<p>
+Jadi dari analogi diatas, anggep aja si nasi goreng gerobakan ini adalah sebuah situs web dinamis, terus katakanlah abangnya ini adalah server dari nasi goreng gerobakan tadi. Terus nasi gorengmu ini adalah halaman dari situs web dinamis tadi. Pesenan nasi goreng pedes sama nasi goreng ga pedes tadi itu adalah <i>request</i> ke server yang dilakukan oleh pengunjung situs web dinamis.
+</p>
+
+<p>
+Nah karena ada peran server dalam melayani permintaan di situs web dinamis dan ada yang berperan untuk menampilkan informasi yang diminta, maka dari itu biasanya situs web dinamis ini dipecah menjadi dua bagian, yaitu <i>client side</i> (Frontend), dan <i>server side</i> (Backend).
+</p>
+
+<p>
+Karena ada dua bagian dari situs web dinamis, maka dari itu pengembangan situs web dinamis ini relatif lebih susah dibandingkan dengan situs web statis. Situs web dinamis ini biasanya digunakan untuk mengolah informasi yang sudah kompleks seperti manajemen keuangan, debit kredit, preferensi user dalam melihat video youtube, dan sebagainya. Yang mana informasi tersebut perlu diolah terlebih dahulu sebelum disajikan ke pengunjung.
+</p>
+
+<p>
+Untuk membuat situs web dinamis, tidak banyak <i>tools</i> yang dapat kita pakai selain bahasa pemrograman dan kerangka kerjanya.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6443359" class="outline-2">
+<h2 id="org6443359">Apa itu frontend?</h2>
+<div class="outline-text-2" id="text-org6443359">
+
+<figure id="org4328649">
+<img src="../../assets/images/pengantar-fullstack-web-developer/frontend-tukang-ngecat.jpeg" alt="&quot;Pak de pak de ngecat&quot;" align="middle" width="50%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Contoh kerjaan frontend web developer</figcaption>
+</figure>
+
+<p>
+Ketika kamu membuka sebuah situs web, semua hal yang dapat berinteraksi dengan kamu itulah yang dimanakan frontend. Yuk simak analogi dibawah ini:
+</p>
+
+<blockquote>
+<p>
+Kamu sedang berkunjung ke sebuah restoran bernama mekdi. Nah di dalam restoran mekdi ini kan ada tempat makan, ada kasir, ada wastafel dan sebagainya, yang mana tiap benda-benda itu memiliki fungsinya masing-masing. Karena kamu berkunjung ke mekdi untuk makan, otomatis kamu akan langsung pergi ke kasirnya buat pesen makanan. Katakanlah kamu pesen paket Bikmek, dan abis itu pelayan mekdi bakal ngasih kamu nampan yang diatasnya ada minumanmu, bikmekmu, dan kentangmu. Kamu bawa nampanmu itu ke meja yang mau kamu duduki dan kamu makan disitu. Sebelum kamu makan pastinya kamu bakal cuci tangan, maka kamu pergi ke wastafel dan mencuci tanganmu disitu, dan kembali ke meja untuk memakan bikmekmu.
+</p>
+</blockquote>
+
+<p>
+Dari analogi diatas, mulai dari meja, wastafel, dan kasir, itu semua merupakan <i>user interface</i>. Nah <i>user interface</i> inilah yang juga kita sebut sebagai frontend. Kalau kita kembali lagi ke konsep situs web, apa yang dirimu lihat melalui peramban web itulah yang disebut sebagai frontend. Lalu, bikmek, air yang dipakai untuk mencuci tanganmu itu semua adalah data atau informasi yang disajikan melalui frontend. Secara garis besar, frontend adalah tampilan yang kamu lihat di dalam peramban web beserta interaksi-interaksi yang dapat kamu lakukan dalam tampilan tersebut. Contoh hal yang dapat berinteraksi dengan pengunjung di dalam situs web adalah tombol yang bisa ditekan, formulir yang dapat diisi, dan video yang bisa di-<i>pause</i> dan sebagainya.
+</p>
+
+
+<figure id="orgc08ac35">
+<img src="../../assets/images/pengantar-fullstack-web-developer/frontend-meme.png" alt="&quot;Two button meme&quot;" align="middle">
+
+<figcaption><span class="figure-number">Figure 5: </span>Tombol yang diliat pria tersebut adalah bagian dari frontend</figcaption>
+</figure>
+
+<p>
+Sebenarnya istilah frontend ini sangat luas, tapi bisa kita sederhanakan dengan istilah <i>client</i>, yang artinya semua aplikasi atau semua hal yang dilihat oleh pengguna situs kita itu adalah <i>frontend</i>, baik itu aplikasi desktop, aplikasi mobile, situs web dan sebagainya.
+</p>
+
+<p>
+Balik lagi nih ke analogi restoran tadi, kamu mungkin bertanya-tanya, lha terus yang masakin bikmekku tadi siapa? Terus wastafelnya bisa muncul air, airnya tuh dari mana? Tenang kawan, kita akan bahas bagian-bagian yang mengurusi itu semua di bagian berikutnya.
+</p>
+
+<p>
+Aktor yang bertanggung jawab terhadap pembuatan frontend dari sebuah situs web adalah <i>frontend web developer</i>.
+</p>
+
+<p>
+Tanpa adanya backend pada sebuah situs web, maka situs web tersebut hanya akan menjadi situs web statis.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0527d3d" class="outline-2">
+<h2 id="org0527d3d">Apa itu backend?</h2>
+<div class="outline-text-2" id="text-org0527d3d">
+
+<figure id="org9214a64">
+<img src="../../assets/images/pengantar-fullstack-web-developer/backend-example-task.jpg" alt="&quot;Kerjaan Backend Developer&quot;" align="middle" width="50%">
+
+<figcaption><span class="figure-number">Figure 6: </span>Contoh pekerjaan seorang backend developer</figcaption>
+</figure>
+
+<p>
+Backend adalah bagian dari situs web yang berfungsi untuk mengolah informasi yang datang, dan menyajikan informasi tersebut ke frontend untuk diolah lagi agar menjadi sebuah tampilan. Backend inilah yang bertugas untuk membuat informasi, dan menentukan informasi mana  yang cocok untuk ditampilkan oleh user A pada suatu halaman dan mana yang tidak cocok untuk ditampilkan oleh user B. Backend juga bertanggung jawab dalam mengurus segala bisnis yang terjadi di dalam sebuah situs web, seperti menghubungi bank untuk menagih tagihan dari user A, memberikan notifikasi ke user A agar segera membayar tagihannya, memberi tahu user bahwa email yang ingin mereka daftarkan sudah terdaftar dan sebagainya. Backend ini sangat abstrak, karena kamu sebagai seorang pengunjung tidak akan pernah melihatnya tanpa adanya Frontend. Yuk simak analogi dibawah ini:
+</p>
+
+<blockquote>
+<p>
+Ketika kasir mekdi menerima pesananmu, mereka akan mencatat pesanan tersebut dan memberikannya ke bagian dapur. Catatan tersebut pastinya sudah ada format yang sudah ditentukan antara kasir dan bagian dapur agar mereka berdua tidak salah menangkap apa yang sedang dipesan oleh kamu. Setelah bagian dapur menerima pesanan dari kasir, maka mereka akan segera membuatkan pesanan bikmek dan minumanmu tadi. Mereka akan mencari bahan-bahan yang diperlukan untuk membuat sebuah bikmek. Mereka akan memanggang daging sapi yang nantinya akan menjadi bagian dari bikmek yang kamu pesan. Mereka juga akan mengiris kubis, bawang bombai yang akan disajikan juga di dalam bikmekmu. Setelah semua itu selesai dilakukan, bagian dapur akan memberikan pesananmu tadi ke kasir, agar kasir dapat menaruhnya di dalam nampan yang akan diberikan ke kamu. Kamu tidak perlu terlibat di dalam pembuatan bikmekmu, yang perlu kamu lakukan hanyalah menunggu sampai pesananmu siap disajikan, dan kamu tinggal makan.
+</p>
+
+<p>
+Dan juga ketika kamu menggunakan wastafel untuk mencuci tangan, wastafel tersebut sudah tersambung ke dalam pengairan yang ada di sekitar restoran tersebut, kamu hanya perlu memutar tuas keran agar air tersebut keluar dan dapat kamu gunakan untuk mencuci tangan. Kamu tidak perlu tau bagaimana tukang pipa membuat saluran air sehingga dapat digunakan di dalam wastafel tersebut, yang perlu kamu lakukan hanyalah menarik atau memutar tuas keran, itu saja.
+</p>
+</blockquote>
+
+<p>
+Berbeda dengan frontend yang mana dijalankan di dalam komputer atau gawai dari pengguna situs web, backend dijalankan di dalam sebuah server yang melayani kebutuhan situs web tersebut. Maka dari itu, pengguna tidak akan pernah tahu apa yang terjadi di backend, mereka hanya perlu tau tampilan yang ditampilkan di dalam peramban web saja.
+</p>
+
+<p>
+Aktor yang bertanggung jawab terhadap pembuatan backend dari sebuah situs web adalah <i>backend web developer</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2ee3d74" class="outline-2">
+<h2 id="org2ee3d74">Lantas apa hubungannya dengan fullstack web developer?</h2>
+<div class="outline-text-2" id="text-org2ee3d74">
+
+<figure id="orgb33d55c">
+<img src="../../assets/images/pengantar-fullstack-web-developer/fullstack-nasi-goreng.jpeg" alt="&quot;Kerjaan Fullstack Web Developer&quot;" align="middle">
+
+<figcaption><span class="figure-number">Figure 7: </span>Contoh kerjaan fullstack web developer</figcaption>
+</figure>
+
+<p>
+Nah, sekarang kita sudah tahu nih ada bagian apa saja di dalam sebuah situs web, yaitu ada bagian backend, dan ada bagian frontend. Dua bagian tersebut adalah yang menjadi cakupan pekerjaan dari seorang <i>fullstack web developer</i>.
+</p>
+
+<p>
+Jadi, untuk menjadi seorang <i>fullstack web developer</i>, ia harus mempunyai keahlian di bidang backend dan frontend.
+</p>
+
+<p>
+<i>Fullstack web developer</i> itu kayak abang-abang yang jualan nasi goreng gerobakan. Abang-abang itu menerima pesanan dari kamu, terus dia juga yang masak pesanannya, dia juga yang menyajikan pesananannya dan dia juga yang nganter pesananannya ke kamu. Si abang-abang nasi goreng ini juga yang nyiapin tempat duduk buat kamu makan di tempat. Abang-abang nasi goreng ini juga yang nyuci piring setelah kamu selesai makan. Pokoknya semuanya yang terkait dagangan dia, dia yang ngurusin.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd20320d" class="outline-2">
+<h2 id="orgd20320d">Cakupan Pekerjaan fullstack web developer</h2>
+<div class="outline-text-2" id="text-orgd20320d">
+<p>
+Kan tadi kita udah ngomongin kaitannya Backend, Frontend dan Fullstack Web Developer. Sekarang kita coba bahas lebih rinci cakupan pekerjaan fullstack web developer itu apa aja sih?
+</p>
+</div>
+
+<div id="outline-container-org8a21204" class="outline-3">
+<h3 id="org8a21204">Mengembangkan Server Side Application (Backend)</h3>
+<div class="outline-text-3" id="text-org8a21204">
+<p>
+Tentu saja dalam pengembangan backend ini ada bagian-bagian yang lebih kecil yang bisa kita spesifikasikan sebagai tugas dari <i>fullstack web developer</i>. Bagian-bagian tersebut adalah:
+</p>
+<ul class="org-ul">
+<li>Database</li>
+<li>Web API</li>
+<li>Logika bisnis</li>
+</ul>
+
+<p>
+Ketiga bagian ini termasuk tugas dari seorang <i>fullstack web developer</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org49049c4" class="outline-3">
+<h3 id="org49049c4">Mengembangkan Client Side Application (Frontend)</h3>
+<div class="outline-text-3" id="text-org49049c4">
+<p>
+Berlaku juga dengan pengembangan frontend, ada tugas-tugas yang lebih kecil yang bisa dispesifikasikan sebagai tugas dari seorang <i>fullstack web developer</i>. Tugas-tugas tersebut adalah:
+</p>
+<ul class="org-ul">
+<li>Slicing (Merubah desain halaman menjadi halaman sebenarnya dalam bentuk HTML, CSS, dan Javascript).</li>
+<li>Mengolah data/informasi dari backend agar menjadi sebuah tampilan.</li>
+<li>Mengolah input dari user untuk dikirimkan ke backend agar dapat diolah oleh backend.</li>
+</ul>
+
+<p>
+Ketiga tugas ini termasuk tugas dari seorang <i>fullstack web developer</i>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org433e618" class="outline-2">
+<h2 id="org433e618">Keahlian apa saja yang diperlukan untuk menjadi seorang fullstack web developer?</h2>
+<div class="outline-text-2" id="text-org433e618">
+<p>
+Karena <i>fullstack web developer</i> harus bisa backend dan frontend, tentu saja, keahlian-keahlian dari backend dan frontend harus mereka kuasai agar mereka bisa menjadi seorang <i>fullstack web developer</i>, apa saja sih keahlian-keahlian yang dibutuhkan?
+</p>
+</div>
+
+<div id="outline-container-org3b315c3" class="outline-3">
+<h3 id="org3b315c3">Keahlian di bidang frontend</h3>
+<div class="outline-text-3" id="text-org3b315c3">
+<p>
+Frontend adalah tentang bagaimana informasi ditampilkan ke peramban web dari pengguna situs web tersebut. Untuk membangun frontend sebuah situs web, diperlukan 3 unsur utama, yaitu HTML, CSS dan Javascript. Sebenarnya 3 hal itu saja sudah cukup untuk membangun frontend pada situs web, namun karena standar industri sudah berubah, maka diperlukan keahlian yang lebih spesifik agar pengembangan frontend lebih efektif, yaitu dengan menggunakan <i>framework</i> populer. Dan juga, karena frontend dan backend akan menjadi 2 aplikasi yang berbeda, maka untuk mengembangkan frontend, kita perlu tau bagaimana cara berkomunikasi dengan backend, umumnya menggunakan HTTP sebagai protokol komunikasi.
+</p>
+
+<p>
+Jadi untuk merangkum keahlian apa saja yang diperlukan untuk membangun frontend dapat dilihat dari daftar berikut:
+</p>
+<ul class="org-ul">
+<li>Menguasai penggunaan HTML</li>
+<li>Menguasai penggunaan CSS</li>
+<li>Paham akan bahasa pemrograman Javascript</li>
+<li>Paham akan salah satu <i>framework</i> yang digunakan untuk membangun frontend, sebagai contoh: ReactJS, AngularJS, dan VueJS.</li>
+<li>Mengerti bagaimana protokol HTTP bekerja agar dapat berkomunikasi dengan backend.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7025dac" class="outline-3">
+<h3 id="org7025dac">Keahlian di bidang backend</h3>
+<div class="outline-text-3" id="text-org7025dac">
+<p>
+Untuk membangun backend dari sebuah situs web ada banyak sekali opsi yang bisa dijadikan sebagai solusi dalam membangunnya. Namun kita coba abstraksikan kebutuhan-kebutuhan itu. Untuk membangun backend, setidaknya diperlukan penguasaan salah satu bahasa pemrograman yang dapat dijalankan di dalam komputer secara langsung, sebagai contoh: Ruby, Node.js, dan sebagainya. Untuk membangun sebuah aplikasi backend, sangat diperlukan pengetahuan tentang framework apa yang dapat digunakan dalam backend tersebut, karena untuk membuat aplikasi backend dari nol itu akan sangat melelahkan, dan akan sangat lama untuk dikembangkan. Dan juga karena tujuan adanya backend adalah melakukan pengolahan informasi, maka informasi-informasi ini harus ditata dengan baik dan benar agar mudah diolah, maka dari itu untuk mengembangkan backend diperlukan pengetahuan tentang database dan cara mengelola database.
+</p>
+
+<p>
+Jadi untuk merangkum keahlian apa saja yang diperlukan untuk membangun backend dapat dilihat dari daftar berikut:
+</p>
+<ul class="org-ul">
+<li>Menguasai salah satu bahasa pemrograman <i>native</i> yang dapat berjalan di dalam komputer, sebagai contoh: Node.js</li>
+<li>Menguasai salah satu <i>framework</i> untuk membuat aplikasi backend, sebagai contoh: Express.js</li>
+<li>Menguasai pengunaan sistem pengelolaan database (<i>DBMS</i>), sebagai contoh: Postgresql</li>
+<li>Mengerti bagaimana protokol HTTP bekerja agar dapat merespon dengan baik apa yang dikomunikasikan oleh aplikasi frontend.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org66b6c49" class="outline-3">
+<h3 id="org66b6c49">Keahlian lainnya</h3>
+<div class="outline-text-3" id="text-org66b6c49">
+<p>
+Dalam mengembangkan sebuah situs web, tentu saja ada semacam SOP yang dapat kita gunakan. Dengan adanya SOP ini akan membuat kita lebih tertata dalam melakukan tugas-tugas kita dan menentukan apa sih definisi dari kelarnya sebuah tugas. Nah SOP di dalam pengembangan situs web ini biasa disebut sebagai <i>Software Development Lifecycle</i>. Jadi sebagai <i>developer</i> secara umum, kita perlu memahami salah satu jenis framework <i>software development lifecycle</i>. Framework yang umum digunakan saat ini adalah <b>SCRUM</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d5af91" class="outline-3">
+<h3 id="org6d5af91">Tech stack yang umum dijadikan landasan fullstack web developer</h3>
+<div class="outline-text-3" id="text-org6d5af91">
+<p>
+Untuk mempermudah dalam mengotak-kotakkan keahlian dari seorang <i>fullstack web developer</i>, muncul istilah-istilah yang merepresentasikan seperangkat keahlian dari seorang <i>fullstack web developer</i>, yang mencakup frontend dan backend.
+Berikut daftar <i>tech stack</i> yang populer untuk <i>fullstack web developer</i>:
+</p>
+<ul class="org-ul">
+<li>LAMP (Linux, Apache, MySQL, PHP/Perl/Python)</li>
+<li>MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</li>
+<li>MEAN (MongoDB, ExpressJS, AngularJS, NodeJS)</li>
+<li>MEVN (MongoDB, ExpressJS, VueJS, NodeJS)</li>
+<li>Ruby on Rails</li>
+<li>Django</li>
+<li>Java Spring</li>
+<li>ASP.NET</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0256518" class="outline-2">
+<h2 id="org0256518">Learning Path</h2>
+<div class="outline-text-2" id="text-org0256518">
+<p>
+Kamu sudah membaca gambaran besar tentang <i>fullstack web development</i>, banyak kan yang perlu dipelajari? Agar pembelajaran lebih terarah, kamu dapat melihat diagram di bawah ini agar bisa menjadi milestone kalian dalam menjadi seorang <i>fullstack web developer</i>.
+</p>
+
+
+<figure id="org8c01b5d">
+<img src="../../assets/images/pengantar-fullstack-web-developer/fullstack-web-stack-part-1.png" alt="&quot;Peta konsep Fullstack&quot;" align="middle">
+
+<figcaption><span class="figure-number">Figure 8: </span>Peta konsep fullstack web developer secara garis besar</figcaption>
+</figure>
+
+
+<figure id="orgfa3aeda">
+<img src="../../assets/images/pengantar-fullstack-web-developer/fullstack-web-stack-part-3.png" alt="&quot;Peta konsep Frontend&quot;" align="middle">
+
+<figcaption><span class="figure-number">Figure 9: </span>Peta konsep frontend</figcaption>
+</figure>
+
+
+<figure id="orgccbd562">
+<img src="../../assets/images/pengantar-fullstack-web-developer/fullstack-web-stack-part-2.png" alt="&quot;Peta konsep Backend&quot;" align="middle">
+
+<figcaption><span class="figure-number">Figure 10: </span>Peta konsep backend</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-orgdc3e343" class="outline-2">
+<h2 id="orgdc3e343">Kesimpulan</h2>
+<div class="outline-text-2" id="text-orgdc3e343">
+<p>
+Jadi objek kerja utama dari seorang <i>fullstack web developer</i> adalah situs web. Situs web dapat dipecah menjadi dua yaitu frontend dan backend, yang mana kedua bagian tersebut menjadi tanggung jawab dari <i>fullstack web developer</i> juga.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org47bf1ad" class="outline-2">
+<h2 id="org47bf1ad">Referensi</h2>
+<div class="outline-text-2" id="text-org47bf1ad">
+<ul class="org-ul">
+<li><a href="https://www.lewagon.com/tech-jobs/web-development/full-stack-developer#:~:text=A%20Full%20Stack%20Developer%20is,Front%20End,%20or%20client%20side.&amp;text=Designing%20user%20interactions%20on%20the,cross-platform%20compatibility%20and%20optimization">What is a full stack developer?</a></li>
+<li><a href="https://roadmap.sh/frontend">Roadmap.sh - Frontend</a></li>
+<li><a href="https://roadmap.sh/backend">Roadmap.sh - Backend</a></li>
+</ul>
+</div>
+</div>
+</main>
+<footer id="postamble" class="status">
+<p>© 2021 Fikri Rahmat Nurhidayat</p>
+</footer>
+</body>
+</html>
