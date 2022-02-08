@@ -46,6 +46,7 @@
       org-html-head-include-scripts nil
       org-html-html5-fancy t
       org-html-coding-system 'utf-8-unix
+      org-html-doctype "html5"
       org-html-divs '((preamble "div" "preamble")
                      (content "main" "content")
                      (postamble "footer" "postamble"))

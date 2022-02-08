@@ -1,6 +1,6 @@
 #+TITLE: Open API
 #+AUTHOR: Fikri Rahmat Nurhidayat
-#+EMAIL: fnurhidayat@binar.co.id
+#+EMAIL: fikrirnurhidayat@gmail.com
 #+DATE: <2021-12-19 Sun>
 
 * Pendahuluan
