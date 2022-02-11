@@ -7,13 +7,13 @@
   --mono-font: "IBM Plex Mono", monospace;
 
   /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
-  --base-fontsize: 1.25rem;
+  --base-fontsize: 1rem;
 
   /* Major third scale progression - see https://type-scale.com/ */
   --header-scale: 1.25;
 
   /* Line height is set to the "Golden ratio" for optimal legibility */
-  --line-height: 2;
+  --line-height: 1.7;
 
   /* Default (light) theme */
   --bg: #fff;
@@ -112,6 +112,7 @@ h4,
 h5,
 h6 {
   margin-top: calc(var(--line-height) * 1.5rem);
+  line-height: calc(var(--line-height) - 0.8);
 }
 
 /* Format navigation */
@@ -154,25 +155,21 @@ footer {
 h1 {
   font-size: calc(
     var(--base-fontsize) * var(--header-scale) * var(--header-scale) *
-      var(--header-scale) * var(--header-scale)
+      var(--header-scale)
   );
+  letter-spacing: -0.1rem;
 }
 
 h2 {
-  font-size: calc(
-    var(--base-fontsize) * var(--header-scale) * var(--header-scale) *
-      var(--header-scale)
-  );
+  font-size: calc(var(--base-fontsize) * var(--header-scale));
 }
 
 h3 {
-  font-size: calc(
-    var(--base-fontsize) * var(--header-scale) * var(--header-scale)
-  );
+  font-size: calc(var(--base-fontsize));
 }
 
 h4 {
-  font-size: calc(var(--base-fontsize) * var(--header-scale));
+  font-size: calc(var(--base-fontsize));
 }
 
 h5 {
