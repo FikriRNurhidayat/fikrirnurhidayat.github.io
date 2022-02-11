@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-02-11 Fri 06:51 -->
+<!-- 2022-02-11 Fri 06:56 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open API</title>
@@ -17,75 +17,75 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf0a94c8">Pendahuluan</a></li>
-<li><a href="#orgf01c271">Apa itu API?</a></li>
-<li><a href="#orgc13f7f0">Apa itu Open API?</a></li>
-<li><a href="#org3f319e4">Kenapa kita perlu menggunakan Open API?</a>
+<li><a href="#orgae8ed29">Pendahuluan</a></li>
+<li><a href="#org77bf5b8">Apa itu API?</a></li>
+<li><a href="#org5ef53fc">Apa itu Open API?</a></li>
+<li><a href="#org57fbaab">Kenapa kita perlu menggunakan Open API?</a>
 <ul>
-<li><a href="#orge2a7cb4">Perencanaan API akan jauh lebih baik</a></li>
-<li><a href="#orgf7563bc">Codegen mempermudah pengembangan <i>client side application</i></a></li>
-<li><a href="#orgeb28225">Mock API akan mempercepat pengembangan aplikasi kita</a></li>
+<li><a href="#org2c9d470">Perencanaan API akan jauh lebih baik</a></li>
+<li><a href="#orge5fb3ae">Codegen mempermudah pengembangan <i>client side application</i></a></li>
+<li><a href="#orge79804f">Mock API akan mempercepat pengembangan aplikasi kita</a></li>
 </ul>
 </li>
-<li><a href="#orge7e3361">Open API Specification</a>
+<li><a href="#org21c2a0f">Open API Specification</a>
 <ul>
-<li><a href="#org3a15db9">Structure of Open API Document</a>
+<li><a href="#orgc459aa0">Structure of Open API Document</a>
 <ul>
-<li><a href="#orgc47b735">Syntax dari dokumen Open API</a></li>
-<li><a href="#org4ec7269">The Open API Object</a></li>
+<li><a href="#orgb087962">Syntax dari dokumen Open API</a></li>
+<li><a href="#orgf22f006">The Open API Object</a></li>
 </ul>
 </li>
-<li><a href="#orgfd2901b">API Endpoints</a>
+<li><a href="#org619b4bc">API Endpoints</a>
 <ul>
-<li><a href="#orgb18ceaf">The Paths Object</a></li>
-<li><a href="#org722da75">The Path Item Object</a></li>
+<li><a href="#org09c432f">The Paths Object</a></li>
+<li><a href="#org9701f5c">The Path Item Object</a></li>
 </ul>
 </li>
-<li><a href="#orge301010">Response Body Message</a>
+<li><a href="#org2f88449">Response Body Message</a>
 <ul>
-<li><a href="#org7848356">The Responses Object</a></li>
-<li><a href="#orgdcad8a6">The Response Object</a>
+<li><a href="#org3b6bb4d">The Responses Object</a></li>
+<li><a href="#org58da7d1">The Response Object</a>
 <ul>
-<li><a href="#org0250c92">The Media Object</a></li>
-<li><a href="#org49b67b9">The Media Type Object</a></li>
-<li><a href="#org13579a0">The Schema Object</a></li>
+<li><a href="#orgf7cc4fe">The Media Object</a></li>
+<li><a href="#orgbe41296">The Media Type Object</a></li>
+<li><a href="#org6bb43dc">The Schema Object</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org6c7026a">Request Body and Parameter</a>
+<li><a href="#orge01ca74">Request Body and Parameter</a>
 <ul>
-<li><a href="#org7f8111d">The Parameter Object</a></li>
-<li><a href="#org8009188">The Request Body Object</a></li>
+<li><a href="#org347ade2">The Parameter Object</a></li>
+<li><a href="#orgdc82b46">The Request Body Object</a></li>
 </ul>
 </li>
-<li><a href="#org4c3e7b4">Components</a>
+<li><a href="#org32be68d">Components</a>
 <ul>
-<li><a href="#org7e99c7a">The Schema Object</a></li>
-<li><a href="#orgb1596c7">The Request Bodies Object</a></li>
-<li><a href="#orgb4d1976">The Response Object</a></li>
-<li><a href="#org86e97d0">The Security Schemes Object</a></li>
+<li><a href="#orgff15361">The Schema Object</a></li>
+<li><a href="#org80e344f">The Request Bodies Object</a></li>
+<li><a href="#org3216fa8">The Response Object</a></li>
+<li><a href="#org21bfb81">The Security Schemes Object</a></li>
 </ul>
 </li>
-<li><a href="#org146f8b2">API Servers</a></li>
+<li><a href="#org6f1dd5c">API Servers</a></li>
 </ul>
 </li>
-<li><a href="#org272d7cf">Menampilkan Open API Documentation</a>
+<li><a href="#org955eef4">Menampilkan Open API Documentation</a>
 <ul>
-<li><a href="#org55a33dc">Swagger UI</a></li>
-<li><a href="#orgaa4bca8">ReDoc</a></li>
+<li><a href="#orge4f0698">Swagger UI</a></li>
+<li><a href="#org5e87398">ReDoc</a></li>
 </ul>
 </li>
-<li><a href="#org3cab305">Membuat Mock API untuk Early Development</a></li>
-<li><a href="#orga949292">Kesimpulan</a></li>
-<li><a href="#orgb17bcb3">Referensi</a></li>
+<li><a href="#org7177965">Membuat Mock API untuk Early Development</a></li>
+<li><a href="#orgde5a0bd">Kesimpulan</a></li>
+<li><a href="#orge6f0271">Referensi</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-orgf0a94c8" class="outline-2">
-<h2 id="orgf0a94c8">Pendahuluan</h2>
-<div class="outline-text-2" id="text-orgf0a94c8">
+<div id="outline-container-orgae8ed29" class="outline-2">
+<h2 id="orgae8ed29">Pendahuluan</h2>
+<div class="outline-text-2" id="text-orgae8ed29">
 <p>
 Ketika kita membuat sebuah remote API (Backend Web API) tentu saja kita perlu mendokumentasikannya, mulai dari operasi apa saja yang bisa kita jalankan melalui remote API tersebut, dan apa saja parameter yang dibutuhkan agar pengguna remote API kita dapat menjalankan operasi tersebut dengan baik. Biasanya, kita sebagai developer akan mendokumentasikan cara penggunaan remote API tersebut dengan menggunakan sebuah dokumen, baik itu PDF, README, Website, dan bentuk-bentuk dokumen yang lainnya.
 </p>
@@ -102,9 +102,9 @@ Ada banyak cara untuk mendokumentasikan remote API (Backend Web API) kita, salah
 </div>
 </div>
 
-<div id="outline-container-orgf01c271" class="outline-2">
-<h2 id="orgf01c271">Apa itu API?</h2>
-<div class="outline-text-2" id="text-orgf01c271">
+<div id="outline-container-org77bf5b8" class="outline-2">
+<h2 id="org77bf5b8">Apa itu API?</h2>
+<div class="outline-text-2" id="text-org77bf5b8">
 <p>
 <b>API</b> atau <i>application programming interface</i> adalah sebuah penghubung antar dua aplikasi, sebagai contoh adalah aplikasi frontend kita, dengan backend kita. Dimana API ini punya sederet operasi yang bisa kita panggil untuk menjalankan beberapa fungsi dari aplikasi backend kita. Sebagai pengguna dari API, kita tidak perlu tau implementasi dari API itu seperti apa, yang terpenting adalah, kita tau operasi ini tentang apa, parameternya seperti apa, dan hasil dari operasi ini apa, kita tidak perlu tau detail tentang bagaimana implementasinya. Familiar bukan? Ini yang bisa kita sebut sebagai abstraksi.
 </p>
@@ -137,9 +137,9 @@ Wujud dari API biasanya adalah sebuah <i>function</i>, <i>method</i> ataupun <i>
 </div>
 </div>
 
-<div id="outline-container-orgc13f7f0" class="outline-2">
-<h2 id="orgc13f7f0">Apa itu Open API?</h2>
-<div class="outline-text-2" id="text-orgc13f7f0">
+<div id="outline-container-org5ef53fc" class="outline-2">
+<h2 id="org5ef53fc">Apa itu Open API?</h2>
+<div class="outline-text-2" id="text-org5ef53fc">
 <p>
 Open API adalah sebuah deskripsi dari sebuah remote API yang biasanya dapat kita panggil menggunakan protokol HTTP atau protokol yang mirip dengan HTTP seperti WebSocket. Dimana deskripsi ini dapat dibaca oleh mesin, karena deskripsi ini ditulis dengan format JSON atau YAML, maka dari itu data tersebut dapat diurai oleh mesin dan dibaca sebagai sebuah <i>object</i> di dalam sebuah program.
 </p>
@@ -170,9 +170,9 @@ Open API ini biasanya berbentuk file yang memiliki ektensi <code>.json</code> at
 </div>
 </div>
 
-<div id="outline-container-org3f319e4" class="outline-2">
-<h2 id="org3f319e4">Kenapa kita perlu menggunakan Open API?</h2>
-<div class="outline-text-2" id="text-org3f319e4">
+<div id="outline-container-org57fbaab" class="outline-2">
+<h2 id="org57fbaab">Kenapa kita perlu menggunakan Open API?</h2>
+<div class="outline-text-2" id="text-org57fbaab">
 
 <figure>
 <img src="https://imgs.xkcd.com/comics/api.png" alt="api.png">
@@ -184,9 +184,9 @@ Inti dari kenapa kita perlu menggunakan Open API adalah komunikasi, entah terhad
 </p>
 </div>
 
-<div id="outline-container-orge2a7cb4" class="outline-3">
-<h3 id="orge2a7cb4">Perencanaan API akan jauh lebih baik</h3>
-<div class="outline-text-3" id="text-orge2a7cb4">
+<div id="outline-container-org2c9d470" class="outline-3">
+<h3 id="org2c9d470">Perencanaan API akan jauh lebih baik</h3>
+<div class="outline-text-3" id="text-org2c9d470">
 
 <figure>
 <img src="../../../assets/images/open-api/CLUELESS.png" alt="CLUELESS.png" width="50%">
@@ -199,9 +199,9 @@ Mungkin bisa direfleksikan dari proses kalian mengerjakan challenge-challenge se
 </div>
 </div>
 
-<div id="outline-container-orgf7563bc" class="outline-3">
-<h3 id="orgf7563bc">Codegen mempermudah pengembangan <i>client side application</i></h3>
-<div class="outline-text-3" id="text-orgf7563bc">
+<div id="outline-container-orge5fb3ae" class="outline-3">
+<h3 id="orge5fb3ae">Codegen mempermudah pengembangan <i>client side application</i></h3>
+<div class="outline-text-3" id="text-orge5fb3ae">
 
 <figure>
 <img src="../../../assets/images/open-api/YES-HONEY.png" alt="YES-HONEY.png" width="50%">
@@ -220,9 +220,9 @@ Things break and they break often
 </div>
 </div>
 
-<div id="outline-container-orgeb28225" class="outline-3">
-<h3 id="orgeb28225">Mock API akan mempercepat pengembangan aplikasi kita</h3>
-<div class="outline-text-3" id="text-orgeb28225">
+<div id="outline-container-orge79804f" class="outline-3">
+<h3 id="orge79804f">Mock API akan mempercepat pengembangan aplikasi kita</h3>
+<div class="outline-text-3" id="text-orge79804f">
 
 <figure>
 <img src="../../../assets/images/open-api/CONVENTIONAL-DEVELOPMENT-LIFECYCLE.png" alt="CONVENTIONAL-DEVELOPMENT-LIFECYCLE.png">
@@ -250,9 +250,9 @@ Selagi aplikasi frontend menggunakan Mock API dari backend, maka backend develop
 </div>
 </div>
 
-<div id="outline-container-orge7e3361" class="outline-2">
-<h2 id="orge7e3361">Open API Specification</h2>
-<div class="outline-text-2" id="text-orge7e3361">
+<div id="outline-container-org21c2a0f" class="outline-2">
+<h2 id="org21c2a0f">Open API Specification</h2>
+<div class="outline-text-2" id="text-org21c2a0f">
 <p>
 Oke, cukup ngomongin pendahuluannya, sekarang kita langsung bahas saja, apa sih yang membuat Open API itu <b>Open API</b>? Yang pertama adalah aturannya. Aturan dalam apa? Dalam mendeskripsikan sebuah remote API. Artinya, ketika kita ingin membuat deskripsi tentang sebuah remote API, ada kaidah-kaidah yang wajib kita ikuti di dalam menulis dokumennya.
 </p>
@@ -268,16 +268,16 @@ Dokumen dibawah ini akan selalu berdasarkan Open API Specification versi 3.0.0, 
 </blockquote>
 </div>
 
-<div id="outline-container-org3a15db9" class="outline-3">
-<h3 id="org3a15db9">Structure of Open API Document</h3>
-<div class="outline-text-3" id="text-org3a15db9">
+<div id="outline-container-orgc459aa0" class="outline-3">
+<h3 id="orgc459aa0">Structure of Open API Document</h3>
+<div class="outline-text-3" id="text-orgc459aa0">
 <p>
 Seperti yang sudah disebutkan pada bagian sebelumnya, dokumen Open API ini kan bermaksud agar bisa dibaca oleh mesin, maka dari itu, kita perlu menyimpan dokumen ini dalam bentuk yang dikenali mesin, yaitu dalam bentuk <code>JSON</code> dan <code>YAML</code>. Karena bentuknya <code>JSON</code> atau <code>YAML</code>, maka dari itu pastinya data yang kita simpan pada file tersebut akan berupa sebuah <i>object</i>, struktur dari <i>object</i> tersebut merepresentasikan atau mendeskripsikan remote API kita, mulai dari apa sih nama remote API kita, siapa maintainernya, lisensinya apa dan sebagainya.
 </p>
 </div>
-<div id="outline-container-orgc47b735" class="outline-4">
-<h4 id="orgc47b735">Syntax dari dokumen Open API</h4>
-<div class="outline-text-4" id="text-orgc47b735">
+<div id="outline-container-orgb087962" class="outline-4">
+<h4 id="orgb087962">Syntax dari dokumen Open API</h4>
+<div class="outline-text-4" id="text-orgb087962">
 <p>
 Seperti yang sudah disebutkan diatas, dokumen ini ditulis menggunakan <code>YAML</code> atau <code>JSON</code>, berikut contoh kode <code>YAML</code>:
 </p>
@@ -323,9 +323,9 @@ Pilihlah salah satu tipe dokumen ketika menulis dokumentasi menggunakan Open API
 </div>
 </div>
 
-<div id="outline-container-org4ec7269" class="outline-4">
-<h4 id="org4ec7269">The Open API Object</h4>
-<div class="outline-text-4" id="text-org4ec7269">
+<div id="outline-container-orgf22f006" class="outline-4">
+<h4 id="orgf22f006">The Open API Object</h4>
+<div class="outline-text-4" id="text-orgf22f006">
 <p>
 <i>Root object</i> atau <i>object</i> dengan level tertinggi di dalam dokumen ini kita sebut dengan <i>Open API Object</i>, dimana <i>object</i> ini mendefinisikan metadata dari remote API yang ingin kita dokumentasikan. Object ini terdiri dari beberapa atribut berikut:
 </p>
@@ -362,9 +362,9 @@ Dokumen tersebut sudah valid, namun tidak memberi tahu kita lebih tentang apa sa
 </div>
 </div>
 
-<div id="outline-container-orgfd2901b" class="outline-3">
-<h3 id="orgfd2901b">API Endpoints</h3>
-<div class="outline-text-3" id="text-orgfd2901b">
+<div id="outline-container-org619b4bc" class="outline-3">
+<h3 id="org619b4bc">API Endpoints</h3>
+<div class="outline-text-3" id="text-org619b4bc">
 <p>
 Dokumentasi API tidak akan berguna kalau di dalam dokumentasi tersebut tidak terdapat daftar operasi yang dapat dilakukan (endpoint). API Endpoint atau biasa disebut sebagai <i>route</i> atau <i>operation</i> disebut sebagai <b>Paths</b> di dalam OAS (Open API Specification), maka dari itu, untuk mendefinisikan sebuah endpoint, kita akan menulisnya dibawah <i>object</i> bernama <code>paths</code>.
 </p>
@@ -376,9 +376,9 @@ Dokumentasi API tidak akan berguna kalau di dalam dokumentasi tersebut tidak ter
 </figure>
 </div>
 
-<div id="outline-container-orgb18ceaf" class="outline-4">
-<h4 id="orgb18ceaf">The Paths Object</h4>
-<div class="outline-text-4" id="text-orgb18ceaf">
+<div id="outline-container-org09c432f" class="outline-4">
+<h4 id="org09c432f">The Paths Object</h4>
+<div class="outline-text-4" id="text-org09c432f">
 <p>
 <code>paths</code> adalah sebuah atribute dengan tipe data <code>object</code>, dimana tiap atribut dari <i>object</i> tersebut adalah sebuah string yang menandakan sebuah endpoint dari suatu API. Maka dari tiap atribut dari <code>paths</code> harus dimulai dengan <code>/</code> sebagai prefiks dari endpoint.
 </p>
@@ -408,9 +408,9 @@ Penjelasan terkait <code>PathItemObject</code> ini akan dibahas pada bagian beri
 </div>
 </div>
 
-<div id="outline-container-org722da75" class="outline-4">
-<h4 id="org722da75">The Path Item Object</h4>
-<div class="outline-text-4" id="text-org722da75">
+<div id="outline-container-org9701f5c" class="outline-4">
+<h4 id="org9701f5c">The Path Item Object</h4>
+<div class="outline-text-4" id="text-org9701f5c">
 <p>
 <code>PathItemObject</code> adalah sebuah <i>object</i> yang berada pada sebuah atribut dari <i>object</i> <code>paths</code>, atribut dari <i>object</i> ini adalah metode HTTP, baik itu <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, maupun <code>DELETE</code>. Tiap atribut itulah yang menandakan adanya operasi di dalam sebuah API kita.
 </p>
@@ -438,17 +438,17 @@ Dari dokumen diatas, dapat kita simpulkan bahwa <i>Medium Blogging API</i> memil
 </div>
 </div>
 
-<div id="outline-container-orge301010" class="outline-3">
-<h3 id="orge301010">Response Body Message</h3>
-<div class="outline-text-3" id="text-orge301010">
+<div id="outline-container-org2f88449" class="outline-3">
+<h3 id="org2f88449">Response Body Message</h3>
+<div class="outline-text-3" id="text-org2f88449">
 <p>
 Setiap operasi wajib mendeskripsikan hasil dari operasi tersebut, baik itu berupa <i>No Content</i> maupun ada konten. Untuk mendeskripsikan sebuah <i>response</i> dari sebuah operasi, kita perlu menambahkan atribut bernama <code>responses</code> ke dalam <code>OperationObject</code>, dimana <code>OperationObject</code> ini berada di dalam <code>PathItemObject</code>.
 </p>
 </div>
 
-<div id="outline-container-org7848356" class="outline-4">
-<h4 id="org7848356">The Responses Object</h4>
-<div class="outline-text-4" id="text-org7848356">
+<div id="outline-container-org3b6bb4d" class="outline-4">
+<h4 id="org3b6bb4d">The Responses Object</h4>
+<div class="outline-text-4" id="text-org3b6bb4d">
 <p>
 Setiap operasi tentunya memiliki beberapa jenis <i>response</i>, seperti <code>422</code>, <code>400</code>, <code>500</code> atau <code>200</code>, semua <i>response</i> tentu dibedakan berdasarkan <i>HTTP Status Code</i>-nya, maka dari itu pada OAS, setiap operasi wajib mencantumkan setidaknya 1 jenis <i>response</i> menggunakan <i>HTTP Status Code</i> yang ditulis di dalam sebuah string sebagai nama atribut.
 </p>
@@ -497,9 +497,9 @@ Dokumen diatas masih <b>belum valid</b>, karena tiap atribut di dalam <code>Resp
 </div>
 </div>
 
-<div id="outline-container-orgdcad8a6" class="outline-4">
-<h4 id="orgdcad8a6">The Response Object</h4>
-<div class="outline-text-4" id="text-orgdcad8a6">
+<div id="outline-container-org58da7d1" class="outline-4">
+<h4 id="org58da7d1">The Response Object</h4>
+<div class="outline-text-4" id="text-org58da7d1">
 <p>
 <code>ResponseObject</code> adalah sebuah <i>object</i> yang digunakan dalam OAS untuk mendefinisikan seperti apa sih <i>response</i> dari  sebuah operasi yang kita jalankan. <i>Object</i> ini memiliki atribut yang wajib ada di dalamnya, yaitu <code>description</code>, yang mana hanyalah deskripsi dari sebuah <i>response</i>, namun tidak menutup kemungkinan juga kita akan menambahkan skema dari <i>response body</i> dari sebuah operasi.
 </p>
@@ -574,9 +574,9 @@ Dokumen diatas masih <b>belum valid</b>, karena pada <i>path</i> <code>/paths/{i
 </figure>
 </div>
 
-<div id="outline-container-org0250c92" class="outline-5">
-<h5 id="org0250c92">The Media Object</h5>
-<div class="outline-text-5" id="text-org0250c92">
+<div id="outline-container-orgf7cc4fe" class="outline-5">
+<h5 id="orgf7cc4fe">The Media Object</h5>
+<div class="outline-text-5" id="text-orgf7cc4fe">
 <p>
 <code>MediaObject</code> adalah sebuah <i>object</i> yang memiliki atribut yang nama dari atribut tersebut adalah sebuah <code>Content-Type</code> dari sebuah <i>response</i>, berikut adalah contoh daftar <code>Content-Type</code> yang merupakan nama atribut dari <code>MediaObject</code>:
 </p>
@@ -690,9 +690,9 @@ paths:
 </div>
 </div>
 
-<div id="outline-container-org49b67b9" class="outline-5">
-<h5 id="org49b67b9">The Media Type Object</h5>
-<div class="outline-text-5" id="text-org49b67b9">
+<div id="outline-container-orgbe41296" class="outline-5">
+<h5 id="orgbe41296">The Media Type Object</h5>
+<div class="outline-text-5" id="text-orgbe41296">
 <p>
 <code>MediaTypeObject</code> adalah sebuah <i>object</i> yang mendefinisikan bentuk <code>response</code>-nya nanti seperti apa, <i>object</i> ini memiliki atribut-atribut sebagai berikut:
 </p>
@@ -825,9 +825,9 @@ Atribut schema adalah sebuah <code>SchemaObject</code>, yang mana atribut ini di
 </div>
 </div>
 
-<div id="outline-container-org13579a0" class="outline-5">
-<h5 id="org13579a0">The Schema Object</h5>
-<div class="outline-text-5" id="text-org13579a0">
+<div id="outline-container-org6bb43dc" class="outline-5">
+<h5 id="org6bb43dc">The Schema Object</h5>
+<div class="outline-text-5" id="text-org6bb43dc">
 <p>
 <code>SchemaObject</code> adalah sebuah object yang mana dibuat berdasarkan <a href="https://json-schema.org/">JSON Schema</a>, yang mana digunakan untuk mendefinisikan bagaimana bentuk data dari sebuah <i>object</i>. Karena atribut ini <i>compatible</i> dengan <i>JSON Schema</i>, maka dari itu, ketika kita mendefinisikan sebuah skema di dalam Open API Documentation, kita bisa pasang beberapa tools yang dapat memvalidasi sebuah <i>object</i> (parameter) apakah sudah sesuai dengan skema atau belum.
 </p>
@@ -1066,17 +1066,17 @@ Dokumen diatas <b>sudah valid</b>, namun kita masih perlu menambahkan bagaimana 
 </div>
 </div>
 
-<div id="outline-container-org6c7026a" class="outline-3">
-<h3 id="org6c7026a">Request Body and Parameter</h3>
-<div class="outline-text-3" id="text-org6c7026a">
+<div id="outline-container-orge01ca74" class="outline-3">
+<h3 id="orge01ca74">Request Body and Parameter</h3>
+<div class="outline-text-3" id="text-orge01ca74">
 <p>
 Setiap kita menjalankan suatu operasi, tentunya ada beberapa operasi yang memerlukan input dari yang meminta operasi tersebut dijalankan, layaknya sebuah <i>function</i> di dalam sebuah program, ketika kita memanggil sebuah <i>function</i> terkadang <i>function</i> tersebut meminta beberapa parameter. Begitu juga dengan sebuah API, setiap operasi di API, terkadang perlu parameter yang harus dikirim oleh <i>consumer</i> dari API tersebut.
 </p>
 </div>
 
-<div id="outline-container-org7f8111d" class="outline-4">
-<h4 id="org7f8111d">The Parameter Object</h4>
-<div class="outline-text-4" id="text-org7f8111d">
+<div id="outline-container-org347ade2" class="outline-4">
+<h4 id="org347ade2">The Parameter Object</h4>
+<div class="outline-text-4" id="text-org347ade2">
 <p>
 <i>Parameter object</i> adalah sebuah <i>object</i> yang kita gunakan untuk mendefinisikan parameter yang dapat kita kirim pada sebuah operasi. Biasanya, <i>object</i> ini digunakan untuk mendefinisikan <i>path parameter</i> dan <i>query parameter</i> jika dalam sebuah endpoint membutuhkan kedua jenis parameter tersebut.
 </p>
@@ -1295,9 +1295,9 @@ paths:
 </div>
 </div>
 
-<div id="outline-container-org8009188" class="outline-4">
-<h4 id="org8009188">The Request Body Object</h4>
-<div class="outline-text-4" id="text-org8009188">
+<div id="outline-container-orgdc82b46" class="outline-4">
+<h4 id="orgdc82b46">The Request Body Object</h4>
+<div class="outline-text-4" id="text-orgdc82b46">
 <p>
 Selain <i>parameters</i>, kita juga dapat mendefinisikan sebuah <i>parameter</i> lain yaitu <i>request body</i>. <i>Request body</i> pastinya hanya akan dipakai di dalam 3  jenis operasi saja, <code>POST</code>, <code>PUT</code>, dan <code>PATCH</code>. <i>Object</i> ini disimpan di dalam atribut yang bernama <code>requestBody</code> di dalam sebuah <i>Operation Object.</i>
 </p>
@@ -1430,9 +1430,9 @@ paths:
 </div>
 </div>
 
-<div id="outline-container-org4c3e7b4" class="outline-3">
-<h3 id="org4c3e7b4">Components</h3>
-<div class="outline-text-3" id="text-org4c3e7b4">
+<div id="outline-container-org32be68d" class="outline-3">
+<h3 id="org32be68d">Components</h3>
+<div class="outline-text-3" id="text-org32be68d">
 <p>
 Ada beberapa <i>object</i> yang kita buat berulang-ulang, ketika kita mendefinisikan sebuah <i>Open API documentation</i>. Seperti bentuk <i>response</i>, <i>request body</i>, dan sebagainya. Untuk mengurangi perulangan dalam membuat <i>object</i> yang sama, kita dapat menggunakan <code>components</code>, dimana <code>components</code> ini akan diletakkan pada <i>Open API Object</i> dengan atribut bernama <code>components</code>. Ada 4 jenis <code>components</code>, yaitu:
 </p>
@@ -1444,9 +1444,9 @@ Ada beberapa <i>object</i> yang kita buat berulang-ulang, ketika kita mendefinis
 </ul>
 </div>
 
-<div id="outline-container-org7e99c7a" class="outline-4">
-<h4 id="org7e99c7a">The Schema Object</h4>
-<div class="outline-text-4" id="text-org7e99c7a">
+<div id="outline-container-orgff15361" class="outline-4">
+<h4 id="orgff15361">The Schema Object</h4>
+<div class="outline-text-4" id="text-orgff15361">
 <p>
 <i>Schema Object</i> adalah sebuah <i>object</i> yang mana tiap atributnya adalah jenis <i>schema</i> yang dapat kita gunakan ketika kita membutuhkan <i>schema</i> di dalam sebuah <i>operation</i>.
 </p>
@@ -1640,9 +1640,9 @@ Dokumen diatas, sudah menggunakan <code>#/components/schemas/Post</code>, untuk 
 </div>
 </div>
 
-<div id="outline-container-orgb1596c7" class="outline-4">
-<h4 id="orgb1596c7">The Request Bodies Object</h4>
-<div class="outline-text-4" id="text-orgb1596c7">
+<div id="outline-container-org80e344f" class="outline-4">
+<h4 id="org80e344f">The Request Bodies Object</h4>
+<div class="outline-text-4" id="text-org80e344f">
 <p>
 <i>Request Bodies Object</i> adalah sebuah <i>object</i> yang digunakan untuk mendefinisikan sebuah <i>request body</i> yang dapat kita panggil pada sebuah operasi. <i>Request Bodies</i> juga dapat menggunakan <code>schemas</code>.
 </p>
@@ -1843,9 +1843,9 @@ components:
 </div>
 </div>
 
-<div id="outline-container-orgb4d1976" class="outline-4">
-<h4 id="orgb4d1976">The Response Object</h4>
-<div class="outline-text-4" id="text-orgb4d1976">
+<div id="outline-container-org3216fa8" class="outline-4">
+<h4 id="org3216fa8">The Response Object</h4>
+<div class="outline-text-4" id="text-org3216fa8">
 <p>
 <i>Response Object</i> adalah sebuah <i>object</i> yang kita gunakan untuk membuat sebuah definisi <i>response</i> dengan berbagai jenis tipe media yang bisa didefinisikan.
 </p>
@@ -2026,9 +2026,9 @@ components:
 </div>
 </div>
 
-<div id="outline-container-org86e97d0" class="outline-4">
-<h4 id="org86e97d0">The Security Schemes Object</h4>
-<div class="outline-text-4" id="text-org86e97d0">
+<div id="outline-container-org21bfb81" class="outline-4">
+<h4 id="org21bfb81">The Security Schemes Object</h4>
+<div class="outline-text-4" id="text-org21bfb81">
 <p>
 <i>Security Schemes Object</i> digunakan untuk mendefinisikan sebuah security yang nantinya akan digunakan di dalam operasi. Untuk detail terkait ini dapat dilihat pada tautan berikut:
 </p>
@@ -2230,9 +2230,9 @@ Ketika kita memasang <code>security</code> di dalam sebuah <i>operation</i>, mak
 </div>
 </div>
 
-<div id="outline-container-org146f8b2" class="outline-3">
-<h3 id="org146f8b2">API Servers</h3>
-<div class="outline-text-3" id="text-org146f8b2">
+<div id="outline-container-org6f1dd5c" class="outline-3">
+<h3 id="org6f1dd5c">API Servers</h3>
+<div class="outline-text-3" id="text-org6f1dd5c">
 <p>
 Di dalam dokumentasi Open API, kita dapat mendefinisikan apa saja sih server yang menjalankan API tersebut. Untuk mendefinisikannya, kita dapat menggunakan atribut bernama <code>servers</code>, di dalam <i>Open API object</i>.
 </p>
@@ -2258,9 +2258,9 @@ paths: {}
 </div>
 </div>
 
-<div id="outline-container-org272d7cf" class="outline-2">
-<h2 id="org272d7cf">Menampilkan Open API Documentation</h2>
-<div class="outline-text-2" id="text-org272d7cf">
+<div id="outline-container-org955eef4" class="outline-2">
+<h2 id="org955eef4">Menampilkan Open API Documentation</h2>
+<div class="outline-text-2" id="text-org955eef4">
 <p>
 Berikut ini adalah sebuah Open API Specification yang akan kita gunakan untuk menampilkan sebuah UI dari Open API Specification kita.
 </p>
@@ -2458,9 +2458,9 @@ components:
 </div>
 </div>
 
-<div id="outline-container-org55a33dc" class="outline-3">
-<h3 id="org55a33dc">Swagger UI</h3>
-<div class="outline-text-3" id="text-org55a33dc">
+<div id="outline-container-orge4f0698" class="outline-3">
+<h3 id="orge4f0698">Swagger UI</h3>
+<div class="outline-text-3" id="text-orge4f0698">
 
 <figure>
 <img src="../../../assets/images/open-api/SWAGGER.png" alt="SWAGGER.png" width="100%">
@@ -2506,9 +2506,9 @@ Maka dokumentasi API-mu akan dapat diakses melalui server express pada <i>path</
 </div>
 </div>
 
-<div id="outline-container-orgaa4bca8" class="outline-3">
-<h3 id="orgaa4bca8">ReDoc</h3>
-<div class="outline-text-3" id="text-orgaa4bca8">
+<div id="outline-container-org5e87398" class="outline-3">
+<h3 id="org5e87398">ReDoc</h3>
+<div class="outline-text-3" id="text-org5e87398">
 
 <figure>
 <img src="../../../assets/images/open-api/REDOC.png" alt="REDOC.png" width="100%">
@@ -2554,9 +2554,9 @@ Ketika kalian membuka halaman <code>/docs</code>, maka kalian akan melihat dokum
 </div>
 </div>
 
-<div id="outline-container-org3cab305" class="outline-2">
-<h2 id="org3cab305">Membuat Mock API untuk Early Development</h2>
-<div class="outline-text-2" id="text-org3cab305">
+<div id="outline-container-org7177965" class="outline-2">
+<h2 id="org7177965">Membuat Mock API untuk Early Development</h2>
+<div class="outline-text-2" id="text-org7177965">
 <p>
 Untuk membuat Mock API sangatlah mudah, kalian hanya perlu:
 </p>
@@ -2576,9 +2576,9 @@ Server yang kamu jalankan akan dapat memenuhi kebutuhkan kontrak dari API yang s
 </div>
 </div>
 
-<div id="outline-container-orga949292" class="outline-2">
-<h2 id="orga949292">Kesimpulan</h2>
-<div class="outline-text-2" id="text-orga949292">
+<div id="outline-container-orgde5a0bd" class="outline-2">
+<h2 id="orgde5a0bd">Kesimpulan</h2>
+<div class="outline-text-2" id="text-orgde5a0bd">
 <p>
 Open API Documentation sangat berguna dalam proses development, karena dengan adanya Open API documentation, kita dapat membuat Mock API secara otomatis, yang dapat menggantikan kebutuhan adanya API di dalam proses pengembangan website.
 </p>
@@ -2589,9 +2589,9 @@ Dan juga, Open API documentation sangat berguna untuk mendokumentasikan setiap o
 </div>
 </div>
 
-<div id="outline-container-orgb17bcb3" class="outline-2">
-<h2 id="orgb17bcb3">Referensi</h2>
-<div class="outline-text-2" id="text-orgb17bcb3">
+<div id="outline-container-orge6f0271" class="outline-2">
+<h2 id="orge6f0271">Referensi</h2>
+<div class="outline-text-2" id="text-orge6f0271">
 <ul class="org-ul">
 <li><a href="https://oai.github.io/Documentation/">Open API Initiative</a></li>
 <li><a href="https://swagger.io/docs/specification/about/">Swagger</a></li>
