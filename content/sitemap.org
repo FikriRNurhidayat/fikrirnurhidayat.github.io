@@ -1,8 +1,3 @@
 #+TITLE: Sitemap for project site:main
 
 - [[file:index.org][Fikri Rahmat Nurhidayat]]
-- id
-  - [[file:id/open-api.org][Open API]]
-  - [[file:id/pengantar-fullstack-web-developer.org][Pengantar Fullstack Web Developer]]
-  - open-api
-    - [[file:id/open-api/index.org][index]]
