@@ -62,7 +62,6 @@
              :publishing-directory "./dist"
              :auto-sitemap t
              :with-author nil
-             :with-properties t
              :with-toc t
              :with-timestamps t
              :section-numbers nil
