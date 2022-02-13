@@ -1,0 +1,27 @@
+#+TITLE: Javascript Dasar
+#+DESCRIPTION: Pengenalan terkait apa itu Javascript dan apa kegunaannya.
+#+AUTHOR: Fikri Rahmat Nurhidayat
+#+EMAIL: fikrirnurhidayat@gmail.com
+
+* Pendahuluan
+* Apa sih Bahasa Pemrograman itu?
+* Apa sih maksud dari pemrograman itu?
+* Pengantar Javascript
+** Apa itu Javascript?
+** Apa yang bisa Javascript lakukan?
+** Apa yang Javascript lakukan terhadap halaman web kita?
+** Terus cara nambahin Javascript di halaman web kita gimana?
+*** Internal Javascript
+*** External Javascript
+*** Inline Javascript
+* Tata Bahasa Javascript
+** Sintaks dasar
+** Deklarasi
+** Variable scope
+** Variable hoisting
+** Struktur data dan tipe data
+** Literals
+* Referensi
+- [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide][MDN - Javascript/Guide]]
+- [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction][MDN - Javascript/Guide/Introduction]]
+**
