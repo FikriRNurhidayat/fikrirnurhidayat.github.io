@@ -257,7 +257,7 @@ input[type="radio"]:enabled:hover {
 
 /* Format the expanding box */
 details {
-  background: var(--accent-bg);
+  background: var(--disabled);
   border: 1px solid var(--border);
   border-radius: 5px;
   margin-bottom: 1rem;
@@ -297,13 +297,13 @@ th {
 }
 
 th {
-  background: var(--accent-bg);
+  background: var(--disabled);
   font-weight: bold;
 }
 
 tr:nth-child(even) {
   /* Set every other cell slightly darker. Improves readability. */
-  background: var(--accent-bg);
+  background: var(--disabled);
 }
 
 table caption {
