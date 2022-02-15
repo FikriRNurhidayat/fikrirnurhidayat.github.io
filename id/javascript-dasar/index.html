@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-02-13 Sun 05:00 -->
+<!-- 2022-02-15 Tue 17:40 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Javascript Dasar</title>
@@ -19,108 +19,285 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgeb0664d">Pendahuluan</a></li>
-<li><a href="#org27d1a0a">Apa sih Bahasa Pemrograman itu?</a></li>
-<li><a href="#org7be6c8b">Apa sih maksud dari pemrograman itu?</a></li>
-<li><a href="#org53eadad">Pengantar Javascript</a>
+<li><a href="#org4e4f494">Pendahuluan</a></li>
+<li><a href="#org5e98aed">Apa sih maksud dari pemrograman itu?</a></li>
+<li><a href="#org3f15b07">Apa sih Bahasa Pemrograman itu?</a></li>
+<li><a href="#org621158d">Pengantar Javascript</a>
 <ul>
-<li><a href="#org5d59445">Apa itu Javascript?</a></li>
-<li><a href="#org1fad26b">Apa yang bisa Javascript lakukan?</a></li>
-<li><a href="#org767e6e5">Apa yang Javascript lakukan terhadap halaman web kita?</a></li>
-<li><a href="#org66edae9">Terus cara nambahin Javascript di halaman web kita gimana?</a>
+<li><a href="#orgdacffb1">Apa itu Javascript?</a></li>
+<li><a href="#org6a4be07"><span class="todo TODO">TODO</span> Apa yang bisa Javascript lakukan?</a></li>
+<li><a href="#org2392105"><span class="todo TODO">TODO</span> Apa yang Javascript lakukan terhadap halaman web kita?</a></li>
+<li><a href="#orgfac823a"><span class="todo TODO">TODO</span> Terus cara nambahin Javascript di halaman web kita gimana?</a>
 <ul>
-<li><a href="#orgac6d569">Internal Javascript</a></li>
-<li><a href="#org9d92713">External Javascript</a></li>
-<li><a href="#org7df109e">Inline Javascript</a></li>
+<li><a href="#org6d6f286"><span class="todo TODO">TODO</span> Internal Javascript</a></li>
+<li><a href="#org450017d"><span class="todo TODO">TODO</span> External Javascript</a></li>
+<li><a href="#org4f4fd8b"><span class="todo TODO">TODO</span> Inline Javascript</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org8141980">Tata Bahasa Javascript</a>
+<li><a href="#orgd8dd1bf"><span class="todo TODO">TODO</span> Tata Bahasa Javascript</a>
 <ul>
-<li><a href="#org4421df2">Sintaks dasar</a></li>
-<li><a href="#org7aabf2e">Deklarasi</a></li>
-<li><a href="#org6e45ff2">Variable scope</a></li>
-<li><a href="#org7544618">Variable hoisting</a></li>
-<li><a href="#orgac64b7b">Struktur data dan tipe data</a></li>
-<li><a href="#org43428c8">Literals</a></li>
+<li><a href="#org7206ca7"><span class="todo TODO">TODO</span> Sintaks dasar</a></li>
+<li><a href="#org88c698f"><span class="todo TODO">TODO</span> Deklarasi</a></li>
+<li><a href="#org9a5d10e"><span class="todo TODO">TODO</span> Variable scope</a></li>
+<li><a href="#org0c477f2"><span class="todo TODO">TODO</span> Variable hoisting</a></li>
+<li><a href="#org033ee03"><span class="todo TODO">TODO</span> Struktur data dan tipe data</a></li>
+<li><a href="#org3d03aa0"><span class="todo TODO">TODO</span> Literals</a></li>
 </ul>
 </li>
-<li><a href="#org8d91c31">Referensi</a></li>
+<li><a href="#orgfd5f0d4"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></a></li>
+<li><a href="#orgde555b5"><span class="todo TODO">TODO</span> <i>Loops</i></a></li>
+<li><a href="#orgb6cf034"><span class="todo TODO">TODO</span> <i>Function</i></a></li>
+<li><a href="#org1ec4fb0">Referensi</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-orgeb0664d" class="outline-2">
-<h2 id="orgeb0664d">Pendahuluan</h2>
-</div>
-<div id="outline-container-org27d1a0a" class="outline-2">
-<h2 id="org27d1a0a">Apa sih Bahasa Pemrograman itu?</h2>
-</div>
-<div id="outline-container-org7be6c8b" class="outline-2">
-<h2 id="org7be6c8b">Apa sih maksud dari pemrograman itu?</h2>
-</div>
-<div id="outline-container-org53eadad" class="outline-2">
-<h2 id="org53eadad">Pengantar Javascript</h2>
-<div class="outline-text-2" id="text-org53eadad">
-</div>
-<div id="outline-container-org5d59445" class="outline-3">
-<h3 id="org5d59445">Apa itu Javascript?</h3>
-</div>
-<div id="outline-container-org1fad26b" class="outline-3">
-<h3 id="org1fad26b">Apa yang bisa Javascript lakukan?</h3>
-</div>
-<div id="outline-container-org767e6e5" class="outline-3">
-<h3 id="org767e6e5">Apa yang Javascript lakukan terhadap halaman web kita?</h3>
-</div>
-<div id="outline-container-org66edae9" class="outline-3">
-<h3 id="org66edae9">Terus cara nambahin Javascript di halaman web kita gimana?</h3>
-<div class="outline-text-3" id="text-org66edae9">
-</div>
-<div id="outline-container-orgac6d569" class="outline-4">
-<h4 id="orgac6d569">Internal Javascript</h4>
-</div>
-<div id="outline-container-org9d92713" class="outline-4">
-<h4 id="org9d92713">External Javascript</h4>
-</div>
-<div id="outline-container-org7df109e" class="outline-4">
-<h4 id="org7df109e">Inline Javascript</h4>
-</div>
-</div>
-</div>
-<div id="outline-container-org8141980" class="outline-2">
-<h2 id="org8141980">Tata Bahasa Javascript</h2>
-<div class="outline-text-2" id="text-org8141980">
-</div>
-<div id="outline-container-org4421df2" class="outline-3">
-<h3 id="org4421df2">Sintaks dasar</h3>
-</div>
-<div id="outline-container-org7aabf2e" class="outline-3">
-<h3 id="org7aabf2e">Deklarasi</h3>
-</div>
-<div id="outline-container-org6e45ff2" class="outline-3">
-<h3 id="org6e45ff2">Variable scope</h3>
-</div>
-<div id="outline-container-org7544618" class="outline-3">
-<h3 id="org7544618">Variable hoisting</h3>
-</div>
-<div id="outline-container-orgac64b7b" class="outline-3">
-<h3 id="orgac64b7b">Struktur data dan tipe data</h3>
-</div>
-<div id="outline-container-org43428c8" class="outline-3">
-<h3 id="org43428c8">Literals</h3>
+<div id="outline-container-org4e4f494" class="outline-2">
+<h2 id="org4e4f494">Pendahuluan</h2>
+<div class="outline-text-2" id="text-org4e4f494">
+<p>
+Dalam kehidupan sehari-hari, tentu saja kita tidak pernah terlepas dari yang namanya <i>website</i>.
+Mungkin kita juga bertanya-tanya, gimana sih caranya bikin sebuah <i>website</i>?
+Dan akhirnya kita menemukan 3 bahan utama yang akan digunakan untuk membangun sebuah <i>website</i>, yaitu:
+</p>
+<ul class="org-ul">
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
+
+<p>
+Dan tentu saja, kita juga pastinya akan kepo-kepo apa itu HTML, dan CSS. Dari kepoan itu,
+mungkin sudah terjawab secara singkat, bahwa HTML, dan CSS ini adalah suatu teks yang berfungsi
+untuk mendefinisikan bagaimana tampilan <i>website</i> kita di dalam <i>web browser</i>.
+Dan mungkin akhirnya tersisa 1 bahan lagi yang belum terbahas, yaitu Javascript.
+</p>
+
+
+<figure>
+<img src="../../../assets/images/javascript-dasar/pendahuluan.png" alt="pendahuluan.png">
+
+</figure>
+
+<p>
+Sebenarnya apa sih javascript ini? Bukan, javascript bukanlah Aksara Jawa hehe. Secara singkat, javascript adalah sebuah bahasa pemrograman.
+Hmm&#x2026; kita mendengar istilah baru, yaitu pemrograman, dan bahasa pemrograman.
+Sebenarnya, untuk memahami Javascript ini, kita harus mulai dari mana sih?
+</p>
+
+<p>
+Nah, untuk memahami apa itu javascript, kita bisa perlu tau dulu nih apa itu pemrograman, dan apa itu bahasa pemrograman,
+karena dua hal ini adalah bagian dari jati diri javascript. Yuk kita bahas!
+</p>
 </div>
 </div>
-<div id="outline-container-org8d91c31" class="outline-2">
-<h2 id="org8d91c31">Referensi</h2>
-<div class="outline-text-2" id="text-org8d91c31">
+
+<div id="outline-container-org5e98aed" class="outline-2">
+<h2 id="org5e98aed">Apa sih maksud dari pemrograman itu?</h2>
+<div class="outline-text-2" id="text-org5e98aed">
+<p>
+Untuk memahami apa itu pemrograman, yuk kita bayangin kalo kita dalam situasi berikut:
+</p>
+
+<ul class="org-ul">
+<li>Kamu adalah seorang mahasiswa semester akhir yang tengah kelaparan karena sedang ngerjain skripsi.</li>
+<li>Nah, kebetulan kamu udah nyetok mie instan dua hari yang lalu dan kamu memutuskan bahwa saat itu adalah saatnya kamu makan.</li>
+<li>Kamu pergi ke dapur mengambil bungkus mie instan tersebut dan kamu bersiap untuk memasak mie instan tersebut.</li>
+<li>Kebetulan, mie instan ini agak unik, karena ada topping tambahan yang harus diolah terlebih dahulu.</li>
+<li>Karena untuk memasak mie instan yang kamu miliki ini memiliki prosedur yang berbeda dari mie instan pada umumnya, maka dari itu kamu melihat pandua memasaknya di bungkus mie instan tersebut.</li>
+<li>Prosedur memasak mie instan yang ada di bungkus mie instan tersebut dijabarkan sebagai berikut:
+<ol class="org-ol">
+<li>Siapkan air sebanyak 3 gelas penuh kedalam panci, lalu panaskan dengan menggunakan kompor selama 30 menit.</li>
+<li>Buka bungkus ini, ambil bumbu dan toppingnya, lalu tuangkan bumbu kedalam sebuah mangkok saji.</li>
+<li>Setelah air mendidih, tuangkan air tersebut kedalam mangkok saji secukupnya dengan menggunakan panci tadi, air ini akan menjadi kuah yang akan disantap.</li>
+<li>Masukkan topping beserta mie ke dalam panci dengan air mendidih tadi dan tunggu selama 5 menit.</li>
+<li>Setelah mienya matang, tiriskan dengan menggunakan saringan, lalu masukkan hasil saringan tersebut ke dalam mangkok saji.</li>
+<li>Santaplah mie tersebut selagi hangat.</li>
+</ol></li>
+<li>Kamu mengikuti prosedur tersebut, dan kamu berhasil memasak mie tersebut dengan baik.</li>
+<li>Dan mie tersebut kamu santap dan kamu ga kelaparan lagi.</li>
+</ul>
+
+
+<figure>
+<img src="../../../assets/images/javascript-dasar/analogi-mie-instan.png" alt="analogi-mie-instan.png">
+
+</figure>
+
+<p>
+Nah dari analogi diatas, kalau objek-objek diatas kita sambungin dengan terminologi pemrograman, bisa kita petakan seperti tabel dibawah ini:
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Objek di analogi</th>
+<th scope="col" class="org-left">Objek di dalam pemrograman</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Kamu</td>
+<td class="org-left">Komputer yang menjalankan program</td>
+</tr>
+
+<tr>
+<td class="org-left">Prosedur yang tertera di dalam bungkus mie instan</td>
+<td class="org-left">Program</td>
+</tr>
+
+<tr>
+<td class="org-left">Mie, bumbu, topping, air, mangkok saji, dan panci</td>
+<td class="org-left">Input</td>
+</tr>
+
+<tr>
+<td class="org-left">Mie instan</td>
+<td class="org-left">Output</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Dari sini bisa kita simpulkan, bahwa program adalah suatu prosedur yang berfungsi untuk memberitahu bagaimana cara mengolah input agar menjadi sebuah output (hasil).
+Program hanya akan dijalankan oleh komputer, baik itu PC, Laptop, Console, dan sebagainya.
+Dan input dan output dari sebuah program biasanya berupa sebuah data, yang mana data input adalah sebuah data yang akan diolah menjadi output yang berupa sebuah data juga.
+</p>
+
+<p>
+Program biasanya berbentuk teks yang akan dikonversi menjadi sebuah <i>binary</i> yang mana hanya komputer saja yang dapat memahaminya.
+Teks tersebut akan mendefinisikan seluruh prosedur dari program tersebut, sehingga komputer dapat melakukan apa yang sudah diinstruksikan di dalam program,
+kayak prosedur di bungkus mie instan tadi, cara memasak mie instan sudah tertulis dengan jelas disana, jadi kita hanya perlu mengikutinya dan pasti akan mencapai hasil yang diinginkan.
+</p>
+
+<p>
+Berdasarkan terminologi singkat dari program diatas, bisa kita tarik kesimpulan bahwa, <b>pemrograman</b> adalah sebuah aktifitas membuat sebuah program atau software.
+Nah aktifitas ini bahasa kerennya <b>ngoding</b>, jelas dong, karena pemrograman tadi kan intinya kita ngedit teks, teks ini biasanya disebut sebagai <i>code</i>.
+Nah, teks atau <i>code</i> ini biasanya ditulis dalam sebuah bahasa, yang biasa kita sebut sebagai bahasa pemrograman.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f15b07" class="outline-2">
+<h2 id="org3f15b07">Apa sih Bahasa Pemrograman itu?</h2>
+<div class="outline-text-2" id="text-org3f15b07">
+<p>
+Hmmm&#x2026; Mungkin kita mulai dari definisi bahasa dulu kali ya. Bahasa adalah sistem komunikasi manusia yang dinyatakan melalui susunan suara atau ungkapan tulis yang terstruktur untuk membentuk satuan yang lebih besar, seperti morfem, kata, dan kalimat, yang diterjemahkan dari bahasa Inggris: “ the system of human communication by means of a structured arrangement of sounds (or written representation) to form lager units, eg. morphemes, words, sentences” (Richards, Platt &amp; Weber, 1985: 153).
+</p>
+
+<p>
+Yuk kita coba sambungin dengan terminologi pemrograman tadi, Dari definisi diatas, dalam bahasa ada yang namanya aktor (pengguna bahasa), yang mana aktor ini bertukar informasi melalui bahasa. Nah kalau kita ngomongin bahasa pemrograman, aktor tersebut adalah manusia, dan komputer. Yang mana aktor tersebut menggunakan bahasa pemrograman untuk bertukar informasi.
+</p>
+
+
+<figure>
+<img src="../../../assets/images/javascript-dasar/bahasa-pemrograman.png" alt="bahasa-pemrograman.png">
+
+</figure>
+
+<p>
+Nah, terkhusus untuk bahasa pemrograman, transfer informasi antara manusia dengan komputer ini saat ini hanya tersedia dalam bentuk teks saja. Jadi, kita akan sering-seing <b>ngoding</b> hehe.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org621158d" class="outline-2">
+<h2 id="org621158d">Pengantar Javascript</h2>
+<div class="outline-text-2" id="text-org621158d">
+
+<figure>
+<img src="../../../assets/images/javascript-dasar/javascript.jpg" alt="javascript.jpg" class="non-invertable">
+
+</figure>
+
+<p>
+Seperti yang sudah disebutkan pada bagian-bagian sebelumnya, javascript itu merupakan salah satu bahasa pemrograman. Tapi, sebenarnya apa sih javascript itu, dan apa saja kegunaanya?
+</p>
+</div>
+
+<div id="outline-container-orgdacffb1" class="outline-3">
+<h3 id="orgdacffb1">Apa itu Javascript?</h3>
+<div class="outline-text-3" id="text-orgdacffb1">
+<p>
+Javascript adalah sebuah bahasa pemrograman yang digunakan untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm&#x2026; berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
+Oh dan juga javascript ini adalah <i>interpreted language</i>, artinya ketika kita menjalankan sebuah aplikasi javascript, kodenya akan diterjemahkan baris per baris. Anggep aja, kita nerima prosedur dalam bahasa Inggris, nah disamping kita ada penerjemah bahasa Inggris, si penerjemah itu akan menerjemahkan satu kalimat pada satu waktu, terus kita akan memproses kalimat yang diterjemahkan, setelah proses itu selesai, baru kita lanjut ke kalimat berikutnya untuk diproses.
+</p>
+
+<p>
+Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman <i>cross-plaform</i> yang bisa digunakan dalam membuat aplikasi (program) frontend maupun backend.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a4be07" class="outline-3">
+<h3 id="org6a4be07"><span class="todo TODO">TODO</span> Apa yang bisa Javascript lakukan?</h3>
+</div>
+<div id="outline-container-org2392105" class="outline-3">
+<h3 id="org2392105"><span class="todo TODO">TODO</span> Apa yang Javascript lakukan terhadap halaman web kita?</h3>
+</div>
+<div id="outline-container-orgfac823a" class="outline-3">
+<h3 id="orgfac823a"><span class="todo TODO">TODO</span> Terus cara nambahin Javascript di halaman web kita gimana?</h3>
+<div class="outline-text-3" id="text-orgfac823a">
+</div>
+<div id="outline-container-org6d6f286" class="outline-4">
+<h4 id="org6d6f286"><span class="todo TODO">TODO</span> Internal Javascript</h4>
+</div>
+<div id="outline-container-org450017d" class="outline-4">
+<h4 id="org450017d"><span class="todo TODO">TODO</span> External Javascript</h4>
+</div>
+<div id="outline-container-org4f4fd8b" class="outline-4">
+<h4 id="org4f4fd8b"><span class="todo TODO">TODO</span> Inline Javascript</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd8dd1bf" class="outline-2">
+<h2 id="orgd8dd1bf"><span class="todo TODO">TODO</span> Tata Bahasa Javascript</h2>
+<div class="outline-text-2" id="text-orgd8dd1bf">
+</div>
+<div id="outline-container-org7206ca7" class="outline-3">
+<h3 id="org7206ca7"><span class="todo TODO">TODO</span> Sintaks dasar</h3>
+</div>
+<div id="outline-container-org88c698f" class="outline-3">
+<h3 id="org88c698f"><span class="todo TODO">TODO</span> Deklarasi</h3>
+</div>
+<div id="outline-container-org9a5d10e" class="outline-3">
+<h3 id="org9a5d10e"><span class="todo TODO">TODO</span> Variable scope</h3>
+</div>
+<div id="outline-container-org0c477f2" class="outline-3">
+<h3 id="org0c477f2"><span class="todo TODO">TODO</span> Variable hoisting</h3>
+</div>
+<div id="outline-container-org033ee03" class="outline-3">
+<h3 id="org033ee03"><span class="todo TODO">TODO</span> Struktur data dan tipe data</h3>
+</div>
+<div id="outline-container-org3d03aa0" class="outline-3">
+<h3 id="org3d03aa0"><span class="todo TODO">TODO</span> Literals</h3>
+</div>
+</div>
+<div id="outline-container-orgfd5f0d4" class="outline-2">
+<h2 id="orgfd5f0d4"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></h2>
+</div>
+<div id="outline-container-orgde555b5" class="outline-2">
+<h2 id="orgde555b5"><span class="todo TODO">TODO</span> <i>Loops</i></h2>
+</div>
+<div id="outline-container-orgb6cf034" class="outline-2">
+<h2 id="orgb6cf034"><span class="todo TODO">TODO</span> <i>Function</i></h2>
+</div>
+<div id="outline-container-org1ec4fb0" class="outline-2">
+<h2 id="org1ec4fb0">Referensi</h2>
+<div class="outline-text-2" id="text-org1ec4fb0">
 <ul class="org-ul">
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN - Javascript/Guide</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction">MDN - Javascript/Guide/Introduction</a></li>
 </ul>
-<p>
-**
-</p>
 </div>
 </div>
 </main>

@@ -54,7 +54,7 @@
     filter: invert(100%);
   }
 
-  img {
+  img:not(.non-invertable) {
     -webkit-filter: invert(100%);
     filter: invert(100%);
   }
