@@ -4,24 +4,110 @@
 #+EMAIL: fikrirnurhidayat@gmail.com
 
 * Pendahuluan
-* Apa sih Bahasa Pemrograman itu?
+
+Dalam kehidupan sehari-hari, tentu saja kita tidak pernah terlepas dari yang namanya /website/.
+Mungkin kita juga bertanya-tanya, gimana sih caranya bikin sebuah /website/?
+Dan akhirnya kita menemukan 3 bahan utama yang akan digunakan untuk membangun sebuah /website/, yaitu:
+- HTML
+- CSS
+- Javascript
+
+Dan tentu saja, kita juga pastinya akan kepo-kepo apa itu HTML, dan CSS. Dari kepoan itu,
+mungkin sudah terjawab secara singkat, bahwa HTML, dan CSS ini adalah suatu teks yang berfungsi
+untuk mendefinisikan bagaimana tampilan /website/ kita di dalam /web browser/.
+Dan mungkin akhirnya tersisa 1 bahan lagi yang belum terbahas, yaitu Javascript.
+
+[[../../../assets/images/javascript-dasar/pendahuluan.png]]
+
+Sebenarnya apa sih javascript ini? Bukan, javascript bukanlah Aksara Jawa hehe. Secara singkat, javascript adalah sebuah bahasa pemrograman.
+Hmm... kita mendengar istilah baru, yaitu pemrograman, dan bahasa pemrograman.
+Sebenarnya, untuk memahami Javascript ini, kita harus mulai dari mana sih?
+
+Nah, untuk memahami apa itu javascript, kita bisa perlu tau dulu nih apa itu pemrograman, dan apa itu bahasa pemrograman,
+karena dua hal ini adalah bagian dari jati diri javascript. Yuk kita bahas!
+
 * Apa sih maksud dari pemrograman itu?
+
+Untuk memahami apa itu pemrograman, yuk kita bayangin kalo kita dalam situasi berikut:
+
+- Kamu adalah seorang mahasiswa semester akhir yang tengah kelaparan karena sedang ngerjain skripsi.
+- Nah, kebetulan kamu udah nyetok mie instan dua hari yang lalu dan kamu memutuskan bahwa saat itu adalah saatnya kamu makan.
+- Kamu pergi ke dapur mengambil bungkus mie instan tersebut dan kamu bersiap untuk memasak mie instan tersebut.
+- Kebetulan, mie instan ini agak unik, karena ada topping tambahan yang harus diolah terlebih dahulu.
+- Karena untuk memasak mie instan yang kamu miliki ini memiliki prosedur yang berbeda dari mie instan pada umumnya, maka dari itu kamu melihat pandua memasaknya di bungkus mie instan tersebut.
+- Prosedur memasak mie instan yang ada di bungkus mie instan tersebut dijabarkan sebagai berikut:
+  1. Siapkan air sebanyak 3 gelas penuh kedalam panci, lalu panaskan dengan menggunakan kompor selama 30 menit.
+  2. Buka bungkus ini, ambil bumbu dan toppingnya, lalu tuangkan bumbu kedalam sebuah mangkok saji.
+  3. Setelah air mendidih, tuangkan air tersebut kedalam mangkok saji secukupnya dengan menggunakan panci tadi, air ini akan menjadi kuah yang akan disantap.
+  4. Masukkan topping beserta mie ke dalam panci dengan air mendidih tadi dan tunggu selama 5 menit.
+  5. Setelah mienya matang, tiriskan dengan menggunakan saringan, lalu masukkan hasil saringan tersebut ke dalam mangkok saji.
+  6. Santaplah mie tersebut selagi hangat.
+- Kamu mengikuti prosedur tersebut, dan kamu berhasil memasak mie tersebut dengan baik.
+- Dan mie tersebut kamu santap dan kamu ga kelaparan lagi.
+
+[[../../../assets/images/javascript-dasar/analogi-mie-instan.png]]
+
+Nah dari analogi diatas, kalau objek-objek diatas kita sambungin dengan terminologi pemrograman, bisa kita petakan seperti tabel dibawah ini:
+
+| Objek di analogi                                  | Objek di dalam pemrograman        |
+|---------------------------------------------------+-----------------------------------|
+| Kamu                                              | Komputer yang menjalankan program |
+| Prosedur yang tertera di dalam bungkus mie instan | Program                           |
+| Mie, bumbu, topping, air, mangkok saji, dan panci | Input                             |
+| Mie instan                                        | Output                            |
+
+Dari sini bisa kita simpulkan, bahwa program adalah suatu prosedur yang berfungsi untuk memberitahu bagaimana cara mengolah input agar menjadi sebuah output (hasil).
+Program hanya akan dijalankan oleh komputer, baik itu PC, Laptop, Console, dan sebagainya.
+Dan input dan output dari sebuah program biasanya berupa sebuah data, yang mana data input adalah sebuah data yang akan diolah menjadi output yang berupa sebuah data juga.
+
+Program biasanya berbentuk teks yang akan dikonversi menjadi sebuah /binary/ yang mana hanya komputer saja yang dapat memahaminya.
+Teks tersebut akan mendefinisikan seluruh prosedur dari program tersebut, sehingga komputer dapat melakukan apa yang sudah diinstruksikan di dalam program,
+kayak prosedur di bungkus mie instan tadi, cara memasak mie instan sudah tertulis dengan jelas disana, jadi kita hanya perlu mengikutinya dan pasti akan mencapai hasil yang diinginkan.
+
+Berdasarkan terminologi singkat dari program diatas, bisa kita tarik kesimpulan bahwa, *pemrograman* adalah sebuah aktifitas membuat sebuah program atau software.
+Nah aktifitas ini bahasa kerennya *ngoding*, jelas dong, karena pemrograman tadi kan intinya kita ngedit teks, teks ini biasanya disebut sebagai /code/.
+Nah, teks atau /code/ ini biasanya ditulis dalam sebuah bahasa, yang biasa kita sebut sebagai bahasa pemrograman.
+
+* Apa sih Bahasa Pemrograman itu?
+
+Hmmm... Mungkin kita mulai dari definisi bahasa dulu kali ya. Bahasa adalah sistem komunikasi manusia yang dinyatakan melalui susunan suara atau ungkapan tulis yang terstruktur untuk membentuk satuan yang lebih besar, seperti morfem, kata, dan kalimat, yang diterjemahkan dari bahasa Inggris: “ the system of human communication by means of a structured arrangement of sounds (or written representation) to form lager units, eg. morphemes, words, sentences” (Richards, Platt & Weber, 1985: 153).
+
+Yuk kita coba sambungin dengan terminologi pemrograman tadi, Dari definisi diatas, dalam bahasa ada yang namanya aktor (pengguna bahasa), yang mana aktor ini bertukar informasi melalui bahasa. Nah kalau kita ngomongin bahasa pemrograman, aktor tersebut adalah manusia, dan komputer. Yang mana aktor tersebut menggunakan bahasa pemrograman untuk bertukar informasi.
+
+[[../../../assets/images/javascript-dasar/bahasa-pemrograman.png]]
+
+Nah, terkhusus untuk bahasa pemrograman, transfer informasi antara manusia dengan komputer ini saat ini hanya tersedia dalam bentuk teks saja. Jadi, kita akan sering-seing *ngoding* hehe.
+
 * Pengantar Javascript
+
+#+ATTR_HTML: :class non-invertable
+[[../../../assets/images/javascript-dasar/javascript.jpg]]
+
+Seperti yang sudah disebutkan pada bagian-bagian sebelumnya, javascript itu merupakan salah satu bahasa pemrograman. Tapi, sebenarnya apa sih javascript itu, dan apa saja kegunaanya?
+
 ** Apa itu Javascript?
-** Apa yang bisa Javascript lakukan?
-** Apa yang Javascript lakukan terhadap halaman web kita?
-** Terus cara nambahin Javascript di halaman web kita gimana?
-*** Internal Javascript
-*** External Javascript
-*** Inline Javascript
-* Tata Bahasa Javascript
-** Sintaks dasar
-** Deklarasi
-** Variable scope
-** Variable hoisting
-** Struktur data dan tipe data
-** Literals
+
+Javascript adalah sebuah bahasa pemrograman yang digunakan untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm... berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
+Oh dan juga javascript ini adalah /interpreted language/, artinya ketika kita menjalankan sebuah aplikasi javascript, kodenya akan diterjemahkan baris per baris. Anggep aja, kita nerima prosedur dalam bahasa Inggris, nah disamping kita ada penerjemah bahasa Inggris, si penerjemah itu akan menerjemahkan satu kalimat pada satu waktu, terus kita akan memproses kalimat yang diterjemahkan, setelah proses itu selesai, baru kita lanjut ke kalimat berikutnya untuk diproses.
+
+Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman /cross-plaform/ yang bisa digunakan dalam membuat aplikasi (program) frontend maupun backend.
+
+** TODO Apa yang bisa Javascript lakukan?
+** TODO Apa yang Javascript lakukan terhadap halaman web kita?
+** TODO Terus cara nambahin Javascript di halaman web kita gimana?
+*** TODO Internal Javascript
+*** TODO External Javascript
+*** TODO Inline Javascript
+* TODO Tata Bahasa Javascript
+** TODO Sintaks dasar
+** TODO Deklarasi
+** TODO Variable scope
+** TODO Variable hoisting
+** TODO Struktur data dan tipe data
+** TODO Literals
+* TODO /Expression/ dan /Operation/
+* TODO /Loops/
+* TODO /Function/
 * Referensi
 - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide][MDN - Javascript/Guide]]
 - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction][MDN - Javascript/Guide/Introduction]]
-**
