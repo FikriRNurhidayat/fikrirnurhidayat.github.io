@@ -36,9 +36,9 @@ Untuk memahami apa itu pemrograman, yuk kita bayangin kalo kita dalam situasi be
 - Kebetulan, mie instan ini agak unik, karena ada topping tambahan yang harus diolah terlebih dahulu.
 - Karena untuk memasak mie instan yang kamu miliki ini memiliki prosedur yang berbeda dari mie instan pada umumnya, maka dari itu kamu melihat pandua memasaknya di bungkus mie instan tersebut.
 - Prosedur memasak mie instan yang ada di bungkus mie instan tersebut dijabarkan sebagai berikut:
-  1. Siapkan air sebanyak 3 gelas penuh kedalam panci, lalu panaskan dengan menggunakan kompor selama 30 menit.
-  2. Buka bungkus ini, ambil bumbu dan toppingnya, lalu tuangkan bumbu kedalam sebuah mangkok saji.
-  3. Setelah air mendidih, tuangkan air tersebut kedalam mangkok saji secukupnya dengan menggunakan panci tadi, air ini akan menjadi kuah yang akan disantap.
+  1. Siapkan air sebanyak 3 gelas penuh ke dalam panci, lalu panaskan dengan menggunakan kompor selama 30 menit.
+  2. Buka bungkus ini, ambil bumbu dan toppingnya, lalu tuangkan bumbu ke dalam sebuah mangkok saji.
+  3. Setelah air mendidih, tuangkan air tersebut ke dalam mangkok saji secukupnya dengan menggunakan panci tadi, air ini akan menjadi kuah yang akan disantap.
   4. Masukkan topping beserta mie ke dalam panci dengan air mendidih tadi dan tunggu selama 5 menit.
   5. Setelah mienya matang, tiriskan dengan menggunakan saringan, lalu masukkan hasil saringan tersebut ke dalam mangkok saji.
   6. Santaplah mie tersebut selagi hangat.
@@ -90,14 +90,155 @@ Seperti yang sudah disebutkan pada bagian-bagian sebelumnya, javascript itu meru
 Javascript adalah sebuah bahasa pemrograman yang digunakan untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm... berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
 Oh dan juga javascript ini adalah /interpreted language/, artinya ketika kita menjalankan sebuah aplikasi javascript, kodenya akan diterjemahkan baris per baris. Anggep aja, kita nerima prosedur dalam bahasa Inggris, nah disamping kita ada penerjemah bahasa Inggris, si penerjemah itu akan menerjemahkan satu kalimat pada satu waktu, terus kita akan memproses kalimat yang diterjemahkan, setelah proses itu selesai, baru kita lanjut ke kalimat berikutnya untuk diproses.
 
-Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman /cross-plaform/ yang bisa digunakan dalam membuat aplikasi (program) frontend maupun backend.
+Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman /cross-plaform/ yang bisa digunakan untuk membuat situs web baik dari sisi frontend maupun backend.
 
-** TODO Apa yang bisa Javascript lakukan?
-** TODO Apa yang Javascript lakukan terhadap halaman web kita?
-** TODO Terus cara nambahin Javascript di halaman web kita gimana?
-*** TODO Internal Javascript
-*** TODO External Javascript
-*** TODO Inline Javascript
+** Apa yang bisa Javascript lakukan?
+
+Karena javascript adalah sebuah bahasa pemrograman, tentunya fungsi utamanya digunakan untuk membuat sebuah program. Maka dari itu, kegunaan javascript bisa dijabarkan dengan poin-poin berikut:
+- Menyimpan informasi penting yang nantinya akan diolah menjadi tampilan dalam bentuk variabel.
+- Mengolah data
+- Dan masih banyak lagi.
+
+Selain itu, bila javascript dijalankan di dalam frontend, maka kita bisa gunakan javascript untuk berbagai hal, sebagai contoh:
+- Mendapatkan lokasi user (GeoLocation API)
+- Memutar video
+- Memutar audio
+- Memanipulasi HTML dan CSS (DOM API)
+- Ngobrol dengan backend Google (Google API).
+- Ngobrol dengan backend Twitter (Twitter API).
+- Membuat animasi 3D (Canvas & WebGL)
+- Dan sebagainya.
+
+Banyak kan yang bisa dilakuin javascript?
+
+** Apa yang Javascript lakukan terhadap halaman web kita?
+
+Seperti yang dijelaskan pada bagian *Apa itu Javascript?*, javascript dapat berjalan di backend, maupun di frontend. Maka dari itu, apa yang dilakuin javascript itu jelas beda antara backend, dan frontend. Nah di bagian ini, kita bakal bahas nih, apa sih yang dilakuin javascript di halaman web (frontend).
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/puppeteer.png]]
+
+Umumnya javascript ini digunakan untuk menampilkan suatu halaman secara dinamis. Maksudnya apa? Maksudnya HTML dan CSS yang kita terima akan dimodifikasi strukturnya secara realtime. Jadi, HTML & CSS ini hanya akan menjadi kerangka situs web saja, dan yang bertugas mengisi dan mengatur ulang tampilan adalah javascript. Kita bisa ambil contoh, Youtube.
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[https://miro.medium.com/max/1838/0*ABjKedHjIe8El9RJ.png]]
+
+Ketika kita membuka youtube untuk pertama kali, disitu terlihat semacam kerangka dari situs Youtube. Nah ketika dalam fase tersebut browser hanya menampilkan HTML & CSS saja dan belum selesai menjalankan javascript. Nah disini javascript berperan untuk mengambil data dari server Youtube. Setelah diterima, data tersebut kemudian akan diolah menjadi tampilan yang sudah dapat digunakan untuk melihat video dan sebagainya.
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/youtube-loaded.png]]
+
+Javascript akan selalu dijalankan di setiap halaman yang ada di Youtube, termasuk ketika kita mengetikkan sebuah keyword di dalam search bar.
+
+** Terus cara nambahin Javascript di halaman web kita gimana?
+
+Dari tadi kita ngomogin apa itu javascript, gaada praktek-prakteknya, pasti pada bosen, yaudah kuy, langsung cobain aja gimana caranya nambahin javascript di halaman web kita.
+Ada 3 cara nih untuk nambahin javascript di dalam halaman web kita, yaitu:
+- Internal Javascript
+- External Javascript
+- Inline Javascript
+
+Yuk bahas satu per satu.
+
+*** Internal Javascript
+
+Mirip dengan internal CSS, internal javascript adalah penambahan kode javascript di dalam file HTML secara langsung, yang mana javascript ini akan ditulis di dalam tag bernama ~script~.
+Sebagian besar penambahan tag ~script~ ini ditulis di dalam tag ~body~ di dalam HTML.
+
+~internal.html~
+
+#+BEGIN_SRC html :tangle ../../../assets/html/javascript-dasar/internal.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Hello from Javascript</title>
+  </head>
+  <body>
+    <script>
+      console.log("Hello from Javascript!")
+    </script>
+  </body>
+</html>
+#+END_SRC
+
+Jika kita membuka dokumen HTML tersebut di dalam browser, dan setelah itu kita membuka /devtools/ pada tab /console/ maka inilah yang akan kita lihat.
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/hello-from-javascript.png]]
+
+Selamat, kamu sudah berhasil menjalankan javascript di halaman web kamu!
+Sekalian, mumpung lagi di /console/ nih, kamu juga bisa coba-coba buat nulis kode javascript di dalam /console/.
+
+Kamu bisa buka contoh kode ini [[https://fikrirnurhidayat.com/assets/html/javascript-dasar/01.html][disini]].
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/hi-kamu.png]]
+
+*** External Javascript
+
+Lagi-lagi mirip dengan CSS, eksternal javascript adalah suatu file lain yang berisikan kode javascript, yang nantinya kita impor melalui dokumen HTML. Berbeda dengan css yang mana ketika kita mengimpor kita menggunakan ~link~, untuk mengimpor file javascript kita hanya perlu menggunakan ~script~ dengan atribut ~src~ yang mana nilai dari atribut tersebut berisi alamat dari file tersebut. Yuk kita simak contoh dibawah ini, pastikan semua file dibawah ini disimpan di folder yang sama yak!
+
+~external.html~
+
+#+BEGIN_SRC html :tangle ../../../assets/html/javascript-dasar/external.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Hello from Javascript</title>
+  </head>
+  <body>
+    <script src="./external.js"></script>
+  </body>
+</html>
+#+END_SRC
+
+~external.js~
+
+#+BEGIN_SRC js :tangle ../../../assets/html/javascript-dasar/external.js
+console.log("Hello from external Javascript!");
+#+END_SRC
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/external.png]]
+
+Contoh diatas dapat dilihat melalui [[https://fikrirnurhidayat.com/assets/html/external.html][link ini.]]
+
+*** Inline Javascript
+
+Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika digunakan untuk memetakan fungsi yang akan dipanggil ketika suatu event dari suatu elemen dipanggil. Kenapa? Karena jika kita menuliskan kode yang kompleks dengan menggunakan inline javascript, ini akan sulit untuk dibaca.
+
+#+BEGIN_SRC html :tangle ../../../assets/html/javascript-dasar/inline.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Hello from Javascript</title>
+  </head>
+  <body>
+    <button onclick="console.log('Aku tertekan!')">Tekan aku</button>
+  </body>
+</html>
+#+END_SRC
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/internal.png]]
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/aku-tertekan.png]]
+
+Contoh diatas dapat dilihat melalui [[https://fikrirnurhidayat.com/assets/html/internal.html][link ini]].
+
 * TODO Tata Bahasa Javascript
 ** TODO Sintaks dasar
 ** TODO Deklarasi
@@ -109,5 +250,6 @@ Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman
 * TODO /Loops/
 * TODO /Function/
 * Referensi
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript][MDN - What is Javascript?]]
 - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide][MDN - Javascript/Guide]]
 - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction][MDN - Javascript/Guide/Introduction]]
