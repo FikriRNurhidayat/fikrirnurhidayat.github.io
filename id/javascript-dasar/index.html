@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-02-16 Wed 07:59 -->
+<!-- 2022-02-17 Thu 01:30 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Javascript Dasar</title>
@@ -19,48 +19,64 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7f79f83">Pendahuluan</a></li>
-<li><a href="#org917ffa3">Apa sih maksud dari pemrograman itu?</a></li>
-<li><a href="#orga0442cb">Apa sih Bahasa Pemrograman itu?</a></li>
-<li><a href="#org100ac26">Pengantar Javascript</a>
+<li><a href="#org934e47e">Pendahuluan</a></li>
+<li><a href="#orgbd43747">Apa sih maksud dari pemrograman itu?</a></li>
+<li><a href="#org84194d0">Apa sih Bahasa Pemrograman itu?</a></li>
+<li><a href="#org309c682">Pengantar Javascript</a>
 <ul>
-<li><a href="#org4bae4cf">Apa itu Javascript?</a></li>
-<li><a href="#org8dff41c">Apa yang bisa Javascript lakukan?</a></li>
-<li><a href="#orgf300a2a">Apa yang Javascript lakukan terhadap halaman web kita?</a></li>
-<li><a href="#org3905024">Terus cara nambahin Javascript di halaman web kita gimana?</a>
+<li><a href="#orgfdd1f24">Apa itu Javascript?</a></li>
+<li><a href="#org1a337b4">Apa yang bisa Javascript lakukan?</a></li>
+<li><a href="#org13ec239">Apa yang Javascript lakukan terhadap halaman web kita?</a></li>
+<li><a href="#org3465f24">Terus cara nambahin Javascript di halaman web kita gimana?</a>
 <ul>
-<li><a href="#org7fb55f8">Internal Javascript</a></li>
-<li><a href="#org5b0e313">External Javascript</a></li>
-<li><a href="#orgf03eef2">Inline Javascript</a></li>
+<li><a href="#org13eed16">Internal Javascript</a></li>
+<li><a href="#orgfc8fca2">External Javascript</a></li>
+<li><a href="#org0c2f964">Inline Javascript</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org7f7f583"><span class="todo TODO">TODO</span> Tata Bahasa Javascript</a>
+<li><a href="#org43bf50f">Tata Bahasa Javascript</a>
 <ul>
-<li><a href="#orga4009ee"><span class="todo TODO">TODO</span> Sintaks dasar</a></li>
-<li><a href="#org83f0f86"><span class="todo TODO">TODO</span> Deklarasi</a></li>
-<li><a href="#org01f52b5"><span class="todo TODO">TODO</span> Variable scope</a></li>
-<li><a href="#org094efe9"><span class="todo TODO">TODO</span> Variable hoisting</a></li>
-<li><a href="#org06efd6c"><span class="todo TODO">TODO</span> Struktur data dan tipe data</a></li>
-<li><a href="#org177f62a"><span class="todo TODO">TODO</span> Literals</a></li>
+<li><a href="#orgb57519c">Sintaks dasar</a></li>
+<li><a href="#org63a06f8">Comments</a></li>
+<li><a href="#orgede2cb3">Deklarasi</a>
+<ul>
+<li><a href="#org68011d3"><code>var</code></a></li>
+<li><a href="#org5b3af6f"><code>let</code></a></li>
+<li><a href="#org0b470d3"><code>const</code></a></li>
 </ul>
 </li>
-<li><a href="#orgc023fbf"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></a></li>
-<li><a href="#org9d9a0d2"><span class="todo TODO">TODO</span> <i>Loops</i></a></li>
-<li><a href="#org0a35ab4"><span class="todo TODO">TODO</span> <i>Function</i></a></li>
-<li><a href="#orgec34864">Referensi</a></li>
+<li><a href="#org5c00ea6">Variable scope</a></li>
+<li><a href="#org71f8268">Variable hoisting</a></li>
+<li><a href="#orgb68ecf2">Struktur data dan tipe data</a>
+<ul>
+<li><a href="#org8360bc2">String</a></li>
+<li><a href="#org7e0a777">Number</a></li>
+<li><a href="#orgb8d7180">Boolean</a></li>
+<li><a href="#org56427f9">null</a></li>
+<li><a href="#org85e7408">undefined</a></li>
+<li><a href="#org12d8119">Array</a></li>
+<li><a href="#org7728231">Object</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1a89d8d"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></a></li>
+<li><a href="#org9066fa0"><span class="todo TODO">TODO</span> <i>Loops</i></a></li>
+<li><a href="#orga9916ba"><span class="todo TODO">TODO</span> <i>Function</i></a></li>
+<li><a href="#org523f3e3">Referensi</a></li>
 </ul>
 </div>
 </nav>
 
-<div id="outline-container-org7f79f83" class="outline-2">
-<h2 id="org7f79f83">Pendahuluan</h2>
-<div class="outline-text-2" id="text-org7f79f83">
+<div id="outline-container-org934e47e" class="outline-2">
+<h2 id="org934e47e">Pendahuluan</h2>
+<div class="outline-text-2" id="text-org934e47e">
 <p>
 Dalam kehidupan sehari-hari, tentu saja kita tidak pernah terlepas dari yang namanya <i>website</i>.
 Mungkin kita juga bertanya-tanya, gimana sih caranya bikin sebuah <i>website</i>?
-Dan akhirnya kita menemukan 3 bahan utama yang akan digunakan untuk membangun sebuah <i>website</i>, yaitu:
+Dan akhirnya kita menemukan 3 bahan utama yang akan dipake untuk membangun sebuah <i>website</i>, yaitu:
 </p>
 <ul class="org-ul">
 <li>HTML</li>
@@ -94,9 +110,9 @@ karena dua hal ini adalah bagian dari jati diri javascript. Yuk kita bahas!
 </div>
 </div>
 
-<div id="outline-container-org917ffa3" class="outline-2">
-<h2 id="org917ffa3">Apa sih maksud dari pemrograman itu?</h2>
-<div class="outline-text-2" id="text-org917ffa3">
+<div id="outline-container-orgbd43747" class="outline-2">
+<h2 id="orgbd43747">Apa sih maksud dari pemrograman itu?</h2>
+<div class="outline-text-2" id="text-orgbd43747">
 <p>
 Untuk memahami apa itu pemrograman, yuk kita bayangin kalo kita dalam situasi berikut:
 </p>
@@ -187,9 +203,9 @@ Nah, teks atau <i>code</i> ini biasanya ditulis dalam sebuah bahasa, yang biasa 
 </div>
 </div>
 
-<div id="outline-container-orga0442cb" class="outline-2">
-<h2 id="orga0442cb">Apa sih Bahasa Pemrograman itu?</h2>
-<div class="outline-text-2" id="text-orga0442cb">
+<div id="outline-container-org84194d0" class="outline-2">
+<h2 id="org84194d0">Apa sih Bahasa Pemrograman itu?</h2>
+<div class="outline-text-2" id="text-org84194d0">
 <p>
 Hmmm&#x2026; Mungkin kita mulai dari definisi bahasa dulu kali ya. Bahasa adalah sistem komunikasi manusia yang dinyatakan melalui susunan suara atau ungkapan tulis yang terstruktur untuk membentuk satuan yang lebih besar, seperti morfem, kata, dan kalimat, yang diterjemahkan dari bahasa Inggris: “ the system of human communication by means of a structured arrangement of sounds (or written representation) to form lager units, eg. morphemes, words, sentences” (Richards, Platt &amp; Weber, 1985: 153).
 </p>
@@ -210,9 +226,9 @@ Nah, terkhusus untuk bahasa pemrograman, transfer informasi antara manusia denga
 </div>
 </div>
 
-<div id="outline-container-org100ac26" class="outline-2">
-<h2 id="org100ac26">Pengantar Javascript</h2>
-<div class="outline-text-2" id="text-org100ac26">
+<div id="outline-container-org309c682" class="outline-2">
+<h2 id="org309c682">Pengantar Javascript</h2>
+<div class="outline-text-2" id="text-org309c682">
 
 <figure>
 <img src="../../../assets/images/javascript-dasar/javascript.jpg" alt="javascript.jpg" class="non-invertable">
@@ -224,25 +240,25 @@ Seperti yang sudah disebutkan pada bagian-bagian sebelumnya, javascript itu meru
 </p>
 </div>
 
-<div id="outline-container-org4bae4cf" class="outline-3">
-<h3 id="org4bae4cf">Apa itu Javascript?</h3>
-<div class="outline-text-3" id="text-org4bae4cf">
+<div id="outline-container-orgfdd1f24" class="outline-3">
+<h3 id="orgfdd1f24">Apa itu Javascript?</h3>
+<div class="outline-text-3" id="text-orgfdd1f24">
 <p>
-Javascript adalah sebuah bahasa pemrograman yang digunakan untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm&#x2026; berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
+Javascript adalah sebuah bahasa pemrograman yang dipake untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm&#x2026; berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
 Oh dan juga javascript ini adalah <i>interpreted language</i>, artinya ketika kita menjalankan sebuah aplikasi javascript, kodenya akan diterjemahkan baris per baris. Anggep aja, kita nerima prosedur dalam bahasa Inggris, nah disamping kita ada penerjemah bahasa Inggris, si penerjemah itu akan menerjemahkan satu kalimat pada satu waktu, terus kita akan memproses kalimat yang diterjemahkan, setelah proses itu selesai, baru kita lanjut ke kalimat berikutnya untuk diproses.
 </p>
 
 <p>
-Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman <i>cross-plaform</i> yang bisa digunakan untuk membuat situs web baik dari sisi frontend maupun backend.
+Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman <i>cross-plaform</i> yang bisa dipake untuk membuat situs web baik dari sisi frontend maupun backend.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8dff41c" class="outline-3">
-<h3 id="org8dff41c">Apa yang bisa Javascript lakukan?</h3>
-<div class="outline-text-3" id="text-org8dff41c">
+<div id="outline-container-org1a337b4" class="outline-3">
+<h3 id="org1a337b4">Apa yang bisa Javascript lakukan?</h3>
+<div class="outline-text-3" id="text-org1a337b4">
 <p>
-Karena javascript adalah sebuah bahasa pemrograman, tentunya fungsi utamanya digunakan untuk membuat sebuah program. Maka dari itu, kegunaan javascript bisa dijabarkan dengan poin-poin berikut:
+Karena javascript adalah sebuah bahasa pemrograman, tentunya fungsi utamanya dipake untuk membuat sebuah program. Maka dari itu, kegunaan javascript bisa dijabarkan dengan poin-poin berikut:
 </p>
 <ul class="org-ul">
 <li>Menyimpan informasi penting yang nantinya akan diolah menjadi tampilan dalam bentuk variabel.</li>
@@ -270,9 +286,9 @@ Banyak kan yang bisa dilakuin javascript?
 </div>
 </div>
 
-<div id="outline-container-orgf300a2a" class="outline-3">
-<h3 id="orgf300a2a">Apa yang Javascript lakukan terhadap halaman web kita?</h3>
-<div class="outline-text-3" id="text-orgf300a2a">
+<div id="outline-container-org13ec239" class="outline-3">
+<h3 id="org13ec239">Apa yang Javascript lakukan terhadap halaman web kita?</h3>
+<div class="outline-text-3" id="text-org13ec239">
 <p>
 Seperti yang dijelaskan pada bagian <b>Apa itu Javascript?</b>, javascript dapat berjalan di backend, maupun di frontend. Maka dari itu, apa yang dilakuin javascript itu jelas beda antara backend, dan frontend. Nah di bagian ini, kita bakal bahas nih, apa sih yang dilakuin javascript di halaman web (frontend).
 </p>
@@ -284,7 +300,7 @@ Seperti yang dijelaskan pada bagian <b>Apa itu Javascript?</b>, javascript dapat
 </figure>
 
 <p>
-Umumnya javascript ini digunakan untuk menampilkan suatu halaman secara dinamis. Maksudnya apa? Maksudnya HTML dan CSS yang kita terima akan dimodifikasi strukturnya secara realtime. Jadi, HTML &amp; CSS ini hanya akan menjadi kerangka situs web saja, dan yang bertugas mengisi dan mengatur ulang tampilan adalah javascript. Kita bisa ambil contoh, Youtube.
+Umumnya javascript ini dipake untuk menampilkan suatu halaman secara dinamis. Maksudnya apa? Maksudnya HTML dan CSS yang kita terima akan dimodifikasi strukturnya secara realtime. Jadi, HTML &amp; CSS ini hanya akan menjadi kerangka situs web saja, dan yang bertugas mengisi dan mengatur ulang tampilan adalah javascript. Kita bisa ambil contoh, Youtube.
 </p>
 
 
@@ -294,7 +310,7 @@ Umumnya javascript ini digunakan untuk menampilkan suatu halaman secara dinamis.
 </figure>
 
 <p>
-Ketika kita membuka youtube untuk pertama kali, disitu terlihat semacam kerangka dari situs Youtube. Nah ketika dalam fase tersebut browser hanya menampilkan HTML &amp; CSS saja dan belum selesai menjalankan javascript. Nah disini javascript berperan untuk mengambil data dari server Youtube. Setelah diterima, data tersebut kemudian akan diolah menjadi tampilan yang sudah dapat digunakan untuk melihat video dan sebagainya.
+Ketika kita membuka youtube untuk pertama kali, disitu terlihat semacam kerangka dari situs Youtube. Nah ketika dalam fase tersebut browser hanya menampilkan HTML &amp; CSS saja dan belum selesai menjalankan javascript. Nah disini javascript berperan untuk mengambil data dari server Youtube. Setelah diterima, data tersebut kemudian akan diolah menjadi tampilan yang sudah dapat dipake untuk melihat video dan sebagainya.
 </p>
 
 
@@ -309,9 +325,9 @@ Javascript akan selalu dijalankan di setiap halaman yang ada di Youtube, termasu
 </div>
 </div>
 
-<div id="outline-container-org3905024" class="outline-3">
-<h3 id="org3905024">Terus cara nambahin Javascript di halaman web kita gimana?</h3>
-<div class="outline-text-3" id="text-org3905024">
+<div id="outline-container-org3465f24" class="outline-3">
+<h3 id="org3465f24">Terus cara nambahin Javascript di halaman web kita gimana?</h3>
+<div class="outline-text-3" id="text-org3465f24">
 <p>
 Dari tadi kita ngomogin apa itu javascript, gaada praktek-prakteknya, pasti pada bosen, yaudah kuy, langsung cobain aja gimana caranya nambahin javascript di halaman web kita.
 Ada 3 cara nih untuk nambahin javascript di dalam halaman web kita, yaitu:
@@ -327,9 +343,9 @@ Yuk bahas satu per satu.
 </p>
 </div>
 
-<div id="outline-container-org7fb55f8" class="outline-4">
-<h4 id="org7fb55f8">Internal Javascript</h4>
-<div class="outline-text-4" id="text-org7fb55f8">
+<div id="outline-container-org13eed16" class="outline-4">
+<h4 id="org13eed16">Internal Javascript</h4>
+<div class="outline-text-4" id="text-org13eed16">
 <p>
 Mirip dengan internal CSS, internal javascript adalah penambahan kode javascript di dalam file HTML secara langsung, yang mana javascript ini akan ditulis di dalam tag bernama <code>script</code>.
 Sebagian besar penambahan tag <code>script</code> ini ditulis di dalam tag <code>body</code> di dalam HTML.
@@ -385,9 +401,9 @@ Kamu bisa buka contoh kode ini <a href="https://fikrirnurhidayat.com/assets/html
 </div>
 </div>
 
-<div id="outline-container-org5b0e313" class="outline-4">
-<h4 id="org5b0e313">External Javascript</h4>
-<div class="outline-text-4" id="text-org5b0e313">
+<div id="outline-container-orgfc8fca2" class="outline-4">
+<h4 id="orgfc8fca2">External Javascript</h4>
+<div class="outline-text-4" id="text-orgfc8fca2">
 <p>
 Lagi-lagi mirip dengan CSS, eksternal javascript adalah suatu file lain yang berisikan kode javascript, yang nantinya kita impor melalui dokumen HTML. Berbeda dengan css yang mana ketika kita mengimpor kita menggunakan <code>link</code>, untuk mengimpor file javascript kita hanya perlu menggunakan <code>script</code> dengan atribut <code>src</code> yang mana nilai dari atribut tersebut berisi alamat dari file tersebut. Yuk kita simak contoh dibawah ini, pastikan semua file dibawah ini disimpan di folder yang sama yak!
 </p>
@@ -434,11 +450,11 @@ Contoh diatas dapat dilihat melalui <a href="https://fikrirnurhidayat.com/assets
 </div>
 </div>
 
-<div id="outline-container-orgf03eef2" class="outline-4">
-<h4 id="orgf03eef2">Inline Javascript</h4>
-<div class="outline-text-4" id="text-orgf03eef2">
+<div id="outline-container-org0c2f964" class="outline-4">
+<h4 id="org0c2f964">Inline Javascript</h4>
+<div class="outline-text-4" id="text-org0c2f964">
 <p>
-Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika digunakan untuk memetakan fungsi yang akan dipanggil ketika suatu event dari suatu elemen dipanggil. Kenapa? Karena jika kita menuliskan kode yang kompleks dengan menggunakan inline javascript, ini akan sulit untuk dibaca.
+Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika dipake untuk memetakan fungsi yang akan dipanggil ketika suatu event dari suatu elemen dipanggil. Kenapa? Karena jika kita menuliskan kode yang kompleks dengan menggunakan inline javascript, ini akan sulit untuk dibaca.
 </p>
 
 <div class="org-src-container">
@@ -478,41 +494,504 @@ Contoh diatas dapat dilihat melalui <a href="https://fikrirnurhidayat.com/assets
 </div>
 </div>
 
-<div id="outline-container-org7f7f583" class="outline-2">
-<h2 id="org7f7f583"><span class="todo TODO">TODO</span> Tata Bahasa Javascript</h2>
-<div class="outline-text-2" id="text-org7f7f583">
+<div id="outline-container-org43bf50f" class="outline-2">
+<h2 id="org43bf50f">Tata Bahasa Javascript</h2>
+<div class="outline-text-2" id="text-org43bf50f">
+<p>
+Berhubung kita udah tau nih cara nambahin javascript di halaman web kita, sekarang kita coba cari tahu nih, kaidah bahasa javascript itu kayak gimana. Ya dong, karena dia sebuah bahasa pastinya ada grammar-nya hehe.
+</p>
 </div>
-<div id="outline-container-orga4009ee" class="outline-3">
-<h3 id="orga4009ee"><span class="todo TODO">TODO</span> Sintaks dasar</h3>
+
+<div id="outline-container-orgb57519c" class="outline-3">
+<h3 id="orgb57519c">Sintaks dasar</h3>
+<div class="outline-text-3" id="text-orgb57519c">
+<p>
+Bahasa javascript ini mirip-mirip dengan Java, C, dan C++, dan bahasa ini juga dipengaruhi oleh bahasa lain yaitu Awk, Perl dan Python. Makanya sintaks dan aturannya mirip-mirip, bedanya Javascript ini <i>loosely-typed</i>, artinya di dalam Javascript kita tidak perlu menspesifikasikan tipe data.
+</p>
+
+<p>
+Javascript itu <i>case sentitive</i> dan menggunakan <b>Unicode</b> character set. Jadi kita bisa gunain emoji, atau mungkin aksara jawa untuk membuat sebuah variabel atau sebuah fungsi.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+<span style="font-weight: bold;">const</span> &#43442;&#43441;&#43456;&#43433; = <span style="font-style: italic;">"Sabrina"</span>;
+
+console.log(name);
+console.log(&#43442;&#43441;&#43456;&#43433;);
+</pre>
 </div>
-<div id="outline-container-org83f0f86" class="outline-3">
-<h3 id="org83f0f86"><span class="todo TODO">TODO</span> Deklarasi</h3>
+
+<p>
+Kalau kita jalankan kode diatas, maka output-nya akan seperti ini:
+</p>
+
+<pre class="example">
+Sabrina
+Sabrina
+</pre>
+
+<p>
+Karena javascript ini <i>case sensitive</i> maka <code>name</code> itu tidak sama dengan <code>Name</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+<span style="font-weight: bold;">const</span> &#43442;&#43441;&#43456;&#43433; = <span style="font-style: italic;">"Sabrina"</span>;
+
+console.log(Name); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ini pasti error!</span>
+console.log(&#43442;&#43441;&#43456;&#43433;);
+</pre>
 </div>
-<div id="outline-container-org01f52b5" class="outline-3">
-<h3 id="org01f52b5"><span class="todo TODO">TODO</span> Variable scope</h3>
+
+<p>
+Karena di kode diatas kita memamnggil variabel <code>Name</code> yang sebelumnya tidak didefinisikan, maka pasti output dari kode tersebut adalah error.
+</p>
+
+
+<figure>
+<img src="../../../assets/images/javascript-dasar/basic-syntax-error.png" alt="basic-syntax-error.png" width="100%" class="non-invertable">
+
+</figure>
+
+<p>
+Kode-kode diatas adalah contoh perintah yang kita tuliskan di dalam Javascript, nah perintah di dalam javascript itu disebut sebagai <b>statements</b> dan dipisah oleh titik koma (;). Titik koma tidaklah wajib ditulis jika setiap statement ditulis di masing-masing baris. Jika 1 baris terdapat 2 statemen, maka wajib dipisah dengan titik koma.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+<span style="font-weight: bold;">const</span> &#43442;&#43441;&#43456;&#43433; = <span style="font-style: italic;">"Sabrina"</span>;
+
+console.log(name); console.log(&#43442;&#43441;&#43456;&#43433;);
+</pre>
 </div>
-<div id="outline-container-org094efe9" class="outline-3">
-<h3 id="org094efe9"><span class="todo TODO">TODO</span> Variable hoisting</h3>
-</div>
-<div id="outline-container-org06efd6c" class="outline-3">
-<h3 id="org06efd6c"><span class="todo TODO">TODO</span> Struktur data dan tipe data</h3>
-</div>
-<div id="outline-container-org177f62a" class="outline-3">
-<h3 id="org177f62a"><span class="todo TODO">TODO</span> Literals</h3>
+
+<p>
+Ketika kode javascript dijalankan, interpreter akan membaca kode dari kiri ke kanan.
+</p>
 </div>
 </div>
-<div id="outline-container-orgc023fbf" class="outline-2">
-<h2 id="orgc023fbf"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></h2>
+
+<div id="outline-container-org63a06f8" class="outline-3">
+<h3 id="org63a06f8">Comments</h3>
+<div class="outline-text-3" id="text-org63a06f8">
+<p>
+Kode itu bisa saja sangat rumit, bisa saja sangat sederhana, namun sebagai developer yang baik, kita dianjurkan untuk menulis <i>comment</i> di dalam kode kita. Apa sih <i>comment</i> itu? Comment adalah teks yang kita tulis di dalam kode, namun tidak akan dianggap sebagai kode, karena <i>comment</i> secara intensional akan dianggap sebagai catatan saja di dalam kode.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ndeklarasiin kalo ada variabel bernama name yang nilainya sabrina</span>
+<span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Aku suka mengomentari</span>
+<span style="font-weight: bold;">const</span> &#43442;&#43441;&#43456;&#43433; = <span style="font-style: italic;">"Sabrina"</span>;
+
+<span style="font-weight: bold; font-style: italic;">/*</span>
+<span style="font-weight: bold; font-style: italic;">  Aku komentar yang lebih dari 1 baris</span>
+<span style="font-weight: bold; font-style: italic;">  Disini aku bebas mau speak up</span>
+<span style="font-weight: bold; font-style: italic;">  Pokoknya gitu deh</span>
+<span style="font-weight: bold; font-style: italic;">  */</span>
+
+console.log(name); console.log(&#43442;&#43441;&#43456;&#43433;);
+</pre>
 </div>
-<div id="outline-container-org9d9a0d2" class="outline-2">
-<h2 id="org9d9a0d2"><span class="todo TODO">TODO</span> <i>Loops</i></h2>
+
+<p>
+<i>Comment</i> ini berguna banget untuk mendokumentasikan kode, ya kita kan manusia, pasti suka lupa hehe.
+</p>
 </div>
-<div id="outline-container-org0a35ab4" class="outline-2">
-<h2 id="org0a35ab4"><span class="todo TODO">TODO</span> <i>Function</i></h2>
 </div>
-<div id="outline-container-orgec34864" class="outline-2">
-<h2 id="orgec34864">Referensi</h2>
-<div class="outline-text-2" id="text-orgec34864">
+
+<div id="outline-container-orgede2cb3" class="outline-3">
+<h3 id="orgede2cb3">Deklarasi</h3>
+<div class="outline-text-3" id="text-orgede2cb3">
+<p>
+Deklarasi ini dipake untuk mendefinisikan sebuah variabel. Variabel di dalam javascript adalah sebuah nama yang kita berikan untuk mereferensikan sebuah nilai. Contoh, kita punya variabel bernama <code>PI</code>, yang mana kita pasti tau nilai dari <code>PI</code> itu adalah <code>3.14</code>.
+</p>
+
+<p>
+Dalam mendeklarasikan variabel, di javascript terdapat 3 cara, masing-masing cara memiliki sifat sendiri-sendiri yang direpresentasikan dengan menggunakan <i>keyword</i> sebelum nama variabel. Nah untuk nama variabelnya sendiri, kita dapat menggunakan teks biasa dan unicode (seperti aksara jawa tadi).
+</p>
+</div>
+
+<div id="outline-container-org68011d3" class="outline-4">
+<h4 id="org68011d3"><code>var</code></h4>
+<div class="outline-text-4" id="text-org68011d3">
+<p>
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang mana biasanya bersifat global (semuanya yang ada di dalam file itu bisa akses variabel tersebut), yang dalam pendeklarasiannya bisa dengan nilainya sekaligus, maupun tidak.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Deklarasi tanpa nilai</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">name</span>;
+name = <span style="font-style: italic;">"Sabrina"</span>;
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Deklarasi dengan nilai</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">isMarried</span> = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">petName</span> = <span style="font-style: italic;">"Oyen"</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b3af6f" class="outline-4">
+<h4 id="org5b3af6f"><code>let</code></h4>
+<div class="outline-text-4" id="text-org5b3af6f">
+<p>
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang cakupannya hanya dalam sebuah block (function, class, dan sebagainya), yang dalam pendeklarasiannya bisa dengan nilainya sekaligus, maupun tidak. <code>let</code> juga bisa dipake secara global, karena global itu juga termasuk block. Variabel yang dideklarasikan dengan <code>let</code> tidak dapat dideklarasikan ulang, hanya boleh dirubah nilainya.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Deklarasi tanpa nilai</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">name</span>;
+name = <span style="font-style: italic;">"Sabrina"</span>;
+console.log(<span style="font-style: italic;">"Namaku adalah"</span>, name);
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Deklarasi dengan nilai</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">isMarried</span> = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+console.log(<span style="font-style: italic;">"isMarried tuh nilainya adalah"</span>, isMarried)
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Merubah nilai isMarried dari false menjadi true</span>
+isMarried = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+console.log(<span style="font-style: italic;">"Sek, maksudnya isMarried itu nilainya adalah"</span>, isMarried)
+
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">petName</span> = <span style="font-style: italic;">"Oyen"</span>;
+console.log(<span style="font-style: italic;">"Kucingku namanya"</span>, petName);
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Merubah nilai petName dari "Oyen" menjadi "Bob"</span>
+petName = <span style="font-style: italic;">"Bob"</span>;
+console.log(<span style="font-style: italic;">"Sorry, maksudku adalah kucingku namanya"</span>, petName);
+</pre>
+</div>
+
+<p>
+Contoh di bawah ini akan menyebabkan error, karena ada pendeklarasian ulang sebuah variabel.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">name</span>;
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Error, karena deklarasi ulang</span>
+
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">petName</span> = <span style="font-style: italic;">"Oyen"</span>;
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">petName</span> = <span style="font-style: italic;">"Bob"</span>;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0b470d3" class="outline-4">
+<h4 id="org0b470d3"><code>const</code></h4>
+<div class="outline-text-4" id="text-org0b470d3">
+<p>
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang bersifat <i>read-only</i>. Artinya, ketika kita mendeklarasikan sebuah variabel dengan <code>const</code> kita wajib memasukkan nilainya sekaligus, dan juga nilai dari variabel tersebut tidak boleh dirubah.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+</pre>
+</div>
+
+<p>
+<code>const</code> ini biasa dipake untuk variabel-variabel yang bersifat konstan, sebagai contoh <code>PI</code>, dan ditulis dengan huruf kapital.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">PI</span> = 3.14;
+</pre>
+</div>
+
+<p>
+Contoh dibawah ini akan menghasilkan error karena contoh tersebut mencoba untuk merubah nilai dari variabel yang dideklarasikan dengan menggunakan <code>const</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">PI</span> = 3.14;
+PI = 2.14; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ini pasti error</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5c00ea6" class="outline-3">
+<h3 id="org5c00ea6">Variable scope</h3>
+<div class="outline-text-3" id="text-org5c00ea6">
+<p>
+Setiap kali kita mendeklarasikan sebuah variabel, variabel tersebut pasti punya cakupan. Cakupan berarti akses ke variabel tersebut. Ada dua cakupan untuk variabel, yaitu <i>global</i> dan <i>local</i>. Nah untuk variabel global sendiri dideklarasikan dengan menggunakan <code>var</code>, namun untuk variabel lokal, kita hanya perlu menggunakan <code>let</code>, dan <code>const</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Variabel global</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">x</span> = 10;
+
+console.log(<span style="font-style: italic;">"x adalah variabel global yang bernilai"</span>, x);
+
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">greet</span>() {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Variabel local</span>
+  <span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+  console.log(<span style="font-style: italic;">"Hi, namaku"</span>, name);
+}
+</pre>
+</div>
+
+<p>
+Contoh dibawah ini akan menyebabkan error karena kita mencoba mengakses variabel lokal di dalam cakupan global.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Variabel global</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">x</span> = 10;
+
+console.log(<span style="font-style: italic;">"x adalah variabel global yang bernilai"</span>, x);
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Apapun yang ditambahkan di dalam fungsi ini</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Akan menjadi variabel lokal</span>
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">greet</span>() {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Variabel local</span>
+  <span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>;
+}
+
+console.log(<span style="font-style: italic;">"Hi, namaku"</span>, name); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">ReferenceError: name is not defined</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org71f8268" class="outline-3">
+<h3 id="org71f8268">Variable hoisting</h3>
+<div class="outline-text-3" id="text-org71f8268">
+<p>
+Ini hal yang paling unik di dalam javascript, kita bisa mengakses variabel sebelum variabel itu dideklarasikan.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">console.log(x === <span style="font-weight: bold; text-decoration: underline;">undefined</span>); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">true</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">x</span> = 3;
+
+console.log(x) <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">3;</span>
+</pre>
+</div>
+
+<p>
+Dari contoh kode diatas, kita bisa lihat, bahwa kita mencoba mengakses variabel <code>x</code> di baris pertama, meskipun tidak ada nilainya. Nah hoisting semacam ini hanya dapat dilakukan dengan menggunakan <code>var</code>, karena ketika kita menggunakan <code>let</code> dan <code>const</code>, dua deklarasi ini punya sifat yang berbeda.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">console.log(x); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">ReferenceError</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">x</span> = 3;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb68ecf2" class="outline-3">
+<h3 id="orgb68ecf2">Struktur data dan tipe data</h3>
+<div class="outline-text-3" id="text-orgb68ecf2">
+<p>
+Masih ingat analogi masak mie tadi? Di dalam prosedur tadi, terdapat beberapa data, yaitu: panci, mangkok, mie instan, air dan sebagainya. Nah data-data itu bisa kita kelompokkan nih jadi peralatan dan bahan, yang mana panci, dan mangkok itu adalah peralatan, lalu mie instan dan air itu adalah bahan. Nah, bahan dan peralatan kalo kita sambungin ke bahasa pemrograman itulah yang kita sebut sebagai tipe data.
+</p>
+
+<p>
+Tipe data ini berguna untuk apa sih? Setiap tipe data punya sifatnya masing-masing, dan akan dipake tergantung dengan kebutuhan. Contoh, jika kita punya data berupa angka, otomatis kita dapat menggunakan angka tersebut dalam operasi aritmatik. Kalau kita punya data berupa teks atau string, data itu akan kita gunakan untuk membentuk teks yang lain dan sebagainya.
+</p>
+
+<p>
+Di dalam javascript terdapat beberapa jenis tipe data, yuk kita coba simak satu per satu:
+</p>
+</div>
+
+<div id="outline-container-org8360bc2" class="outline-4">
+<h4 id="org8360bc2">String</h4>
+<div class="outline-text-4" id="text-org8360bc2">
+<p>
+String adalah teks. Dalam penulisan string, teks tersebut akan diapit oleh tanda kutip, baik itu kutip satu maupun kutip dua.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">name</span> = <span style="font-style: italic;">"Sabrina"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ini adalah string</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">address</span> = <span style="font-style: italic;">"Bumi Serpong Damai"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ini juga string</span>
+
+console.log(name);
+console.log(address);
+console.log(<span style="font-style: italic;">'The Breeze'</span>) <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Ini juga string pake kutip satu</span>
+</pre>
+</div>
+
+<p>
+Nah string ini biasanya dipake buat apa aja sih? Ya cuma dipake buat nyimpen teks aja, contohnya nama, alamat, nomor hp, username, url, dan sebagainya.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e0a777" class="outline-4">
+<h4 id="org7e0a777">Number</h4>
+<div class="outline-text-4" id="text-org7e0a777">
+<p>
+Kalo kita terjemahkan secara harfiah, number itu adalah angka. Angka kan ada banyak tuh jenisnya, ada desimal, ada cacah, dan sebagainya. Tapi kalo di javascript, hanya ada dua jenis angka, yaitu cacah (Integer), dan desimal (Float).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">x</span> = 10; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Integer</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">y</span> = 100; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Integer</span>
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">z</span> = 1.1; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Float</span>
+</pre>
+</div>
+
+<p>
+Number biasa dipake dalam operasi aritmatik, dan bisa dipake sebagai pembanding juga.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">console.log(x + y); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">110</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb8d7180" class="outline-4">
+<h4 id="orgb8d7180">Boolean</h4>
+<div class="outline-text-4" id="text-orgb8d7180">
+<p>
+Tipe data ini adalah tipe data paling simpel, karena cuma ada dua nilai, <b>YA</b>, atau <b>NGGAK</b>, tipe data ini biasanya dipake untuk menandai suatu fakta itu bener atau enggak.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">isRaining</span> = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+<span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">isExhausted</span> = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">shouldRunFromReality</span> = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org56427f9" class="outline-4">
+<h4 id="org56427f9">null</h4>
+<div class="outline-text-4" id="text-org56427f9">
+<p>
+Null adalah sebuah tipe data yang kosong. Ketika ada nilai null di dalam kode kita, itu artinya ada yang kosong. Null ini biasanya dipake untuk menandai bahwa sesuatu itu sedang kosong, dan nantinya akan dapat diisi dengan tipe data yang lain. Maka dari itu jarang sekali ada orang menggunakan <code>const</code> untuk mendeklarasikan variabel yang bernilai <code>null</code> karena tidak berguna sama sekali wkwkwk.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">seseorangDiHatiku</span> = <span style="font-weight: bold; text-decoration: underline;">null</span>;
+seseorangDiHatiku = <span style="font-style: italic;">"Kamu"</span>;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org85e7408" class="outline-4">
+<h4 id="org85e7408">undefined</h4>
+<div class="outline-text-4" id="text-org85e7408">
+<p>
+Berbeda dengan <code>null</code>, undefined ini adalah sebuah nilai yang menandakan bahwa sesuatu belum didefinisikan. Sama dengan <code>null</code>, tidak ada developer yang menggunakan <code>const</code> untuk mendeklarasikan variabel yang bernilai <code>undefined</code>. Secara default, ketika kita mendeklarasikan sebuah variabel dengan menggunakan <code>var</code> dan <code>let</code> tanpa memberikannya nilai, variabel tersebut akan bernilai <code>undefined</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">tujuanHidupku</span>;
+<span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">artiKebahagiaan</span> = <span style="font-weight: bold; text-decoration: underline;">undefined</span>;
+
+console.log(tujuanHidupku); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">undefined</span>
+console.log(artiKebahagiaan); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">undefined</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org12d8119" class="outline-4">
+<h4 id="org12d8119">Array</h4>
+<div class="outline-text-4" id="text-org12d8119">
+<p>
+Tipe data ini dipake untuk menyimpan kumpulan dari data. Contoh, kumpulan angka, nama-nama kucing satu kelurahan, dan sebagainya. Dan dalam penamaan variabel yang menyimpan array, sangat dianjurkan untuk menggunakan kata jamak, contoh: <code>names</code>.
+</p>
+
+<p>
+Setiap data di dalam array diidentifikasikan dengan yang namanya indeks. Indeks ini dimulai dari 0, kayak pengusaha sukses.
+Jadi data paling depan di dalam array itu pasti indeksnya 0, dan data selanjutnya indeksnya adalah 1 dan seterusnya.
+Yuk simak contoh kode dibawah ini biar makin kebayang.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">catNames</span> = [<span style="font-style: italic;">"Oyen"</span>, <span style="font-style: italic;">"Bob"</span>];
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Kalo aku mau memanggil "Oyen" maka aku akan menggunakan indeks 0,</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">karena "Oyen" adalah data terdepan dari array catNames</span>
+console.log(catNames[0]); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Oyen</span>
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Kalo aku mau memanggil "Bob" maka aku akan menggunakan indeks 1,</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">karena "Bob" adalah data kedua dari array catNames</span>
+console.log(catNames[1]); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Bob</span>
+</pre>
+</div>
+
+<p>
+Kita juga bisa nih merubah nilai data dari dalam sebuah array, dengan memanggil indeks dan melakukan <i>assignment</i>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">let</span> <span style="font-weight: bold; font-style: italic;">favouriteNumbers</span> = [1, 2, 10];
+favouriteNumbers[0] = 100;
+console.log(favouriteNumbers) <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">[100, 2, 10];</span>
+</pre>
+</div>
+
+<p>
+Array ini buat apa sih biasanya? Ya untuk menyimpan sekumpulan data, di dunia nyata pasti akan banyak data yang berwujud array, sebagai contoh, daftar kasus covid-19 di Indonesia hehe.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7728231" class="outline-4">
+<h4 id="org7728231">Object</h4>
+<div class="outline-text-4" id="text-org7728231">
+<p>
+Object mirip dengan array, kalau array mengidentifikasi data di dalamnya menggunakan indeks, object menggunakan key sebagai idenfitier-nya. Contoh:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span style="font-weight: bold;">const</span> <span style="font-weight: bold; font-style: italic;">person</span> = {
+    name: <span style="font-style: italic;">"Sabrina"</span>,
+    age: 21,
+    isMarried: <span style="font-weight: bold; text-decoration: underline;">false</span>,
+    pets: [
+      {
+          name: <span style="font-style: italic;">"Oyen"</span>,
+          speciesName: <span style="font-style: italic;">"Cat"</span>
+      },
+      {
+          name: <span style="font-style: italic;">"Bob"</span>,
+          speciesName: <span style="font-style: italic;">"Cat"</span>
+      },
+    ]
+}
+</pre>
+</div>
+
+<p>
+Dari data diatas, yang merupakan key adalah <code>name</code>, <code>age</code>, <code>isMarried</code>, dan <code>pets</code>. Yang mana masing-masing key memiliki nilai yang merupakan sebuah tipe data juga. Nah untuk memanggil nilai dari sebuah object, kita bisa gunakan square bracket seperti array, atau kita bisa menggunakan dot notation (.), contoh:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">console.log(person.name); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Sabrina</span>
+console.log(person[<span style="font-style: italic;">"age"</span>]) <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">21;</span>
+console.log(person.pets[0].name) <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Oyen</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1a89d8d" class="outline-2">
+<h2 id="org1a89d8d"><span class="todo TODO">TODO</span> <i>Expression</i> dan <i>Operation</i></h2>
+</div>
+<div id="outline-container-org9066fa0" class="outline-2">
+<h2 id="org9066fa0"><span class="todo TODO">TODO</span> <i>Loops</i></h2>
+</div>
+<div id="outline-container-orga9916ba" class="outline-2">
+<h2 id="orga9916ba"><span class="todo TODO">TODO</span> <i>Function</i></h2>
+</div>
+<div id="outline-container-org523f3e3" class="outline-2">
+<h2 id="org523f3e3">Referensi</h2>
+<div class="outline-text-2" id="text-org523f3e3">
 <ul class="org-ul">
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">MDN - What is Javascript?</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN - Javascript/Guide</a></li>
