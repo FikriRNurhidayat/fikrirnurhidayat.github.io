@@ -7,7 +7,7 @@
 
 Dalam kehidupan sehari-hari, tentu saja kita tidak pernah terlepas dari yang namanya /website/.
 Mungkin kita juga bertanya-tanya, gimana sih caranya bikin sebuah /website/?
-Dan akhirnya kita menemukan 3 bahan utama yang akan digunakan untuk membangun sebuah /website/, yaitu:
+Dan akhirnya kita menemukan 3 bahan utama yang akan dipake untuk membangun sebuah /website/, yaitu:
 - HTML
 - CSS
 - Javascript
@@ -87,14 +87,14 @@ Seperti yang sudah disebutkan pada bagian-bagian sebelumnya, javascript itu meru
 
 ** Apa itu Javascript?
 
-Javascript adalah sebuah bahasa pemrograman yang digunakan untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm... berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
+Javascript adalah sebuah bahasa pemrograman yang dipake untuk membuat sebuah halaman web lebih interaktif (contoh: membuat animasi yang kompleks, menu popup dan sebagainya). Dari definisi ini mungkin muncul pertanyaan, "Hmm... berarti javascript ini hanya bisa dipake di frontend aja ya?". Berkat seseorang yang bernama Ryan Dahl, javascript saat ini ga cuma dipake untuk frontend aja, melainkan bisa dipake di backend dengan menggunakan NodeJS.
 Oh dan juga javascript ini adalah /interpreted language/, artinya ketika kita menjalankan sebuah aplikasi javascript, kodenya akan diterjemahkan baris per baris. Anggep aja, kita nerima prosedur dalam bahasa Inggris, nah disamping kita ada penerjemah bahasa Inggris, si penerjemah itu akan menerjemahkan satu kalimat pada satu waktu, terus kita akan memproses kalimat yang diterjemahkan, setelah proses itu selesai, baru kita lanjut ke kalimat berikutnya untuk diproses.
 
-Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman /cross-plaform/ yang bisa digunakan untuk membuat situs web baik dari sisi frontend maupun backend.
+Jadi, bisa kita simpulkan bahwa, javascript itu adalah sebuah bahasa pemrograman /cross-plaform/ yang bisa dipake untuk membuat situs web baik dari sisi frontend maupun backend.
 
 ** Apa yang bisa Javascript lakukan?
 
-Karena javascript adalah sebuah bahasa pemrograman, tentunya fungsi utamanya digunakan untuk membuat sebuah program. Maka dari itu, kegunaan javascript bisa dijabarkan dengan poin-poin berikut:
+Karena javascript adalah sebuah bahasa pemrograman, tentunya fungsi utamanya dipake untuk membuat sebuah program. Maka dari itu, kegunaan javascript bisa dijabarkan dengan poin-poin berikut:
 - Menyimpan informasi penting yang nantinya akan diolah menjadi tampilan dalam bentuk variabel.
 - Mengolah data
 - Dan masih banyak lagi.
@@ -118,12 +118,12 @@ Seperti yang dijelaskan pada bagian *Apa itu Javascript?*, javascript dapat berj
 #+ATTR_HTML: :width 100% :class non-invertable
 [[../../../assets/images/javascript-dasar/puppeteer.png]]
 
-Umumnya javascript ini digunakan untuk menampilkan suatu halaman secara dinamis. Maksudnya apa? Maksudnya HTML dan CSS yang kita terima akan dimodifikasi strukturnya secara realtime. Jadi, HTML & CSS ini hanya akan menjadi kerangka situs web saja, dan yang bertugas mengisi dan mengatur ulang tampilan adalah javascript. Kita bisa ambil contoh, Youtube.
+Umumnya javascript ini dipake untuk menampilkan suatu halaman secara dinamis. Maksudnya apa? Maksudnya HTML dan CSS yang kita terima akan dimodifikasi strukturnya secara realtime. Jadi, HTML & CSS ini hanya akan menjadi kerangka situs web saja, dan yang bertugas mengisi dan mengatur ulang tampilan adalah javascript. Kita bisa ambil contoh, Youtube.
 
 #+ATTR_HTML: :width 100% :class non-invertable
 [[https://miro.medium.com/max/1838/0*ABjKedHjIe8El9RJ.png]]
 
-Ketika kita membuka youtube untuk pertama kali, disitu terlihat semacam kerangka dari situs Youtube. Nah ketika dalam fase tersebut browser hanya menampilkan HTML & CSS saja dan belum selesai menjalankan javascript. Nah disini javascript berperan untuk mengambil data dari server Youtube. Setelah diterima, data tersebut kemudian akan diolah menjadi tampilan yang sudah dapat digunakan untuk melihat video dan sebagainya.
+Ketika kita membuka youtube untuk pertama kali, disitu terlihat semacam kerangka dari situs Youtube. Nah ketika dalam fase tersebut browser hanya menampilkan HTML & CSS saja dan belum selesai menjalankan javascript. Nah disini javascript berperan untuk mengambil data dari server Youtube. Setelah diterima, data tersebut kemudian akan diolah menjadi tampilan yang sudah dapat dipake untuk melihat video dan sebagainya.
 
 #+ATTR_HTML: :width 100% :class non-invertable
 [[../../../assets/images/javascript-dasar/youtube-loaded.png]]
@@ -213,7 +213,7 @@ Contoh diatas dapat dilihat melalui [[https://fikrirnurhidayat.com/assets/html/e
 
 *** Inline Javascript
 
-Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika digunakan untuk memetakan fungsi yang akan dipanggil ketika suatu event dari suatu elemen dipanggil. Kenapa? Karena jika kita menuliskan kode yang kompleks dengan menggunakan inline javascript, ini akan sulit untuk dibaca.
+Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika dipake untuk memetakan fungsi yang akan dipanggil ketika suatu event dari suatu elemen dipanggil. Kenapa? Karena jika kita menuliskan kode yang kompleks dengan menggunakan inline javascript, ini akan sulit untuk dibaca.
 
 #+BEGIN_SRC html :tangle ../../../assets/html/javascript-dasar/inline.html
 <!DOCTYPE html>
@@ -239,13 +239,338 @@ Yang terakhir adalah inline javascript. Cara ini hanya berlaku jika digunakan un
 
 Contoh diatas dapat dilihat melalui [[https://fikrirnurhidayat.com/assets/html/internal.html][link ini]].
 
-* TODO Tata Bahasa Javascript
-** TODO Sintaks dasar
-** TODO Deklarasi
-** TODO Variable scope
-** TODO Variable hoisting
-** TODO Struktur data dan tipe data
-** TODO Literals
+* Tata Bahasa Javascript
+
+Berhubung kita udah tau nih cara nambahin javascript di halaman web kita, sekarang kita coba cari tahu nih, kaidah bahasa javascript itu kayak gimana. Ya dong, karena dia sebuah bahasa pastinya ada grammar-nya hehe.
+
+** Sintaks dasar
+
+Bahasa javascript ini mirip-mirip dengan Java, C, dan C++, dan bahasa ini juga dipengaruhi oleh bahasa lain yaitu Awk, Perl dan Python. Makanya sintaks dan aturannya mirip-mirip, bedanya Javascript ini /loosely-typed/, artinya di dalam Javascript kita tidak perlu menspesifikasikan tipe data.
+
+Javascript itu /case sentitive/ dan menggunakan *Unicode* character set. Jadi kita bisa gunain emoji, atau mungkin aksara jawa untuk membuat sebuah variabel atau sebuah fungsi.
+
+#+BEGIN_SRC js
+const name = "Sabrina";
+const ꦲꦱ꧀ꦩ = "Sabrina";
+
+console.log(name);
+console.log(ꦲꦱ꧀ꦩ);
+#+END_SRC
+
+Kalau kita jalankan kode diatas, maka output-nya akan seperti ini:
+
+#+BEGIN_EXAMPLE
+Sabrina
+Sabrina
+#+END_EXAMPLE
+
+Karena javascript ini /case sensitive/ maka ~name~ itu tidak sama dengan ~Name~.
+
+#+BEGIN_SRC js :tangle ../../../assets/html/javascript-dasar/basic-syntax-error.js
+const name = "Sabrina";
+const ꦲꦱ꧀ꦩ = "Sabrina";
+
+console.log(Name); // Ini pasti error!
+console.log(ꦲꦱ꧀ꦩ);
+#+END_SRC
+
+Karena di kode diatas kita memamnggil variabel ~Name~ yang sebelumnya tidak didefinisikan, maka pasti output dari kode tersebut adalah error.
+
+#+ATTR_HTML: :width 100% :class non-invertable
+[[../../../assets/images/javascript-dasar/basic-syntax-error.png]]
+
+Kode-kode diatas adalah contoh perintah yang kita tuliskan di dalam Javascript, nah perintah di dalam javascript itu disebut sebagai *statements* dan dipisah oleh titik koma (;). Titik koma tidaklah wajib ditulis jika setiap statement ditulis di masing-masing baris. Jika 1 baris terdapat 2 statemen, maka wajib dipisah dengan titik koma.
+
+#+BEGIN_SRC js
+const name = "Sabrina";
+const ꦲꦱ꧀ꦩ = "Sabrina";
+
+console.log(name); console.log(ꦲꦱ꧀ꦩ);
+#+END_SRC
+
+Ketika kode javascript dijalankan, interpreter akan membaca kode dari kiri ke kanan.
+
+**  Comments
+
+Kode itu bisa saja sangat rumit, bisa saja sangat sederhana, namun sebagai developer yang baik, kita dianjurkan untuk menulis /comment/ di dalam kode kita. Apa sih /comment/ itu? Comment adalah teks yang kita tulis di dalam kode, namun tidak akan dianggap sebagai kode, karena /comment/ secara intensional akan dianggap sebagai catatan saja di dalam kode.
+
+#+BEGIN_SRC js
+// Ndeklarasiin kalo ada variabel bernama name yang nilainya sabrina
+const name = "Sabrina";
+// Aku suka mengomentari
+const ꦲꦱ꧀ꦩ = "Sabrina";
+
+/*
+  Aku komentar yang lebih dari 1 baris
+  Disini aku bebas mau speak up
+  Pokoknya gitu deh
+  ,*/
+
+console.log(name); console.log(ꦲꦱ꧀ꦩ);
+#+END_SRC
+
+/Comment/ ini berguna banget untuk mendokumentasikan kode, ya kita kan manusia, pasti suka lupa hehe.
+
+** Deklarasi
+
+Deklarasi ini dipake untuk mendefinisikan sebuah variabel. Variabel di dalam javascript adalah sebuah nama yang kita berikan untuk mereferensikan sebuah nilai. Contoh, kita punya variabel bernama ~PI~, yang mana kita pasti tau nilai dari ~PI~ itu adalah ~3.14~.
+
+Dalam mendeklarasikan variabel, di javascript terdapat 3 cara, masing-masing cara memiliki sifat sendiri-sendiri yang direpresentasikan dengan menggunakan /keyword/ sebelum nama variabel. Nah untuk nama variabelnya sendiri, kita dapat menggunakan teks biasa dan unicode (seperti aksara jawa tadi).
+
+*** ~var~
+
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang mana biasanya bersifat global (semuanya yang ada di dalam file itu bisa akses variabel tersebut), yang dalam pendeklarasiannya bisa dengan nilainya sekaligus, maupun tidak.
+
+#+BEGIN_SRC js
+// Deklarasi tanpa nilai
+var name;
+name = "Sabrina";
+
+// Deklarasi dengan nilai
+var isMarried = false;
+var petName = "Oyen"
+#+END_SRC
+
+*** ~let~
+
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang cakupannya hanya dalam sebuah block (function, class, dan sebagainya), yang dalam pendeklarasiannya bisa dengan nilainya sekaligus, maupun tidak. ~let~ juga bisa dipake secara global, karena global itu juga termasuk block. Variabel yang dideklarasikan dengan ~let~ tidak dapat dideklarasikan ulang, hanya boleh dirubah nilainya.
+
+#+BEGIN_SRC js
+// Deklarasi tanpa nilai
+let name;
+name = "Sabrina";
+console.log("Namaku adalah", name);
+
+// Deklarasi dengan nilai
+let isMarried = false;
+console.log("isMarried tuh nilainya adalah", isMarried)
+
+// Merubah nilai isMarried dari false menjadi true
+isMarried = true;
+console.log("Sek, maksudnya isMarried itu nilainya adalah", isMarried)
+
+let petName = "Oyen";
+console.log("Kucingku namanya", petName);
+
+// Merubah nilai petName dari "Oyen" menjadi "Bob"
+petName = "Bob";
+console.log("Sorry, maksudku adalah kucingku namanya", petName);
+#+END_SRC
+
+Contoh di bawah ini akan menyebabkan error, karena ada pendeklarasian ulang sebuah variabel.
+
+#+BEGIN_SRC js
+let name;
+let name = "Sabrina"; // Error, karena deklarasi ulang
+
+let petName = "Oyen";
+let petName = "Bob";
+#+END_SRC
+
+*** ~const~
+
+Sebuah keyword yang dipake untuk mendeklarasikan sebuah variabel yang bersifat /read-only/. Artinya, ketika kita mendeklarasikan sebuah variabel dengan ~const~ kita wajib memasukkan nilainya sekaligus, dan juga nilai dari variabel tersebut tidak boleh dirubah.
+
+#+BEGIN_SRC js
+const name = "Sabrina";
+#+END_SRC
+
+~const~ ini biasa dipake untuk variabel-variabel yang bersifat konstan, sebagai contoh ~PI~, dan ditulis dengan huruf kapital.
+
+#+BEGIN_SRC js
+const PI = 3.14;
+#+END_SRC
+
+Contoh dibawah ini akan menghasilkan error karena contoh tersebut mencoba untuk merubah nilai dari variabel yang dideklarasikan dengan menggunakan ~const~.
+
+#+BEGIN_SRC js
+const PI = 3.14;
+PI = 2.14; // Ini pasti error
+#+END_SRC
+
+** Variable scope
+
+Setiap kali kita mendeklarasikan sebuah variabel, variabel tersebut pasti punya cakupan. Cakupan berarti akses ke variabel tersebut. Ada dua cakupan untuk variabel, yaitu /global/ dan /local/. Nah untuk variabel global sendiri dideklarasikan dengan menggunakan ~var~, namun untuk variabel lokal, kita hanya perlu menggunakan ~let~, dan ~const~.
+
+#+BEGIN_SRC js
+// Variabel global
+var x = 10;
+
+console.log("x adalah variabel global yang bernilai", x);
+
+function greet() {
+  // Variabel local
+  const name = "Sabrina";
+  console.log("Hi, namaku", name);
+}
+#+END_SRC
+
+Contoh dibawah ini akan menyebabkan error karena kita mencoba mengakses variabel lokal di dalam cakupan global.
+
+#+BEGIN_SRC js
+// Variabel global
+var x = 10;
+
+console.log("x adalah variabel global yang bernilai", x);
+
+// Apapun yang ditambahkan di dalam fungsi ini
+// Akan menjadi variabel lokal
+function greet() {
+  // Variabel local
+  const name = "Sabrina";
+}
+
+console.log("Hi, namaku", name); // ReferenceError: name is not defined
+#+END_SRC
+
+** Variable hoisting
+
+Ini hal yang paling unik di dalam javascript, kita bisa mengakses variabel sebelum variabel itu dideklarasikan.
+
+#+BEGIN_SRC js
+console.log(x === undefined); // true
+var x = 3;
+
+console.log(x) // 3;
+#+END_SRC
+
+Dari contoh kode diatas, kita bisa lihat, bahwa kita mencoba mengakses variabel ~x~ di baris pertama, meskipun tidak ada nilainya. Nah hoisting semacam ini hanya dapat dilakukan dengan menggunakan ~var~, karena ketika kita menggunakan ~let~ dan ~const~, dua deklarasi ini punya sifat yang berbeda.
+
+#+BEGIN_SRC js
+console.log(x); // ReferenceError
+let x = 3;
+#+END_SRC
+
+** Struktur data dan tipe data
+
+Masih ingat analogi masak mie tadi? Di dalam prosedur tadi, terdapat beberapa data, yaitu: panci, mangkok, mie instan, air dan sebagainya. Nah data-data itu bisa kita kelompokkan nih jadi peralatan dan bahan, yang mana panci, dan mangkok itu adalah peralatan, lalu mie instan dan air itu adalah bahan. Nah, bahan dan peralatan kalo kita sambungin ke bahasa pemrograman itulah yang kita sebut sebagai tipe data.
+
+Tipe data ini berguna untuk apa sih? Setiap tipe data punya sifatnya masing-masing, dan akan dipake tergantung dengan kebutuhan. Contoh, jika kita punya data berupa angka, otomatis kita dapat menggunakan angka tersebut dalam operasi aritmatik. Kalau kita punya data berupa teks atau string, data itu akan kita gunakan untuk membentuk teks yang lain dan sebagainya.
+
+Di dalam javascript terdapat beberapa jenis tipe data, yuk kita coba simak satu per satu:
+
+*** String
+
+String adalah teks. Dalam penulisan string, teks tersebut akan diapit oleh tanda kutip, baik itu kutip satu maupun kutip dua.
+
+#+BEGIN_SRC js
+const name = "Sabrina"; // Ini adalah string
+let address = "Bumi Serpong Damai"; // Ini juga string
+
+console.log(name);
+console.log(address);
+console.log('The Breeze') // Ini juga string pake kutip satu
+#+END_SRC
+
+Nah string ini biasanya dipake buat apa aja sih? Ya cuma dipake buat nyimpen teks aja, contohnya nama, alamat, nomor hp, username, url, dan sebagainya.
+
+*** Number
+
+Kalo kita terjemahkan secara harfiah, number itu adalah angka. Angka kan ada banyak tuh jenisnya, ada desimal, ada cacah, dan sebagainya. Tapi kalo di javascript, hanya ada dua jenis angka, yaitu cacah (Integer), dan desimal (Float).
+
+#+BEGIN_SRC js
+const x = 10; // Integer
+let y = 100; // Integer
+let z = 1.1; // Float
+#+END_SRC
+
+Number biasa dipake dalam operasi aritmatik, dan bisa dipake sebagai pembanding juga.
+
+#+BEGIN_SRC js
+console.log(x + y); // 110
+#+END_SRC
+
+*** Boolean
+
+Tipe data ini adalah tipe data paling simpel, karena cuma ada dua nilai, *YA*, atau *NGGAK*, tipe data ini biasanya dipake untuk menandai suatu fakta itu bener atau enggak.
+
+#+BEGIN_SRC js
+const isRaining = false;
+const isExhausted = true;
+let shouldRunFromReality = true;
+#+END_SRC
+
+*** null
+
+Null adalah sebuah tipe data yang kosong. Ketika ada nilai null di dalam kode kita, itu artinya ada yang kosong. Null ini biasanya dipake untuk menandai bahwa sesuatu itu sedang kosong, dan nantinya akan dapat diisi dengan tipe data yang lain. Maka dari itu jarang sekali ada orang menggunakan ~const~ untuk mendeklarasikan variabel yang bernilai ~null~ karena tidak berguna sama sekali wkwkwk.
+
+#+BEGIN_SRC js
+let seseorangDiHatiku = null;
+seseorangDiHatiku = "Kamu";
+#+END_SRC
+
+*** undefined
+
+Berbeda dengan ~null~, undefined ini adalah sebuah nilai yang menandakan bahwa sesuatu belum didefinisikan. Sama dengan ~null~, tidak ada developer yang menggunakan ~const~ untuk mendeklarasikan variabel yang bernilai ~undefined~. Secara default, ketika kita mendeklarasikan sebuah variabel dengan menggunakan ~var~ dan ~let~ tanpa memberikannya nilai, variabel tersebut akan bernilai ~undefined~.
+
+#+BEGIN_SRC js
+let tujuanHidupku;
+let artiKebahagiaan = undefined;
+
+console.log(tujuanHidupku); // undefined
+console.log(artiKebahagiaan); // undefined
+#+END_SRC
+
+*** Array
+
+Tipe data ini dipake untuk menyimpan kumpulan dari data. Contoh, kumpulan angka, nama-nama kucing satu kelurahan, dan sebagainya. Dan dalam penamaan variabel yang menyimpan array, sangat dianjurkan untuk menggunakan kata jamak, contoh: ~names~.
+
+Setiap data di dalam array diidentifikasikan dengan yang namanya indeks. Indeks ini dimulai dari 0, kayak pengusaha sukses.
+Jadi data paling depan di dalam array itu pasti indeksnya 0, dan data selanjutnya indeksnya adalah 1 dan seterusnya.
+Yuk simak contoh kode dibawah ini biar makin kebayang.
+
+#+BEGIN_SRC js
+const catNames = ["Oyen", "Bob"];
+
+// Kalo aku mau memanggil "Oyen" maka aku akan menggunakan indeks 0,
+// karena "Oyen" adalah data terdepan dari array catNames
+console.log(catNames[0]); // Oyen
+
+// Kalo aku mau memanggil "Bob" maka aku akan menggunakan indeks 1,
+// karena "Bob" adalah data kedua dari array catNames
+console.log(catNames[1]); // Bob
+#+END_SRC
+
+Kita juga bisa nih merubah nilai data dari dalam sebuah array, dengan memanggil indeks dan melakukan /assignment/.
+
+#+BEGIN_SRC js
+let favouriteNumbers = [1, 2, 10];
+favouriteNumbers[0] = 100;
+console.log(favouriteNumbers) // [100, 2, 10];
+#+END_SRC
+
+Array ini buat apa sih biasanya? Ya untuk menyimpan sekumpulan data, di dunia nyata pasti akan banyak data yang berwujud array, sebagai contoh, daftar kasus covid-19 di Indonesia hehe.
+
+*** Object
+
+Object mirip dengan array, kalau array mengidentifikasi data di dalamnya menggunakan indeks, object menggunakan key sebagai idenfitier-nya. Contoh:
+
+#+BEGIN_SRC js
+const person = {
+    name: "Sabrina",
+    age: 21,
+    isMarried: false,
+    pets: [
+      {
+          name: "Oyen",
+          speciesName: "Cat"
+      },
+      {
+          name: "Bob",
+          speciesName: "Cat"
+      },
+    ]
+}
+#+END_SRC
+
+Dari data diatas, yang merupakan key adalah ~name~, ~age~, ~isMarried~, dan ~pets~. Yang mana masing-masing key memiliki nilai yang merupakan sebuah tipe data juga. Nah untuk memanggil nilai dari sebuah object, kita bisa gunakan square bracket seperti array, atau kita bisa menggunakan dot notation (.), contoh:
+
+#+BEGIN_SRC js
+console.log(person.name); // Sabrina
+console.log(person["age"]) // 21;
+console.log(person.pets[0].name) // Oyen
+#+END_SRC
+
 * TODO /Expression/ dan /Operation/
 * TODO /Loops/
 * TODO /Function/
