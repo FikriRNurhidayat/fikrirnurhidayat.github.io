@@ -473,7 +473,6 @@ cite {
 }
 
 /* Use mono font for code like elements */
-code,
 pre,
 pre span,
 kbd,
@@ -503,9 +502,13 @@ pre {
 }
 
 /* Fix embedded code within pre */
-pre code {
+pre {
   color: var(--preformatted);
   background: none;
   margin: 0;
   padding: 0;
+}
+
+pre, code {
+  padding: .5rem;
 }
