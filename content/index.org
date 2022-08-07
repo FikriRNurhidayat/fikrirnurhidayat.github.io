@@ -12,7 +12,7 @@
 #+BEGIN_EXPORT html
 <section class="display">
   <h1>Web Developer</h1>
-  <p>Based on Yogyakarta, Indonesia. Work remotely anywhere.</p>
+  <p>Based on Surakarta, Indonesia. Work remotely anywhere.</p>
   <nav>
     <a href="https://github.com/fikrirnurhidayat" target="_blank">Github</a>
     <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">Gitlab</a>
@@ -42,6 +42,10 @@
       <li class="stacks">
         <img src="../assets/images/home/backend.javascript.png" alt="Javascript">
         <h6 class="stacks--name">Node.js</h6>
+      </li>
+      <li class="stacks">
+        <img src="../assets/images/home/backend.golang.png" alt="Golang">
+        <h6 class="stacks--name">Golang</h6>
       </li>
       <li class="stacks">
         <img src="../assets/images/home/backend.rails.png" alt="Rails">
@@ -89,17 +93,21 @@
         <img src="../assets/images/home/frontend.vue.png" alt="Vue">
         <h6 class="stacks--name">Vue</h6>
       </li>
+      <li class="stacks">
+        <img src="../assets/images/home/frontend.next.png" alt="Next">
+        <h6 class="stacks--name">Next</h6>
+      </li>
     </ul>
   </div>
 </section>
 #+END_EXPORT
 
-* Holds
+* Factions
 :PROPERTIES:
 :HTML_CONTAINER: section
 :HTML_CONTAINER_CLASS: display
 :END:
-Serving as *Backend Developer* at *Binar Academy*
+*Principal Engineer* of *Binar Academy*
 
 #+BEGIN_EXPORT html
 <nav>
