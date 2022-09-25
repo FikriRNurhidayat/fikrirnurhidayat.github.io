@@ -14,9 +14,18 @@
   <h1>Web Developer</h1>
   <p>Based on Surakarta, Indonesia. Work remotely anywhere.</p>
   <nav>
-    <a href="https://github.com/fikrirnurhidayat" target="_blank">Github</a>
-    <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">Gitlab</a>
-    <a href="https://www.linkedin.com/in/fikrirnurhidayat" target="_blank">Linkedin</a>
+    <a href="https://github.com/fikrirnurhidayat" target="_blank">
+        Github
+        <img src="/assets/images/home/github.png" alt="Github">
+    </a>
+    <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">
+        Gitlab
+        <img src="/assets/images/home/gitlab.png" alt="Gitlab">
+    </a>
+    <a href="https://www.linkedin.com/in/fikrirnurhidayat" target="_blank">
+        Linkedin
+        <img src="/assets/images/home/linkedin.png" alt="Linkedin">
+    </a>
   </nav>
 </section>
 #+END_EXPORT

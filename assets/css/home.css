@@ -59,8 +59,6 @@ section .outline-text-2 {
 }
 
 .display nav a {
-  background: var(--text);
-  color: var(--bg) !important;
   display: flex;
   align-items: center;
 }
@@ -116,6 +114,7 @@ section .outline-text-2 {
 
 .stacks--name {
   font-weight: normal;
+  font-size: 1rem;
 }
 
 .fit-content-height {

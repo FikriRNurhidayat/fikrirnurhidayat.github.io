@@ -1,13 +1,10 @@
-#+TITLE: Pemrograman Literasi
-#+AUTHOR: Fikri Rahmat Nurhidayat
-#+EMAIL: fikrirnurhidayat@gmail.com
-#+DATE: <2022-07-02 Sat>
-
-Pemrograman terpelajar? Pemrograman sastra? Pemrograman non-primitif?
+#+title: Pemrograman Literasi
+#+author: Fikri Rahmat Nurhidayat
+#+email: fikrirnurhidayat@gmail.com
+#+date: <2022-07-02 Sat>
+#+options: toc:nil num:nil
 
 * Kamu mau ngapain sih, Fik?
-
-Gatau, gabut, yaudah aku bikin video aja.
 
 Pernah ga sih kalian ngoding sesuatu, terus kalian ninggalin kodingan itu selama 1 abad terus tau-tau balik lagi ke kode itu dan kalian bingung buat memahaminya?
 
@@ -17,7 +14,7 @@ Di presentasi ini kita bakal bahas apa sih pemrograman literasi itu, dan kenapa 
 
 * Pemrograman Literasi, apaan tuh?
 
-Mungkin kamu sebagai programmer udah bosen lah denger istilah =Something Programming=, sebagai contoh:
+Mungkin kamu sebagai programmer udah bosen lah denger istilah *Something Programming*, sebagai contoh:
 
 - /Object Oriented Programming/ (Pemrograman Berbasis Objek)
 - /Functional Programming/ (Pemrograman Fungsional)
@@ -88,6 +85,8 @@ type Cat = {
 
 **** Sumber data kucing
 
+Kode di bawah ini adalah sumber data kucing dalam bentuk array. Data ini akan digunakan di berbagai kode di bawah.
+
 #+NAME: catTables
 #+BEGIN_SRC js
 const cats = [
@@ -125,8 +124,8 @@ Fungsi ini memiliki dependensi ke fungsi lain, yaitu fungsi =getRandomInt=, kare
 #+NAME: getRandomCats
 #+BEGIN_SRC js
 function getRandomCats() {
-    const catTableLength = cats.length; // Menghitung panjang daftar kucing
-    const randomCatIndex = getRandomInt(0, catTableLength - 1); // Menghitung indeks dari daftar kucing secara acak
+    const catTableLength = cats.length;
+    const randomCatIndex = getRandomInt(0, catTableLength - 1);
     return cats[randomCatIndex];
 }
 #+END_SRC
@@ -134,10 +133,13 @@ function getRandomCats() {
 Contoh pengunaan.
 
 #+NAME: getRandomCatsExample
-#+BEGIN_SRC js :noweb yes
+#+BEGIN_SRC js :noweb yes :exports both
 <<catTables>>
+
 <<getRandomInt>>
+
 <<getRandomCats>>
+
 return getRandomCats()
 #+END_SRC
 
@@ -173,17 +175,22 @@ Untuk memenuhi kebutuhan diatas, kita perlu memanggil dua fungsi tadi.
 #+NAME: main
 #+BEGIN_SRC js :noweb yes :results output
 <<catTables>>
+
 <<getRandomInt>>
+
 <<getRandomCats>>
+
 <<formatCatToString>>
+
 const cat = getRandomCats();
+
 console.log(formatCatToString(cat));
 #+END_SRC
 
 #+RESULTS: main
 : Kamu mengadopsi Oyen dengan ras Domestic Shorthair, lucu kan!
 
-** Sebagai masyarakat industri nih, aku melihat itu ga pragmatis sama sekali 😛
+** Aku melihat itu ga pragmatis sama sekali 😛
 
 Wo jelas, contoh tadi tuh cuma nyontohin kalo kamu ga perlu ngebikin file =.js= buat melakukan Pemrograman Literasi dengan Javascript.
 
@@ -195,7 +202,7 @@ Disini kita bakal pake =express= sebagai /Web Framework/-nya.
 
 Aku gamau bahas terlalu detail terkait /express/, jadi kita langsung cekidot aja untuk instalasi /express/ dan mulai menulis kode dengan /express/.
 
-** Initialisasi Proyek Node.js
+** Inisialisasi Proyek Node.js
 
 Untuk menginstal /express/, kita perlu inisialisasi proyek =node.js= dulu
 
@@ -275,8 +282,8 @@ Setelah kalian berhasil menginstal express, kini saatnya kita buat sebuah aplika
 
 #+NAME: setupExpress
 #+BEGIN_SRC js :tangle ./index.js
-const express = require("express") // impor express
-const app = express() // initialisasi express
+const express = require("express")
+const app = express()
 #+END_SRC
 
 Jangan lupa pasang JSON Parser juga, karena kita pengen bikin REST API yang ngomong pake JSON.
@@ -372,10 +379,8 @@ Nah, fungsi ini akan diekspos melalui endpoint =GET /api/v1/todos=.
 #+NAME: listTodos
 #+BEGIN_SRC js :tangle ./index.js
 app.get("/api/v1/todos", (req, res) => {
-  const { filters } = req.query; // Mengambil parameter filter dari user.
+  const { filters } = req.query;
 
-  // Jika user mengirimkan parameter filter
-  // Maka lakukan filtering.
   if (!!filters) {
     const todoListResults = todos.filter((i) => {
       return i.isDone === filters.isDone;
@@ -385,8 +390,6 @@ app.get("/api/v1/todos", (req, res) => {
     return;
   }
 
-  // Jika user tidak mengirimkan parameter filter
-  // Yaudah tampilin semua data todo
   res.status(200).json(todos);
 });
 #+END_SRC
@@ -424,14 +427,11 @@ Fungsi ini akan diekspos melalui endpoint =PUT /api/v1/todos/{id}=
 #+NAME: updateTodo
 #+BEGIN_SRC js :tangle ./index.js
 app.put("/api/v1/todos/:id", (req, res) => {
-  const { id } = req.params; // Mengambil parameter id dari data Todo
-  const { content, isDone } = req.body; // Mengambil parameter content dan isDone
+  const { id } = req.params;
+  const { content, isDone } = req.body;
 
-  // Mencari data todo dengan id yang diberikan oleh user
   const todoIndex = todos.findIndex((i) => i.id === Number(id));
 
-  // Kalo todo dengan id yang diberikan user ga ketemu
-  // Yaudah kasih tau kalo ga ketemu
   if (todoIndex < 0) {
     res.status(404).json({
       error: {
@@ -445,11 +445,7 @@ app.put("/api/v1/todos/:id", (req, res) => {
   const todo = todos[todoIndex];
   const updatedTodo = {...todo, content, isDone}
 
-  // Jika sudah selesai, maka simpan timestamp
-  // ke dalam atribut doneAt
   if (isDone) updatedTodo.doneAt = new Date();
-
-  // Memperbarui data todo dari daftar Todo;
   todos[todoIndex] = updatedTodo;
 
   res.status(200).json(updatedTodo);
@@ -489,12 +485,9 @@ Fungsi ini akan diekspos melalui endpoint =DELETE /api/v1/todos/{id}=. Dimana fu
 #+NAME: deleteTodo
 #+BEGIN_SRC js :tangle ./index.js
 app.delete("/api/v1/todos/:id", (req, res) => {
-  const { id } = req.params; // Mengambil parameter id dari data Todo
-  // Mencari data todo dengan id yang diberikan oleh user
+  const { id } = req.params;
   const todoIndex = todos.findIndex((i) => i.id === Number(id));
 
-  // Kalo todo dengan id yang diberikan user ga ketemu
-  // Yaudah kasih tau kalo ga ketemu
   if (todoIndex < 0) {
     res.status(404).json({
       error: {
@@ -528,6 +521,10 @@ app.listen(PORT, () => {
     console.log("Listening on port", PORT);
 });
 #+END_SRC
+
+* Repository
+
+Semua kode tersebut dapat dilihat di [[https://github.com/FikriRNurhidayat/express-literate][tautan berikut]].
 
 * Kesimpulan
 
