@@ -12,7 +12,7 @@ Ahah, masalah klasik dari seorang /programmer/, yaitu tidak pernah mendokumentas
 
 Di presentasi ini kita bakal bahas apa sih pemrograman literasi itu, dan kenapa kok ini keren banget buat kita sebagai programmer untuk mulai mencobanya.
 
-* Pemrograman Literasi, apaan tuh?
+* Pemrograman literasi, apaan tuh?
 
 Mungkin kamu sebagai programmer udah bosen lah denger istilah *Something Programming*, sebagai contoh:
 
@@ -24,7 +24,7 @@ Mungkin kamu sebagai programmer udah bosen lah denger istilah *Something Program
 
 Nah dari segala jenis teknik pemrograman, ada satu teknik pemrograman yang bisa dibilang sangat unik, yaitu /Literate Programming/ (Pemrograman Literasi).
 
-** Terus Pemrograman Literasi itu apaan?
+** Terus pemrograman literasi itu apaan?
 
 #+BEGIN_QUOTE
 Intinya sih, kamu nulis dokumen yang mendeskripsikan program yang buat. Dan sumber kode dari program-mu juga tertulis dokumen itu juga.
