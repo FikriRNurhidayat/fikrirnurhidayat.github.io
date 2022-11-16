@@ -4,21 +4,24 @@
   --color-foreground: black;
   --color-foreground-alt: lightgray;
   --color-background: white;
-  --color-accent: -webkit-link;
+  --color-accent: #36454f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-foreground: white;
-    --color-foreground-alt: lightgray;
     --color-background: black;
-    --color-accent: -webkit-link;
+    --color-accent: whitesmoke;
   }
 
-  a {
-    color: var(--color-accent);
+  img:not([class="non-invertable"]) {
     filter: invert(100%);
   }
+}
+
+a {
+  color: var(--color-accent);
+  font-weight: normal;
 }
 
 html {

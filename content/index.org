@@ -108,35 +108,49 @@
 </section>
 #+end_export
 
-* Factions
-:PROPERTIES:
-:html_container: section
-:html_container_class: display
-:END:
-*Principal Engineer* of *[[https://binaracademy.com][Binar Academy]]*
 
-* Recipes
-:PROPERTIES:
-:html_container: section
-:html_container_class: display recipes
-:END:
+#+begin_export html
+<section class="display">
+  <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.9361 23.3085L44.3077 2.3094L80.6793 23.3085V65.3068L44.3077 86.306L7.9361 65.3068V23.3085Z" stroke="black" stroke-width="4"/>
+    <path d="M15.3207 30.6932L51.6923 9.69404L88.0639 30.6932V72.6915L51.6923 93.6906L15.3207 72.6915V30.6932Z" stroke="black" stroke-width="4"/>
+  </svg>
 
-Spells and incantations for those with the talent to cast them.
+  <h2>Occupation</h2>
+  <p>Principal Engineer of <a href="https://binaracademy.com" target="_blank">Binar Academy</a>.</p>
+</section>
+#+end_export
 
-- @@html: <a href="https://orgmode.org" target="_blank">@@
-  org
- #+ATTR_HTML: :class recipes-img
-  [[../assets/images/home/recipes.tecosaurorg.png]]
-  @@html: </a>@@
+#+begin_export html
+<section class="display recipes">
+    <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.40021 64.4615L44.3077 4L79.2152 64.4615H9.40021Z" stroke="black" stroke-width="4"/>
+        <path d="M16.7848 71.8462L51.6923 11.3846L86.5998 71.8462H16.7848Z" stroke="black" stroke-width="4"/>
+    </svg>
 
-- @@html: <a href="https://emacs.org" target="_blank">@@
-  emacs
- #+attr_html: :class recipes-img
-  [[../assets/images/home/recipes.emacs.png]]
-  @@html: </a>@@
+    <h2>Recipes</h2>
+    <p>Spells and incantations for those with the talent to cast them.</p>
+    <ul>
+        <li>
+            <a href="https://orgmode.org" target="_blank">
+            <img src="../assets/images/home/recipes.tecosaurorg.png" alt="recipes.tecosaurorg.png" class="recipes-img">
+            <p>org</p>
+            </a>
+        </li>
 
-- @@html: <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@@
-  love
- #+attr_html: :class recipes-img
-  [[../assets/images/home/recipes.love.png]]
-  @@html: </a>@@
+        <li>
+            <a href="https://www.gnu.org/software/emacs/" target="_blank">
+            <img src="../assets/images/home/recipes.emacs.png" alt="recipes.emacs.png" class="recipes-img">
+            <p>emacs</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+            <img src="../assets/images/home/recipes.love.png" alt="recipes.love.png" class="recipes-img">
+            <p>love</p>
+            </a>
+        </li>
+    </ul>
+</section>
+#+end_export
