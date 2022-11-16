@@ -14,7 +14,8 @@
     --color-accent: whitesmoke;
   }
 
-  img:not([class="non-invertable"]) {
+  img:not([class="non-invertable"]),
+  svg:not([class="non-invertable"]) {
     filter: invert(100%);
   }
 }
