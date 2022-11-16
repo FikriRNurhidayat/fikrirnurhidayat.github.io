@@ -1,3 +1,0 @@
-#+TITLE: Sitemap for project site:main
-
-- [[file:index.org][Fikri Rahmat Nurhidayat]]

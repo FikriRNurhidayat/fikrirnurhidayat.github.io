@@ -20,7 +20,7 @@ header {
 
 header h1 {
   font-size: 6rem;
-  font-weight: lighter;
+  font-weight: bold;
   word-break: break-word;
 }
 
@@ -144,7 +144,6 @@ section .outline-text-2 {
 .recipes li p a {
   text-decoration: unset;
   font-weight: normal;
-  color: var(--text) !important;
 }
 
 .recipes li:hover {
@@ -180,5 +179,11 @@ footer {
     margin-bottom: 4rem !important;
     border-right: unset;
     border-bottom: 0.1rem solid var(--color-foreground-alt);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .stacks img {
+    filter: invert(100%);
   }
 }

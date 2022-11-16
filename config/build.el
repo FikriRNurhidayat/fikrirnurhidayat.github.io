@@ -59,7 +59,7 @@
 (setq org-publish-project-alist
       '(("site:main"
              :recursive t
-             :auto-sitemap t
+             :auto-sitemap nil
              :auto-preamble t
              :auto-postamble t
              :base-directory "./content"
