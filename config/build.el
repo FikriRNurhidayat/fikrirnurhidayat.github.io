@@ -9,7 +9,7 @@
 ;; Version: 0.0.1
 ;; Keywords: abbrev bib c calendar comm convenience data docs emulations extensions faces files frames games hardware help hypermedia i18n internal languages lisp local maint mail matching mouse multimedia news outlines processes terminals tex tools unix vc wp
 ;; Homepage: https://github.com/fikrirnurhidayat/fikrirnurhidayat.github.io
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "28.2"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
@@ -42,14 +42,15 @@
 
 (setq org-html-validation-link nil
       org-html-head-include-default-style nil
-      org-export-headline-levels 5
+      org-export-headline-levels 6
       org-html-head-include-scripts nil
       org-html-html5-fancy t
       org-html-coding-system 'utf-8-unix
       org-html-doctype "html5"
-      org-html-divs '((preamble "div" "preamble")
-                     (content "main" "content")
+      org-html-divs '((preamble "header" "preamble")
+                     (content "article" "content")
                      (postamble "footer" "postamble"))
+      org-html-preamble-format '(("en" "<h1>%t</h1> <p>%d</p> <p>%s</p>"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
       org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
                      <link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/favicon.svg\">")
@@ -58,11 +59,16 @@
 (setq org-publish-project-alist
       '(("site:main"
              :recursive t
+             :auto-sitemap t
+             :auto-preamble t
+             :auto-postamble t
              :base-directory "./content"
              :publishing-directory "./dist"
              :with-author nil
+             :with-title nil
              :with-toc nil
-             :with-timestamps t
+             :with-date t
+             :with-timestamps nil
              :section-numbers nil
              :publishing-function org-html-publish-to-html)
         ("site:assets"

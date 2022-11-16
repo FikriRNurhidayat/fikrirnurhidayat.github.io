@@ -1,36 +1,33 @@
-#+TITLE: Fikri Rahmat Nurhidayat
-#+DESCRIPTION: Bottom text
-#+OPTIONS: title:nil toc:nil
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="/assets/css/home.css">
+#+title: Fikri Rahmat Nurhidayat
+#+description: My Personal Website
+#+html_head_extra: <link rel="stylesheet" href="/assets/css/home.css">
+#+options: html-preamble:nil
 
-#+BEGIN_EXPORT html
+#+begin_export html
 <header>
   <h1>Fikri<br>Rahmat<br>Nurhidayat</h1>
 </header>
-#+END_EXPORT
+#+end_export
 
-#+BEGIN_EXPORT html
+#+begin_export html
 <section class="display">
   <h1>Web Developer</h1>
   <p>Based on Surakarta, Indonesia. Work remotely anywhere.</p>
   <nav>
     <a href="https://github.com/fikrirnurhidayat" target="_blank">
         Github
-        <img src="/assets/images/home/github.png" alt="Github">
     </a>
     <a href="https://gitlab.com/fikrirnurhidayat" target="_blank">
         Gitlab
-        <img src="/assets/images/home/gitlab.png" alt="Gitlab">
     </a>
     <a href="https://www.linkedin.com/in/fikrirnurhidayat" target="_blank">
         Linkedin
-        <img src="/assets/images/home/linkedin.png" alt="Linkedin">
     </a>
   </nav>
 </section>
-#+END_EXPORT
+#+end_export
 
-#+BEGIN_EXPORT html
+#+begin_export html
 <section class="features">
   <div class="features--card">
     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,23 +106,14 @@
     </ul>
   </div>
 </section>
-#+END_EXPORT
+#+end_export
 
 * Factions
 :PROPERTIES:
 :HTML_CONTAINER: section
 :HTML_CONTAINER_CLASS: display
 :END:
-*Principal Engineer* of *Binar Academy*
-
-#+BEGIN_EXPORT html
-<nav>
-  <a href="https://binaracademy.com" target="_blank">
-    Fast Travel
-    <img src="/assets/images/home/work.binaracademy.png" alt="Binar Academy">
-  </a>
-</nav>
-#+END_EXPORT
+*Principal Engineer* of *[[https://binaracademy.com][Binar Academy]]*
 
 * Recipes
 :PROPERTIES:

@@ -1,0 +1,38 @@
+#+title: Tentang Situs Ini
+#+subtitle: Situs yang saya buat sejak tahun 2021 dan sampai sekarang masih tidak ada isi yang bermanfaat.
+#+description: Situs yang saya buat sejak tahun 2021 dan sampai sekarang masih tidak ada isi yang bermanfaat.
+#+author: Fikri Rahmat Nurhidayat
+#+email: fikrirnurhidayat@gmail.com
+#+date: 16 November 2022
+
+* Prakata
+
+Saya adalah seorang /programmer/ dari [[https://binaracademy.com][Binar Academy]], yang mana adalah sebuah perusahaan yang bergerak di bidang teknologi dan edukasi. Sebagai seorang karyawan yang mempunyai visi yang sama dengan perusahaannya, saya pun haus untuk berbagi ilmu, pengalaman, dan apapun yang saya ketahui. Baik itu di bidang teknologi, maupun bidang lainnya.
+
+Maka dari itu, saya membentuk situs ini. Situs ini akan saya gunakan sebagai wadah untuk berekspresi, berbagi ilmu, berbagi pengalaman, dan berbagai sudut pandang saya terkait dunia saat ini. Karena dengan berbagi, secara tidak langsung saya sudah berkontribusi dalam memajukan pendidikan baik di Indonesia, maupun di dunia ini. Karena saya percaya, dengan majunya pendidikan, dunia ini akan menjadi lebih baik dengan perspektif yang lebih masuk akal.
+
+Semua konten yang ada di situs ini adalah hasil pikiran saya seorang. Tentu saja jika saya mendapatkan informasi dari suatu sumber yang dapat saya cantumkan, saya akan memberi sitasi dengan baik. Karena saya percaya, dengan menyertakan sumber, pembaca dapat melakukan peninjauan lebih lanjut supaya informasi yang pembaca terima tidak hanya datang dari satu arah saja.
+
+* Konten di dalam Situs ini
+
+Situs ini akan mencakup tulisan-tulisan saya mengenai beberapa topik berikut:
+- Komputer
+- GNU/Linux
+- /Free and Open Source Software/
+- /Programming/
+- /Emacs/
+- Dan lain-lain.
+
+Topik-topik diatas adalah topik yang kebetulan saya kuasai, dan sangat saya gemari. Ada banyak hal yang bisa dikulik dari topik-topik diatas. Seperti /emacs/, saya membuat tulisan ini hanya berbekal  /emacs/ saja, dan tulisan ini ditulis di dengan format =.org= dari /emacs/. Tulisan tersebut lalu dikonversi menjadi tulisan dengan format =html= oleh /emacs/. Bahkan kalau saya mau, tulisan ini pun bisa saya publikasikan dalam bentuk PDF.
+
+Saya harap pembaca dapat menangkap gambaran besar terkait apa saja yang akan saya tulis kedepannya.
+
+* Seberapa Sering Saya Akan Membuat Tulisan Baru?
+
+Sejujurnya, saya adalah seseorang yang sebenarnya baru saja belajar menulis, dan saya cukup senang menulis. Akan tetapi kesenangan saya tidak membuat saya lantas rajin menulis, karena saya masih ada musuh terbesar yang perlu saya hadapi, yaitu rasa malas.
+
+Saya akan berusaha untuk menulis setiap bulannya, namun saya tidak bisa berjanji. Bahkan, saya ada tendensi untuk menghapus tulisan saya jika saya menganggap itu sampah, seperti yang pernah saya lakukan di situs ini.
+
+* Situs ini Terdiri dari Apa Saja?
+
+Seperti yang sudah saya sebutkan di muka, situs ini saya buat dengan menggunakan /emacs/ saja. Untuk gaya tampilan dari situs ini saya menggunakan [[https://simplecss.org/][Simple.css]]. Namun ini dapat berubah di kemudian hari.
