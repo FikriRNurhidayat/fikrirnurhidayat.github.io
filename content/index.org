@@ -110,15 +110,15 @@
 
 * Factions
 :PROPERTIES:
-:HTML_CONTAINER: section
-:HTML_CONTAINER_CLASS: display
+:html_container: section
+:html_container_class: display
 :END:
 *Principal Engineer* of *[[https://binaracademy.com][Binar Academy]]*
 
 * Recipes
 :PROPERTIES:
-:HTML_CONTAINER: section
-:HTML_CONTAINER_CLASS: display recipes
+:html_container: section
+:html_container_class: display recipes
 :END:
 
 Spells and incantations for those with the talent to cast them.
@@ -131,18 +131,12 @@ Spells and incantations for those with the talent to cast them.
 
 - @@html: <a href="https://emacs.org" target="_blank">@@
   emacs
- #+ATTR_HTML: :class recipes-img
+ #+attr_html: :class recipes-img
   [[../assets/images/home/recipes.emacs.png]]
-  @@html: </a>@@
-
-- @@html: <a href="https://simplecss.org" target="_blank">@@
-  simple.css
- #+ATTR_HTML: :class recipes-img
-  [[../assets/images/home/recipes.simpledotcss.png]]
   @@html: </a>@@
 
 - @@html: <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@@
   love
- #+ATTR_HTML: :class recipes-img
+ #+attr_html: :class recipes-img
   [[../assets/images/home/recipes.love.png]]
   @@html: </a>@@
