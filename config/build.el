@@ -60,7 +60,7 @@
 
 ;; Setup publishing
 (setq org-publish-project-alist
-      '(("site:main"
+      '(("site:content"
              :recursive t
              :auto-sitemap nil
              :auto-preamble t
@@ -80,6 +80,12 @@
              :base-extension "html\\|xml\\|css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|zip\\|gz\\|csv\\|m\\|R\\|el\\|svg"
              :publishing-directory "./dist/assets"
              :publishing-function org-publish-attachment)
-        ("site" :components ("site:main" "site:assets"))))
+        ("site:html"
+             :recursive t
+             :base-directory "./content"
+             :base-extension "html"
+             :publishing-directory "./dist"
+             :publishing-function org-publish-attachment)
+        ("site" :components ("site:html" "site:content" "site:assets"))))
 (provide 'build)
 ;;; build.el ends here

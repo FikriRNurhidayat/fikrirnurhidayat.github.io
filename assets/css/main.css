@@ -3,22 +3,21 @@
 
 :root {
   --color-foreground: var(--nord0);
-  --color-foreground-alt: var(--nord4);
-  --color-background: var(--nord5);
-  --color-accent: var(--nord10);
-  --color-accent-alt: var(--nord15);
+  --color-foreground-alt: var(--nord5);
+  --color-background: var(--nord6);
+  --color-accent: var(--nord7);
+  --color-accent-alt: var(--nord9);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-foreground: var(--nord5);
+    --color-foreground: var(--nord6);
     --color-foreground-alt: var(--nord1);
     --color-background: var(--nord0);
-    --color-accent: var(--nord7);
   }
 
-  img:not([class="non-invertable"]),
-  svg:not([class="non-invertable"]) {
+  img[class~="invertable"],
+  svg[class~="invertable"] {
     filter: invert(100%);
   }
 }
@@ -29,11 +28,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 a:visited {
   color: var(--color-accent-alt);
 }
 
 html {
+  transition: 0.3s;
   font-family: Roboto Slab, serif;
   margin: 0;
   padding: 0;
