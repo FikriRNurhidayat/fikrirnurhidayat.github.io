@@ -1,0 +1,3 @@
+[submodule "content/id/doom-emacs"]
+	path = content/id/doom-emacs
+	url = git@github.com:FikriRNurhidayat/doom-emacs.git

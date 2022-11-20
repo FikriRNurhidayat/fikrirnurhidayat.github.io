@@ -5,6 +5,7 @@
 #+email: fikrirnurhidayat@gmail.com
 #+date: 16 November 2022
 #+language: id
+#+options: num:nil toc:nil
 
 * Prakata
 

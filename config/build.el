@@ -26,6 +26,7 @@
 (require 'package)
 (setq package-user-dir (expand-file-name "./packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; Initialize the package system
@@ -40,6 +41,8 @@
 (require 'org)
 (require 'ox-publish)
 
+(load-theme 'tango)
+
 (setq org-html-validation-link nil
       org-html-head-include-default-style nil
       org-export-headline-levels 6
@@ -48,8 +51,8 @@
       org-html-coding-system 'utf-8-unix
       org-html-doctype "html5"
       org-html-divs '((preamble "header" "preamble")
-                     (content "article" "content")
-                     (postamble "footer" "postamble"))
+                      (content "article" "content")
+                      (postamble "footer" "postamble"))
       org-html-preamble-format '(("en" "<h1>%t</h1> <p>%d</p> <p>%s</p>"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
       org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
