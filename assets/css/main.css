@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;900&display=swap");
+@import url("/assets/css/nord.css");
 
 :root {
-  --color-foreground: black;
-  --color-foreground-alt: lightgray;
-  --color-background: white;
-  --color-accent: #36454f;
+  --color-foreground: var(--nord0);
+  --color-foreground-alt: var(--nord4);
+  --color-background: var(--nord5);
+  --color-accent: var(--nord10);
+  --color-accent-alt: var(--nord15);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-foreground: white;
-    --color-background: black;
-    --color-accent: whitesmoke;
+    --color-foreground: var(--nord5);
+    --color-foreground-alt: var(--nord1);
+    --color-background: var(--nord0);
+    --color-accent: var(--nord7);
   }
 
   img:not([class="non-invertable"]),
@@ -23,6 +26,11 @@
 a {
   color: var(--color-accent);
   font-weight: normal;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-accent-alt);
 }
 
 html {
