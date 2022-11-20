@@ -109,6 +109,11 @@ section .outline-text-2 {
   max-height: 100%;
 }
 
+.stacks svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .fit-content-height {
   min-height: unset !important;
 }
@@ -123,7 +128,7 @@ section .outline-text-2 {
   margin: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   list-style-type: none;
 }
 
@@ -157,7 +162,7 @@ footer {
   }
 
   .recipes ul {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .features {
@@ -172,5 +177,107 @@ footer {
     margin-bottom: 4rem !important;
     border-right: unset;
     border-bottom: 0.1rem solid var(--color-foreground-alt);
+  }
+}
+
+.spin {
+  animation: 3s linear 1s infinite spin;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shine {
+  animation: 1s alternate infinite shine;
+}
+
+@keyframes shine {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}
+
+.flip {
+  animation: 1s linear infinite flip;
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.accelerate {
+  animation: 5s alternate infinite accelerate;
+}
+
+@keyframes accelerate {
+  from {
+    -webkit-transform: skew(0deg) scale(1);
+    -moz-transform: skew(0deg) scale(1);
+    -o-transform: skew(0deg) scale(1);
+    transform: skew(0deg) scale(1);
+  }
+
+  to {
+    -webkit-transform: skew(-15deg) scale(0.8);
+    -moz-transform: skew(-15deg) scale(0.8);
+    -o-transform: skew(-15deg) scale(0.8);
+    transform: skew(-15deg) scale(0.8);
+  }
+}
+
+.float circle:nth-child(even) {
+  animation: 5s ease-in-out infinite float;
+}
+
+.float rect:nth-child(odd) {
+  animation: 5s ease-in-out reverse infinite float;
+}
+
+.float path:nth-child(odd) {
+  animation: 5s ease-in-out infinite float;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 5%);
+  }
+
+  50% {
+    transform: translate(5%, 5%);
+  }
+
+  50% {
+    transform: translate(5%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
   }
 }
