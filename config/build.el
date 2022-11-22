@@ -46,6 +46,7 @@
 (setq org-html-validation-link nil
       org-html-head-include-default-style nil
       org-export-headline-levels 6
+      org-html-htmlize-output-type 'css
       org-html-head-include-scripts nil
       org-html-html5-fancy t
       org-html-coding-system 'utf-8-unix
