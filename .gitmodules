@@ -1,3 +1,5 @@
 [submodule "content/id/doom-emacs"]
 	path = content/id/doom-emacs
 	url = git@gitlab.com:FikriRNurhidayat/doom-emacs.git
+[submodule "content/id/doom-emacs/"]
+	url = https://gitlab.com/fikrirnurhidayat/doom-emacs
