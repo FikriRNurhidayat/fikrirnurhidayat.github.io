@@ -8,8 +8,8 @@ pages:
   script:
     - apk update
     - apk add emacs-nox git
-    - ./bin/build
     - git submodule init
+    - ./bin/build
     - mv dist public
   cache:
     key: ${CI_JOB_NAME}
