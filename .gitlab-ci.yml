@@ -7,8 +7,9 @@ pages:
     url: https://fikrirnurhidayat.gitlab.io
   script:
     - apk update
-    - apk add emacs-nox
+    - apk add emacs-nox git
     - ./bin/build
+    - git submodule init
     - mv dist public
   cache:
     key: ${CI_JOB_NAME}
