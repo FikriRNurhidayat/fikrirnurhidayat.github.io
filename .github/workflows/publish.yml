@@ -16,7 +16,7 @@ jobs:
         run: sudo apt update -y && sudo apt install emacs-nox git --yes
 
       - name: Clone Submodules
-        run: git submodule init
+        run: git submodule update --init
 
       - name: Build the site
         run: ./bin/build
