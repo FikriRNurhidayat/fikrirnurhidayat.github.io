@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;900&display=swap");
 @import url("/assets/css/nord.css");
+@import url("/assets/css/normalize.css");
 
 :root {
   --color-foreground: var(--nord0);
-  --color-foreground-alt: var(--nord5);
-  --color-background: var(--nord6);
+  --color-foreground-alt: var(--nord3);
+  --color-border: var(--nord5);
+  --color-background: white;
   --color-accent: var(--nord7);
   --color-accent-alt: var(--nord9);
 }
@@ -12,7 +13,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-foreground: var(--nord6);
-    --color-foreground-alt: var(--nord1);
+    --color-foreground-alt: var(--nord3);
+    --color-border: var(--nord1);
     --color-background: var(--nord0);
   }
 
@@ -38,23 +40,23 @@ a:visited {
 
 html {
   transition: 0.3s;
-  font-family: Roboto Slab, serif;
+  font-family: serif;
   margin: 0;
   padding: 0;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 body {
   color: var(--color-foreground);
   background-color: var(--color-background);
-  max-width: 48rem;
+  max-width: 40rem;
   padding: 0 1rem;
   margin: 5rem auto auto auto;
 }
 
 code,
 pre {
-  font-family: Roboto Mono, monospace;
+  font-family: monospace;
 }
 
 h1,
@@ -66,13 +68,14 @@ h6 {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 3rem;
+header {
+  margin-bottom: 5rem;
 }
 
 footer {
   margin-top: 5rem;
   padding: 1rem 0;
-  border-top: 1pt solid var(--color-foreground-alt);
+  border-top: 1pt solid var(--color-border);
+  color: var(--color-foreground-alt);
   text-align: center;
 }
