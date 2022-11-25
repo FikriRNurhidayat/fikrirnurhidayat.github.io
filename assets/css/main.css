@@ -57,6 +57,17 @@ body {
 code,
 pre {
   font-family: monospace;
+  background: var(--color-border);
+}
+
+pre {
+  overflow-x: overlay;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
@@ -68,8 +79,11 @@ h6 {
   font-weight: bold;
 }
 
-header {
-  margin-bottom: 5rem;
+hr {
+  margin: 1rem auto;
+  height: 1pt;
+  background-color: var(--color-border);
+  border: none;
 }
 
 footer {
