@@ -13,6 +13,7 @@ Because of that, I want to build this site. This site will be my vessel to share
 
 Every content on this site is all my work. Of course, I'll cite every information that I learn from other people, nobody starts from scratch.
 
+
 * Content on This Sites
 
 This site will contain my writing about the following topics:

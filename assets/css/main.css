@@ -79,6 +79,10 @@ h6 {
   font-weight: bold;
 }
 
+ol li {
+  margin-bottom: 1rem;
+}
+
 hr {
   margin: 1rem auto;
   height: 1pt;
