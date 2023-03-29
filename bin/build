@@ -1,5 +1,3 @@
 #!/usr/bin/env sh
 
-rm -rf dist
-
 emacs -batch -q -l ./config/build.el -f org-publish-all
