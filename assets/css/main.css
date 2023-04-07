@@ -41,7 +41,7 @@ a:visited {
 
 html {
 	transition: 0.3s;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
 	line-height: 1.7;
