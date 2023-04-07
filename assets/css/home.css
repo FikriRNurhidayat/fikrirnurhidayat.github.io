@@ -1,229 +1,239 @@
 body {
-  max-width: 80rem !important;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+	max-width: 80rem !important;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 main {
-  max-width: unset !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	max-width: unset !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 header {
-  min-height: 100vh;
-  min-width: 100%;
-  border: none !important;
-  display: flex;
-  align-items: flex-end;
-  justify-content: start;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	border: none !important;
+	flex-direction: row;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
 }
 
 header h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  word-break: break-word;
+	margin-bottom: 5rem;
+	font-size: 6rem;
+	font-weight: bold;
+	word-break: break-word;
+}
+
+header nav {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 5rem;
 }
 
 section {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 80rem !important;
-  margin: auto;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 80rem !important;
+	margin: auto;
 }
 
 section .outline-text-2 {
-  text-align: center;
+	text-align: center;
 }
 
 /* Display Section */
 .display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
 }
 
 .display h1 {
-  margin: 0;
+	margin: 0;
 }
 
 .display nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .display nav a {
-  display: flex;
-  align-items: center;
-  margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	margin: 0 1rem;
 }
 
 /* Feature section */
 .features {
-  display: flex;
-  align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
 .features > * {
-  width: 100%;
+	width: 100%;
 }
 
 .features--card {
-  padding: 4rem;
-  text-align: center;
+	padding: 4rem;
+	text-align: center;
 }
 
 .features--card ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  list-style-type: none;
-  margin: 0 !important;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
-  padding-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	list-style-type: none;
+	margin: 0 !important;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 0;
+	padding-top: 2rem;
 }
 
 .stacks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .stacks--name {
-  font-weight: normal;
-  font-size: 1rem;
+	font-weight: normal;
+	font-size: 1rem;
 }
 
 .stacks img {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .stacks svg {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .fit-content-height {
-  min-height: unset !important;
+	min-height: unset !important;
 }
 
 /* Recipes */
 .recipes {
-  width: fit-content !important;
+	width: fit-content !important;
 }
 
 .recipes ul {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style-type: none;
 }
 
 .recipes li {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 }
 
 .recipes li p a {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .recipes li:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .recipes-img {
-  height: 4rem;
+	height: 4rem;
 }
 
 footer {
-  margin-bottom: 0rem;
+	margin-bottom: 0rem;
 }
 
 @media only screen and (max-width: 992px) {
-  header h1 {
-    font-size: 4rem;
-  }
+	header h1 {
+		font-size: 3rem;
+	}
 
-  .recipes ul {
-    grid-template-columns: 1fr 1fr;
-  }
+	.recipes ul {
+		grid-template-columns: 1fr 1fr;
+	}
 
-  .features {
-    flex-direction: column !important;
-  }
+	.features {
+		flex-direction: column !important;
+	}
 
-  .features--card {
-    padding: 4rem 0;
-  }
+	.features--card {
+		padding: 4rem 0;
+	}
 
-  .features--card:first-child {
-    margin-bottom: 4rem !important;
-    border-right: unset;
-    border-bottom: 0.1rem solid var(--color-foreground-alt);
-  }
+	.features--card:first-child {
+		margin-bottom: 4rem !important;
+		border-right: unset;
+		border-bottom: 0.1rem solid var(--color-foreground-alt);
+	}
 }
 
 .spin {
-  animation: 3s linear 1s infinite spin;
+	animation: 3s linear 1s infinite spin;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
 
-  to {
-    transform: rotate(360deg);
-  }
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .float circle:nth-child(even) {
-  animation: 5s ease-in-out infinite float;
+	animation: 5s ease-in-out infinite float;
 }
 
 .float rect:nth-child(odd) {
-  animation: 5s ease-in-out reverse infinite float;
+	animation: 5s ease-in-out reverse infinite float;
 }
 
 .float path:nth-child(odd) {
-  animation: 5s ease-in-out infinite float;
+	animation: 5s ease-in-out infinite float;
 }
 
 @keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
+	0% {
+		transform: translate(0, 0);
+	}
 
-  25% {
-    transform: translate(0, 5%);
-  }
+	25% {
+		transform: translate(0, 5%);
+	}
 
-  50% {
-    transform: translate(5%, 5%);
-  }
+	50% {
+		transform: translate(5%, 5%);
+	}
 
-  50% {
-    transform: translate(5%, 0);
-  }
+	50% {
+		transform: translate(5%, 0);
+	}
 
-  100% {
-    transform: translate(0, 0);
-  }
+	100% {
+		transform: translate(0, 0);
+	}
 }

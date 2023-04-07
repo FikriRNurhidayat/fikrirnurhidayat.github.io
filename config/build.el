@@ -41,9 +41,8 @@
 (require 'org)
 (require 'ox-publish)
 
-(load-theme 'tango)
-
-(setq org-html-validation-link nil
+(setq org-html-metadata-timestamp-format "%d %B %Y"
+	  org-html-validation-link nil
       org-html-head-include-default-style nil
       org-export-headline-levels 6
       org-html-htmlize-output-type 'css
@@ -54,8 +53,7 @@
       org-html-divs '((preamble "header" "preamble")
                       (content "article" "content")
                       (postamble "footer" "postamble"))
-      org-html-preamble-format '(("en" "<h1>%t</h1> <time>%d</time>")
-                                 ("id" "<h1>%t</h1> <time>%d</time>"))
+      org-html-preamble-format '(("en" "<h1>%t</h1> <time>%d</time>"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
       org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
                      <link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/favicon.svg\">")
@@ -63,31 +61,72 @@
 ;; Setup publishing
 (setq org-publish-project-alist
       '(("site:content"
-             :recursive t
-             :auto-sitemap nil
-             :auto-preamble t
-             :auto-postamble t
-             :base-directory "./content"
-             :publishing-directory "./dist"
-             :with-author nil
-             :with-title nil
-             :with-toc nil
-             :with-date t
-             :with-timestamps nil
-             :section-numbers nil
-             :publishing-function org-html-publish-to-html)
+         :recursive t
+         :auto-preamble t
+         :auto-postamble t
+         :base-directory "./content"
+		 :base-extension "org"
+		 :exclude "posts/*"
+         :publishing-directory "./dist"
+         :with-author nil
+         :with-title nil
+         :with-toc nil
+         :with-date t
+         :with-timestamps nil
+         :section-numbers nil
+         :publishing-function org-html-publish-to-html)
+		("site:posts"
+         :recursive t
+         :auto-sitemap t
+		 :sitemap-title "Posts"
+		 :sitemap-filename "posts.org"
+		 :sitemap-format-entry fain/org-publish-sitemap-entry
+		 :sitemap-sort-files anti-chronologically
+		 :sitemap-style list
+         :auto-preamble t
+         :auto-postamble t
+         :base-directory "./content"
+		 :base-extension "org"
+		 :exclude "about.org"
+         :publishing-directory "./dist"
+         :with-author nil
+         :with-title nil
+         :with-toc nil
+         :with-date t
+         :with-timestamps nil
+         :section-numbers nil
+         :publishing-function org-html-publish-to-html)
         ("site:assets"
-             :recursive t
-             :base-directory "./assets"
-             :base-extension "html\\|xml\\|css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|zip\\|gz\\|csv\\|m\\|R\\|el\\|svg"
-             :publishing-directory "./dist/assets"
-             :publishing-function org-publish-attachment)
+         :recursive t
+         :base-directory "./assets"
+         :base-extension "html\\|xml\\|css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|zip\\|gz\\|csv\\|m\\|R\\|el\\|svg\\|webp"
+         :publishing-directory "./dist/assets"
+         :publishing-function org-publish-attachment)
         ("site:html"
-             :recursive t
-             :base-directory "./content"
-             :base-extension "html"
-             :publishing-directory "./dist"
-             :publishing-function org-publish-attachment)
-        ("site" :components ("site:html" "site:content" "site:assets"))))
+         :recursive t
+         :base-directory "./content"
+         :base-extension "html"
+         :publishing-directory "./dist"
+         :publishing-function org-publish-attachment)
+        ("site" :components ("site:html" "site:content" "site:posts" "site:assets"))))
+
+(setq org-export-global-macros
+      '(("time" . "@@html:<time>$1</time>@@")))
+
+(defun fain/org-publish-sitemap-entry (entry style project)
+  "Fain's format for site map ENTRY, as a string.
+ENTRY is a file name.  STYLE is the style of the sitemap.
+PROJECT is the current project."
+  (cond
+   ((not (directory-name-p entry))
+	(format "{{{time(%s)}}} [[file:%s][%s]]"
+			(format-time-string "%Y-%m-%d" (seconds-to-time (org-publish-find-date entry project)))
+			entry
+			(org-publish-find-title entry project)))
+   ((eq style 'tree)
+	;; Return only last subdir.
+	(file-name-nondirectory (directory-file-name entry)))
+   (t entry)))
+
 (provide 'build)
 ;;; build.el ends here
