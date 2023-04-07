@@ -54,8 +54,8 @@
       org-html-divs '((preamble "header" "preamble")
                       (content "article" "content")
                       (postamble "footer" "postamble"))
-      org-html-preamble-format '(("en" "<h1>%t</h1> <time>%d</time> <hr>")
-                                 ("id" "<h1>%t</h1> <time>%d</time> <hr>"))
+      org-html-preamble-format '(("en" "<h1>%t</h1> <time>%d</time>")
+                                 ("id" "<h1>%t</h1> <time>%d</time>"))
       org-html-postamble "<p>© 2021 Fikri Rahmat Nurhidayat</p>"
       org-html-head "<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
                      <link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/favicon.svg\">")

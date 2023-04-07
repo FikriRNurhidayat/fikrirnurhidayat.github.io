@@ -5,14 +5,11 @@
 #+email: fikrirnurhidayat@gmail.com
 #+date: 16 November 2022
 
-* Foreword
-
-I am a programmer from [[https://binaracademy.com][Binar Academy]], an edutech company. As an employee who cares about company's vision, I love to share my knowledge, experience, and whatever I know, either it's on technology field, or other field of expertise.
+I am a former programmer from [[https://binaracademy.com][Binar Academy]], an edutech company. As an employee who cares about company's vision, I love to share my knowledge, experience, and whatever I know, either it's on technology field, or other field of expertise.
 
 Because of that, I want to build this site. This site will be my vessel to share my knowledge, experience, and my point of view about this world. I believe that by sharing whatever I have, I indirectly contribute to make better education, and help this world to progress to be better in healthy common sense.
 
 Every content on this site is all my work. Of course, I'll cite every information that I learn from other people, nobody starts from scratch.
-
 
 * Content on This Sites
 
