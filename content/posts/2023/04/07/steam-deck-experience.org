@@ -21,7 +21,7 @@ But, since I live in the Third World Country, I just don't order it directly fro
 * It's gaming time
 
 #+caption: Steam Deck running Doom Eternal
-[[../../assets/posts/2023-04-07-steam-deck-experience/IMG_20230407_223905.webp]]
+[[../../../../../assets/posts/2023/04/07/steam-deck-experience/IMG_20230407_223905.webp]]
 
 When it was arrived, I immediately install bunch of games on my library, here's the following games that I installed immediately:
 - Fallout: New Vegas
@@ -40,7 +40,7 @@ Both of those games run at solid 60 FPS at High Setting.
 * The battery life is bad
 
 #+caption: Steam Deck on Sleep Mode
-[[../../assets/posts/2023-04-07-steam-deck-experience/IMG_20230407_224001.webp]]
+[[../../../../../assets/posts/2023/04/07/steam-deck-experience/IMG_20230407_224001.webp]]
 
 With that price, you can't get everything right? The only downside of Steam Deck is its Battery Life. I can only reach 1 hour or if I'm lucky I can get 2 hours of battery life while playing the Doom Eternal.
 
