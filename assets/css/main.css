@@ -1,73 +1,80 @@
 @import url("/assets/css/nord.css");
 @import url("/assets/css/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
 
 :root {
-  --color-foreground: var(--nord0);
-  --color-foreground-alt: var(--nord3);
-  --color-border: var(--nord5);
-  --color-background: white;
-  --color-accent: var(--nord7);
-  --color-accent-alt: var(--nord9);
+	--color-foreground: var(--nord0);
+	--color-foreground-alt: var(--nord3);
+	--color-border: var(--nord5);
+	--color-background: white;
+	--color-accent: var(--nord7);
+	--color-accent-alt: var(--nord9);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-foreground: var(--nord6);
-    --color-foreground-alt: var(--nord3);
-    --color-border: var(--nord1);
-    --color-background: var(--nord0);
-  }
+	:root {
+		--color-foreground: var(--nord6);
+		--color-foreground-alt: var(--nord3);
+		--color-border: var(--nord1);
+		--color-background: var(--nord0);
+	}
 
-  img[class~="invertable"],
-  svg[class~="invertable"] {
-    filter: invert(100%);
-  }
+	img[class~="invertable"],
+	svg[class~="invertable"] {
+		filter: invert(100%);
+	}
 }
 
 a {
-  color: var(--color-accent);
-  font-weight: normal;
-  text-decoration: none;
+	color: var(--color-accent);
+	font-weight: normal;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:visited {
-  color: var(--color-accent-alt);
+	color: var(--color-accent-alt);
 }
 
 html {
-  transition: 0.3s;
-  font-family: serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
+	transition: 0.3s;
+	font-family: 'Roboto Slab', sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.7;
 }
 
 body {
-  color: var(--color-foreground);
-  background-color: var(--color-background);
-  max-width: 40rem;
-  padding: 0 1rem;
-  margin: 5rem auto auto auto;
+	color: var(--color-foreground);
+	background-color: var(--color-background);
+	max-width: 50rem;
+	padding: 0 1rem;
+	margin: 2.5rem auto auto auto;
 }
 
 code,
 pre {
-  font-family: monospace;
-  background: var(--color-border);
+	font-family: monospace;
+	background: var(--color-border);
 }
 
 pre {
-  overflow-x: overlay;
-  padding: 1rem;
-  border-radius: 0.5rem;
+	overflow-x: overlay;
+	padding: 1rem;
+	border-radius: 0.5rem;
 }
 
 pre::-webkit-scrollbar {
-  display: none;
+	display: none;
+}
+
+h1, h2, h3 {
+	hypens: none;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 h1,
@@ -76,24 +83,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+	font-weight: 600;
 }
 
 ol li {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 hr {
-  margin: 1rem auto;
-  height: 1pt;
-  background-color: var(--color-border);
-  border: none;
+	margin: 1rem auto;
+	height: 1pt;
+	background-color: var(--color-border);
+	border: none;
 }
 
 footer {
-  margin-top: 5rem;
-  padding: 1rem 0;
-  border-top: 1pt solid var(--color-border);
-  color: var(--color-foreground-alt);
-  text-align: center;
+	margin-top: 5rem;
+	padding: 1rem 0;
+	border-top: 1pt solid var(--color-border);
+	color: var(--color-foreground-alt);
+	text-align: center;
 }
+
+time {
+	font-size: small;
+}
+
