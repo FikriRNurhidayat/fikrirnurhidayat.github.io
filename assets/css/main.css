@@ -1,6 +1,5 @@
 @import url("/assets/css/nord.css");
 @import url("/assets/css/normalize.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Slab:wght@400;600&display=swap');
 
 :root {
 	--color-foreground: var(--nord0);
@@ -48,7 +47,7 @@ a:visited {
 
 html {
 	transition: 0.3s;
-	font-family: 'Roboto Slab', serif;
+	font-family: serif;
 	margin: 0;
 	padding: 0;
 	line-height: 1.7;
@@ -67,7 +66,7 @@ code,
 pre {
 	padding: .25rem;
 	border-radius: .5rem;
-	font-family: 'Roboto Mono', monospace;
+	font-family: monospace;
 	background: var(--color-border);
 }
 
