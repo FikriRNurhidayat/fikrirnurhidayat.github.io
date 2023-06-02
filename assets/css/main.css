@@ -1,5 +1,6 @@
 @import url("/assets/css/nord.css");
 @import url("/assets/css/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
 	--color-foreground: var(--nord0);
@@ -60,6 +61,7 @@ body {
 	min-height: 100vh;
 	padding: 0 1.5rem;
 	margin: 2.5rem auto auto auto;
+  font-family: 'Libre Baskerville', serif;
 }
 
 code,
