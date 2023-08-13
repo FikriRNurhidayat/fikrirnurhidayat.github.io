@@ -1,0 +1,19 @@
+#+title: Burnout
+#+description: For the last few months, I felt burnout, even today, when I'm writing this post.
+#+summary: For the last few months, I felt burnout, even today, when I'm writing this post.
+#+author: Fikri Rahmat Nurhidayat
+#+date: <2023-08-13>
+
+For the last few months, I felt burnout, even today, when I'm writing this post. I feel like I don't achieve anything meaningful in my life, even though I can actually do that. I'm not really motivated to do anything meaningful, instead I'm slowly be more lazier day by days and watch Youtube all days.
+
+I don't think this is ideal for me. I'm 24 years old right now, I'm actually only have 1 year left before my frontal cortex fully developed, and what I'm doing right now is actually pretty mundane. I work at boring job where everything is just about the money. Sure, having job is something that I can appreciate in this day and age, but I don't feel the fulfillment. I feel like I'm not going through power process enough, all I'm doing is a surrogate activities.
+
+I actually have a lot of plans to make something meaningful, but I never really try to start working on it, because of my laziness.
+
+Aside from all of that, I feel good in some ways. I spent time and money with my family which is good, it means I don't work for nothing. And I also spent more time with my fiancé.
+
+I've been playing a lot for the past two weeks since I bought the new PS5, even though the one who puts a lot of hours into are my brothers. Playing some Doom Eternal there as well, because why not. Well, playing on Steam Deck is way much comfortable since the control is better there than the PS5 Dualshock Controller. I also played my favourite game when I was a kid, Crash Team Racing: Nitro Fueled. It was a ton of funs, turns out I didn't finish it fully when I was a kid. I learned a ton of stuff that I never do when I was a kid, such as power sliding, etc.
+
+I know it seems random, but today I also found out that [[https://en.wikipedia.org/wiki/Josh_Sawyer][Josh Swayer]] (Project Director & Lead Designer of Fallout: New Vegas) is actually come from History Majors, which my fiancé is currently studying at. She also feels the same way as I am, she felt burnout from her thesis work. This sparks a lot of thoughts for projects that I want to do, and I also can involve her in that project.
+
+About the programming stuff, I tried to learn Guile Scheme again, and found out that Guile Website is actually built using [[https://dthompson.us/projects/haunt.html][Haunt]], maybe I'll migrate my website to use haunt in the future.
