@@ -120,17 +120,18 @@ time {
 	font-size: small;
 }
 
-li time {
-	font-family: 'Roboto Mono', monospace;
-	font-size: unset;
-	margin-right: 1rem;
-	display: flex;
-	align-items: center;
+ul:has(li time) {
+    list-style-type: none;
+	  display: flex;
+    flex-direction: column;
+    margin: unset;
+    padding: unset;
+    gap: 1rem;
 }
 
 li:has(time) {
-	display: flex;
-	align-items: center;
+	  display: flex;
+    flex-direction: column;
 }
 
 figure {

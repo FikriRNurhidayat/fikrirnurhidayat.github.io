@@ -65,8 +65,8 @@
          :auto-preamble t
          :auto-postamble t
          :base-directory "./content"
-		 :base-extension "org"
-		 :exclude "posts/*"
+		     :base-extension "org"
+		     :exclude "posts/*"
          :publishing-directory "./dist"
          :with-author nil
          :with-title nil
@@ -78,16 +78,16 @@
 		("site:posts"
          :recursive t
          :auto-sitemap t
-		 :sitemap-title "Posts"
-		 :sitemap-filename "posts.org"
-		 :sitemap-format-entry fain/org-publish-sitemap-entry
-		 :sitemap-sort-files anti-chronologically
-		 :sitemap-style list
+		     :sitemap-title "Posts"
+		     :sitemap-filename "posts.org"
+		     :sitemap-format-entry fain/org-publish-sitemap-entry
+		     :sitemap-sort-files anti-chronologically
+		     :sitemap-style list
          :auto-preamble t
          :auto-postamble t
          :base-directory "./content"
-		 :base-extension "org"
-		 :exclude "about.org"
+		     :base-extension "org"
+		     :exclude "about.org"
          :publishing-directory "./dist"
          :with-author nil
          :with-title nil
@@ -119,13 +119,13 @@ ENTRY is a file name.  STYLE is the style of the sitemap.
 PROJECT is the current project."
   (cond
    ((not (directory-name-p entry))
-	(format "{{{time(%s)}}} [[file:%s][%s]]"
-			(format-time-string "%Y-%m-%d" (seconds-to-time (org-publish-find-date entry project)))
-			entry
-			(org-publish-find-title entry project)))
+	  (format "{{{time(%s)}}} [[file:%s][%s]]"
+			      (format-time-string "%B %e&#44; %Y" (seconds-to-time (org-publish-find-date entry project)))
+			      entry
+			      (org-publish-find-title entry project)))
    ((eq style 'tree)
-	;; Return only last subdir.
-	(file-name-nondirectory (directory-file-name entry)))
+	  ;; Return only last subdir.
+	  (file-name-nondirectory (directory-file-name entry)))
    (t entry)))
 
 (provide 'build)
