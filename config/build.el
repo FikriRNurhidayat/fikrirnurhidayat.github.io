@@ -36,6 +36,7 @@
 
 ;; Install dependencies
 (package-install 'htmlize)
+(package-install 'webfeeder)
 
 ;; Import publishing tools
 (require 'org)
@@ -75,7 +76,7 @@
          :with-timestamps nil
          :section-numbers nil
          :publishing-function org-html-publish-to-html)
-		("site:posts"
+		    ("site:posts"
          :recursive t
          :auto-sitemap t
 		     :sitemap-title "Posts"
@@ -111,7 +112,7 @@
         ("site" :components ("site:html" "site:content" "site:posts" "site:assets"))))
 
 (setq org-export-global-macros
-      '(("time" . "@@html:<time>$1</time>@@")))
+      '(("time" . "@@html:<br><time>$1</time>@@")))
 
 (defun fain/org-publish-sitemap-entry (entry style project)
   "Fain's format for site map ENTRY, as a string.
@@ -119,14 +120,29 @@ ENTRY is a file name.  STYLE is the style of the sitemap.
 PROJECT is the current project."
   (cond
    ((not (directory-name-p entry))
-	  (format "{{{time(%s)}}} [[file:%s][%s]]"
-			      (format-time-string "%B %e&#44; %Y" (seconds-to-time (org-publish-find-date entry project)))
+	  (format "[[file:%s][%s]] {{{time(%s)}}}"
 			      entry
-			      (org-publish-find-title entry project)))
+			      (org-publish-find-title entry project)
+            (format-time-string "%B %e&#44; %Y" (seconds-to-time (org-publish-find-date entry project)))))
    ((eq style 'tree)
 	  ;; Return only last subdir.
 	  (file-name-nondirectory (directory-file-name entry)))
    (t entry)))
+
+(defun fain/publish ()
+  "Publish the website."
+  (org-publish-all)
+  (make-directory "dist/rss" t)
+  (webfeeder-build "rss/posts.xml"
+                   "./dist"
+                   "https://fikrirnurhidayat.com"
+                   (let ((default-directory (expand-file-name "./dist/")))
+                     (directory-files-recursively "posts"
+                                                  ".*\\.html$"))
+                   :builder 'webfeeder-make-rss
+                   :title "Fikri Rahmat Nurhidayat"
+                   :description "Random thought."
+                   :author "Fikri Rahmat Nurhidayat"))
 
 (provide 'build)
 ;;; build.el ends here

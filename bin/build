@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 rm -rf ~/.org-timestamps/
-emacs -batch -q -l ./config/build.el -f org-publish-all
+emacs -batch -q -l ./config/build.el -f fain/publish
