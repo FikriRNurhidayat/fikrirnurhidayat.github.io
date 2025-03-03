@@ -65,8 +65,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+    article {
+        padding: 2rem 2rem;    
+    }
+    
     main article {
-        padding: 2rem 2rem;
         border: solid 1pt currentColor;
     }
 }
