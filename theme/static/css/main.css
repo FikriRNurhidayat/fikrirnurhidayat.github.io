@@ -19,7 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main, article:not(main article) {
-    width: 40rem;
+    max-width: 40rem;
+    width: 100%;
     margin: auto;
 }
 

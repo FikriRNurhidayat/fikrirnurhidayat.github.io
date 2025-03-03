@@ -65,8 +65,8 @@
 
 ;; route for static assets that also copies files to output directory
 (weblorg-copy-static
- :output "output/static/{{ file }}"
- :url "/static/{{ file }}")
+ :output "output/{{ file }}"
+ :url "/{{ file }}")
 
 ;; fire the engine and export all the files declared in the routes above
 (weblorg-export)
