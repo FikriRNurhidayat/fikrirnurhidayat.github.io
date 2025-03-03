@@ -1,0 +1,85 @@
+@import url("./normalize.min.css");
+
+body {
+    font-family: "JetBrains Sans", sans-serif;
+    line-height: 1.7;
+}
+
+body:has(main) {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+main, article:not(main article) {
+    width: 40rem;
+    margin: auto;
+}
+
+hr {
+    height: 0;
+    border: 1pt solid currentColor;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    article {
+        padding: 0 2rem;
+        
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }    
+}
+
+footer {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    nav {
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    main article {
+        padding: 2rem 2rem;
+        border: solid 1pt currentColor;
+    }
+}
+
+.posts {
+    margin: 0;
+    padding: 1rem 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    li {
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
