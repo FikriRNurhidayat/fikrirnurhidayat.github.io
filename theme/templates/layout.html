@@ -1,0 +1,28 @@
+{# layout.html --- Base template for all other templates -*- Mode: Jinja2; -*-
+
+The blocks available in this file are:
+
+* title: What will show within the HTML <title> tag.
+* description: What will show within the HTML <meta> description tag.
+* nav: Navigation bar with Links, a default is provided
+* body: Main content which starts empty
+* footer: Bottom links, default is provided
+
+#}
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="icon" type="image/png" href="/static/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml">
+  </head>
+  
+  <body>
+    {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>

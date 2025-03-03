@@ -1,8 +1,5 @@
-#+title: About This Site
-#+subtitle: Site that I build since 2021 and still has no proper functionality.
-#+description: Site that I build since 2021 and still has no proper functionality.
+#+title: About
 #+author: Fikri Rahmat Nurhidayat
-#+email: fikrirnurhidayat@gmail.com
 #+date: <2022-11-16>
 
 I am a former programmer from [[https://binaracademy.com][Binar Academy]], an edutech company. As an employee who cares about company's vision, I love to share my knowledge, experience, and whatever I know, either it's on technology field, or other field of expertise.

@@ -1,0 +1,35 @@
+{# blog.html --- Blog template; -*- Mode: Jinja2; -*- #}
+
+{% extends "layout.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+<article>
+<h1>Blog</h1>
+
+<ul class="posts">
+  {% for post in posts %}
+  <li>
+    <time>{{ post.date|strftime("%b %d, %Y") }}</time>
+    <a href="{{ url_for("posts", slug=post.slug) }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+<footer>
+  <nav>
+    <a href="{{ url_for("blog") }}">blog</a>
+    <a href="{{ url_for("rss") }}" target="_blank">rss</a>
+    <a href="mailto:fikrirnurhidayat@gmail.com" target="_blank">email</a>     
+    <a href="https://github.com/fikrirnurhidayat" target="_blank">github</a>
+    <a href="https://toot.cat/@chekoy" target="_blank">fediverse</a>
+    <a href="https://linkedin.com/in/fikrirnurhidayat" target="_blank">linkedin</a>
+  </nav>
+</footer>
+</article>
+{% endblock %}

@@ -3,6 +3,7 @@
 #+summary: Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
 #+author: Fikri Rahmat Nurhidayat
 #+date: <2023-04-08>
+#+options: toc:nil num:nil
 
 Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
 

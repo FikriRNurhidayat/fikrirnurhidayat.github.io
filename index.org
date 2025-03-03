@@ -1,0 +1,6 @@
+#+options: toc:nil num:nil
+#+title: Fikri
+
+Hi, welcome to my site.
+
+I'm a software developer that can build web professionally. Emacs hacker? Linux hacker? I don't know. I love video games, tho.

@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-rm -rf ~/.org-timestamps/
-emacs -batch -q -l ./config/build.el -f fain/publish
+emacs --script ./publish.el

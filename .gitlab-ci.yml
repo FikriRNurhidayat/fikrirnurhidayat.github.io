@@ -9,7 +9,7 @@ pages:
     - apk update
     - apk add emacs-nox git
     - ./bin/build
-    - mv dist public
+    - mv output public
   cache:
     key: ${CI_JOB_NAME}
     paths:

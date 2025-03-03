@@ -3,6 +3,7 @@
 #+summary: For the last few months, I felt burnout, even today, when I'm writing this post.
 #+author: Fikri Rahmat Nurhidayat
 #+date: <2023-08-13>
+#+options: toc:nil num:nil
 
 For the last few months, I felt burnout, even today, when I'm writing this post. I feel like I don't achieve anything meaningful in my life, even though I can actually do that. I'm not really motivated to do anything meaningful, instead I'm slowly be more lazier day by days and watch Youtube all days.
 
