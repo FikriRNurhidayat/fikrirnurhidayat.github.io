@@ -14,7 +14,7 @@
     <atom:link
         href="{{ url_for("rss") }}"
       rel="self" type="application/rss+xml" />
-      <link>{{ url_for("blog") }}</link>
+      <link>{{ url_for("index") }}</link>
       <description><![CDATA[]]></description>
       <language>en</language>
       <pubDate>{{ posts | first | getattr("date") | strftime("%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
@@ -24,7 +24,7 @@
       <image>
         <url>{{ url_for("index") }}/static/favicon.svg</url>
         <title>Fikri</title>
-        <link>{{ url_for("blog") }}</link>
+        <link>{{ url_for("index") }}</link>
       </image>
 
       {% for post in posts %}

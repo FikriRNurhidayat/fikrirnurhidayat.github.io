@@ -1,4 +1,4 @@
-{# index.html --- Template for my website's index page -*- Mode: Jinja2; -*- #}
+{# post.html --- Template for my website's index page -*- Mode: Jinja2; -*- #}
 {% extends "layout.html" %}
 
 {% block title %}{{ post.title }}{% endblock %}
@@ -8,16 +8,5 @@
   <h1>{{ post.title }}</h1>
 
   {{ post.html|safe }}
-
-  <hr>
-
-  <footer>
-    <nav>
-      <a href="{{ url_for("blog") }}">blog</a>
-      <a href="{{ url_for("rss") }}" target="_blank">rss</a>
-      <a href="mailto:fikrirnurhidayat@gmail.com" target="_blank">email</a>
-      <a href="https://toot.cat/@chekoy" target="_blank">fediverse</a>
-    </nav>
-  </footer>
 </article>
 {% endblock %}

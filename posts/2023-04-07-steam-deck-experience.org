@@ -1,0 +1,56 @@
+#+title: Steam Deck Experience
+#+description: Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
+#+summary: Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
+#+author: Fikri Rahmat Nurhidayat
+#+date: <2023-04-08>
+#+options: toc:nil num:nil
+
+Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
+
+* Where was I when it was released?
+
+In late 2021, I followed any information regarding Steam Deck, since it is very interesing for me because it runs on Steam OS with the codename Holo which is a branch of Arch Linux (I use it, btw). I really want to buy that device, but sadly at that time, I don't have the financial budget to do so.
+
+Regardless I was able to buy Steam Deck or not, at least I still get the benefit its existence. Steam Proton is now very well improved, I can run most of the game that are available on the Steam Library, of course the game *MUST* be compatible with my laptop tho. I can even run *The Elder Scrolls V: Skyrim (Special Edition)* on very low setting without any issue.
+
+* Finally, I bought Steam Deck!
+
+In late March of 2023, I bought Steam Deck, because I have the financial capability to do so, and I'm so bored at that time. I bought the 512GB variant, because I think the price is not that bad. The original price from Valve is *$649* which is roughly *Rp 9.697.001,05* in my currency.
+
+But, since I live in the Third World Country, I just don't order it directly from Valve, but instead, I bought it via Tokopedia Seller called *Tech Gadgets Store*. It's a little bit pricy, but I think it's worth tho, it's *Rp 11.474.000,-*. I wait for like 3-4 days after I bought it from Tokopedia, I hate Sicepat.
+
+* It's gaming time
+
+When it was arrived, I immediately install bunch of games on my library, here's the following games that I installed immediately:
+- Fallout: New Vegas
+- Slipstream
+- The Elder Scrolls V: Skyrim (Special Edition)
+- Resident Evil 4 (Remake)
+
+Fallout: New Vegas ran flawlessly on Very High setting, it was overall better experience than running it on my Laptop. I never see Fallout: New Vegas be that good. Slipstream ran perfectly. Then, Skyrim also runs OK, but I have to tweak the setting so I can get 40 FPS, I set it on High setting. And, Resident Evil runs OK at Low Setting, I can get stable 40 FPS.
+
+Days later, I impulsively bought bunch of games to try it out, and also the game that I really want to play for years:
+- Doom Eternal
+- Resident Evil 3 (Remake)
+
+Both of those games run at solid 60 FPS at High Setting.
+
+* The battery life is bad
+
+With that price, you can't get everything right? The only downside of Steam Deck is its Battery Life. I can only reach 1 hour or if I'm lucky I can get 2 hours of battery life while playing the Doom Eternal.
+
+To be honest, it's not a big deal for me, since I usually play it on a desk with charging station in it.
+
+* Does it support mouse and keyboard?
+
+Of course, but I don't use mouse and keyboard at the time, since I plan to buy Steam Deck Docking Station, so I can get optimal Gaming setup with it. To be honest, I don't really need it right now, the controls on Steam Deck is pretty good tho, and it supports Gyro controls.
+
+* Of course I need mouse and keyboard for Desktop mode
+
+So, Steam Deck came with two modes by default, the Gaming Mode, and Desktop Mode. Gaming Mode is the default mode when you launch Steam Deck. It basically the Steam UI where you can launch your games.
+
+Desktop Mode is the generic GNU/Linux Desktop. Steam OS uses KDE as the Desktop Environment. You can switch to Desktop Mode by pressing ~STEAM~ button, then choose Exit then choose Desktop Mode. It's actually a fully fledge GNU/Linux desktop, you can do anything with it. Even in the future, I'm planning to play around a bit on the Desktop Mode. But, for now, let's not do that, since I don't have the Steam Deck Docking Station yet.
+
+* Was it worth your money?
+
+With that price tho, I can say it's worth your money. You have fully fledge Gaming PC on your handheld. And the best part is, you don't have to run Windows to play most of Steam Game. So, I can finally say Goodbye to Windows forever.

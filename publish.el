@@ -31,28 +31,19 @@
                   ("site_description" . "Fikk's personal blog.")))
 
 (weblorg-route
- :name "index"
- :input-pattern "*.org"
- :output "output/index.html"
- :template "index.html"
- :url "/")
-
-;; route for rendering each post
-(weblorg-route
  :name "posts"
  :input-pattern "posts/**/*.org"
  :output "output/blog/{{ slug }}.html"
  :template "post.html"
  :url "/blog/{{ slug }}.html")
 
-;; route for rendering the index page of the blog
 (weblorg-route
- :name "blog"
+ :name "index"
  :input-pattern "posts/**/*.org"
  :input-aggregate #'weblorg-input-aggregate-all-desc
- :output "output/blog.html"
- :template "blog.html"
- :url "/blog.html")
+ :output "output/index.html"
+ :template "index.html"
+ :url "/")
 
 (weblorg-route
  :name "rss"
@@ -61,7 +52,6 @@
  :template "rss.xml"
  :output "output/rss.xml"
  :url "/rss.xml")
-
 
 ;; route for static assets that also copies files to output directory
 (weblorg-copy-static

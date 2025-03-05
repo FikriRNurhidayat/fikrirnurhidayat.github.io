@@ -1,25 +1,23 @@
 {# index.html --- Template for my website's index page -*- Mode: Jinja2; -*- #}
 {% extends "layout.html" %}
 
-{% block title %}{{ post.title }}{% endblock %}
+{% block title %}Fikri R. Nurhidayat{% endblock %}
 
 {% block body %}
 <main>
-  <article>
-    <img src="/favicon.svg" alt="Fikri Rahmat Nurhidayat">
+  <h1>Fikri R. Nurhidayat</h1>
 
-    <h1>{{ post.title }}</h1>
+  <p>I'm a software engineer who builds websites and business-critical applications. I also love video games.</p>
 
-    {{ post.html|safe }}
-  </article>
-  
-  <footer>
-    <nav>
-      <a href="{{ url_for("blog") }}">blog</a>
-      <a href="{{ url_for("rss") }}" target="_blank">rss</a>
-      <a href="mailto:fikrirnurhidayat@gmail.com" target="_blank">email</a>     
-      <a href="https://toot.cat/@chekoy" target="_blank">fediverse</a>
-    </nav>
-  </footer>
+  <ul class="posts">
+    {% for post in posts %}
+    <li>
+      <time>{{ post.date|strftime("%b %d, %Y") }}</time>
+      <a href="{{ url_for("posts", slug=post.slug) }}">
+        {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </main>
 {% endblock %}
