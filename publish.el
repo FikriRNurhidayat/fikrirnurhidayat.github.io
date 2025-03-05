@@ -23,7 +23,7 @@
 
 (require 'weblorg)
 
-(setq weblorg-default-url "")
+(setq weblorg-default-url "https://fikrirnurhidayat.com")
 
 (weblorg-site
  :template-vars '(("site_name" . "Fikk")
