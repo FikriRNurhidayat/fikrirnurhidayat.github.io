@@ -12,27 +12,27 @@
   <channel>
     <title>Fikri</title>
     <atom:link
-        href="/rss.xml"
+        href="https://fikrirnurhidayat.com/rss.xml"
       rel="self" type="application/rss+xml" />
-      <link>/</link>
+      <link>https://fikrirnurhidayat.com/</link>
       <description><![CDATA[]]></description>
       <language>en</language>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
-      <lastBuildDate>Wed, 05 Mar 2025 00:21:35 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 05 Mar 2025 00:26:18 +0000</lastBuildDate>
       <generator>weblorg 0.1.0 (https://emacs.love/weblorg)</generator>
       <webMaster>fikrirnurhidayat@gmail.com (Fikri)</webMaster>
       <image>
-        <url>//static/favicon.svg</url>
+        <url>https://fikrirnurhidayat.com//static/favicon.svg</url>
         <title>Fikri</title>
-        <link>/</link>
+        <link>https://fikrirnurhidayat.com/</link>
       </image>
 
       
       <item>
         <title>Burnout</title>
-        <link>/blog/burnout.html</link>
+        <link>https://fikrirnurhidayat.com/blog/burnout.html</link>
         <author>Fikri Rahmat Nurhidayat</author>
-        <guid isPermaLink="false">/blog/burnout.html</guid>
+        <guid isPermaLink="false">https://fikrirnurhidayat.com/blog/burnout.html</guid>
         <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
         <description><![CDATA[<p>
 For the last few months, I felt burnout, even today, when I'm writing this post. I feel like I don't achieve anything meaningful in my life, even though I can actually do that. I'm not really motivated to do anything meaningful, instead I'm slowly be more lazier day by days and watch Youtube all days.
@@ -66,9 +66,9 @@ About the programming stuff, I tried to learn Guile Scheme again, and found out 
       
       <item>
         <title>Steam Deck Experience</title>
-        <link>/blog/steam-deck-experience.html</link>
+        <link>https://fikrirnurhidayat.com/blog/steam-deck-experience.html</link>
         <author>Fikri Rahmat Nurhidayat</author>
-        <guid isPermaLink="false">/blog/steam-deck-experience.html</guid>
+        <guid isPermaLink="false">https://fikrirnurhidayat.com/blog/steam-deck-experience.html</guid>
         <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
         <description><![CDATA[<p>
 Steam Deck is a handheld gaming device manufactured by Valve. In this post, I'll share my experience of using it.
